@@ -4,7 +4,7 @@
 use Display, Time
 
 var a= Display.draw
-var borramevar="skksk"
+
 import "chess_types"
 import "chess_init"
 import "chess_moves"
