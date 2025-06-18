@@ -1,0 +1,68 @@
+/*********************************************************
+ * Juego de Ajedrez - Programa Principal
+ *********************************************************/
+use Display, Time
+
+var a= Display.draw
+
+import "chess_types"
+import "chess_init"
+import "chess_moves"
+import "chess-check"
+import "chess_ai"
+
+const max_movimientos = 100
+
+var num1=123.123456789
+var num2=1234.123456789
+var num3=12345.123456789
+
+println ("num1: ",num1)
+println ("num2: ",num2)
+println ("num3: ",num3)
+
+// Inicializar el juego
+iniciar_tablero()
+
+
+var start=clock();
+// Bucle principal del juego (IA vs IA)
+while (!Estado.terminar and Estado.movimientos < max_movimientos)
+    println(); println();
+    mostrar_tablero()
+    // Mostrar estado actual
+    println("Turno de las ", (Estado.turno == BLANCO) ? "BLANCAS" : "NEGRAS")
+    println("Movimiento: ", Estado.movimientos," | Tiempo : " , (clock()-start)/1000)
+    start=clock();
+
+    // Verificar jaque
+    if (esta_en_jaque(Estado.turno)) then
+        println("- JAQUE!")
+    end
+
+    // Generar movimiento para la IA actual
+    var color_ia = Estado.turno
+    var movimiento_ia = generar_movimiento_ia(color_ia)  // *** Función modificada
+
+    if (movimiento_ia != nil) then
+        realizar_movimiento_seguro(
+            movimiento_ia[0],
+            movimiento_ia[1],
+            movimiento_ia[2],
+            movimiento_ia[3]
+        )
+        // Pausa para visualizar
+
+    else
+        // Fin del juego
+        mostrar_tablero()
+        println("- JAQUE MATE! Ganan las ", (color_ia == BLANCO) ? "NEGRAS" : "BLANCAS")
+        Estado.terminar = true
+    end
+end
+
+println("- Fin del juego!")
+if (Estado.terminar) then
+    println("-", (Estado.turno == NEGRO) ? "BLANCAS" : "NEGRAS", " GANAN!")
+end
+

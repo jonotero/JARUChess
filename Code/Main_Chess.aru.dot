@@ -1,0 +1,5548 @@
+digraph{
+    node [shape=box]
+    0 [label="0 Root\l--------"]
+    0 -> 2
+    2 [label="2 Use Bitmap"]
+    2 -> 
+    0 [label="0 Root\l--------"]
+    0 -> 4
+    4 [label="4 Use Draw"]
+    4 -> 
+    0 [label="0 Root\l--------"]
+    0 -> 6
+    6 [label="6 Constant\l--------"]
+    6 -> 7
+    7 [label="7 Integer\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 8
+    8 [label="8 Constant\l--------"]
+    8 -> 9
+    9 [label="9 Integer\l10"]
+    0 [label="0 Root\l--------"]
+    0 -> 10
+    10 [label="10 Constant\l--------"]
+    10 -> 11
+    11 [label="11 Integer\l11"]
+    0 [label="0 Root\l--------"]
+    0 -> 12
+    12 [label="12 Constant\l--------"]
+    12 -> 13
+    13 [label="13 Integer\l12"]
+    0 [label="0 Root\l--------"]
+    0 -> 14
+    14 [label="14 Constant\l--------"]
+    14 -> 15
+    15 [label="15 Integer\l13"]
+    0 [label="0 Root\l--------"]
+    0 -> 16
+    16 [label="16 Constant\l--------"]
+    16 -> 17
+    17 [label="17 Integer\l14"]
+    0 [label="0 Root\l--------"]
+    0 -> 18
+    18 [label="18 Constant\l--------"]
+    18 -> 19
+    19 [label="19 Integer\l15"]
+    0 [label="0 Root\l--------"]
+    0 -> 20
+    20 [label="20 Constant\l--------"]
+    20 -> 21
+    21 [label="21 String\lB"]
+    0 [label="0 Root\l--------"]
+    0 -> 22
+    22 [label="22 Constant\l--------"]
+    22 -> 23
+    23 [label="23 String\lN"]
+    0 [label="0 Root\l--------"]
+    0 -> 24
+    24 [label="24 Constant\l--------"]
+    24 -> 25
+    25 [label="25 String\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 26
+    26 [label="26 Constant\l--------"]
+    26 -> 28
+    28 [label="28 Map"]
+    28 -> 27
+    27 [label="27 Integer\l10"]
+    28 -> 30
+    30 [label="30 Integer\l11"]
+    28 -> 32
+    32 [label="32 Integer\l12"]
+    28 -> 34
+    34 [label="34 Integer\l13"]
+    28 -> 36
+    36 [label="36 Integer\l14"]
+    28 -> 38
+    38 [label="38 Integer\l15"]
+    28 -> 40
+    40 [label="40 Integer\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 42
+    42 [label="42 Class Declare\lTCasilla"]
+    42 -> 44
+    44 [label="44 Function Declare\l-----------------------\linit@0"]
+    44 -> 45
+    45 [label="45 Block"]
+    45 -> 46
+    46 [label="46 Expression"]
+    46 -> 50
+    50 [label="50 Assign\l-------------\l="]
+    50 -> 48
+    48 [label="48 Infix Dot"]
+    48 -> 47
+    47 [label="47 this"]
+    48 -> 49
+    49 [label="49 Identifier\lpieza"]
+    50 -> 52
+    52 [label="52 Identifier\lNINGUNA"]
+    45 [label="45 Block"]
+    45 -> 53
+    53 [label="53 Expression"]
+    53 -> 57
+    57 [label="57 Assign\l-------------\l="]
+    57 -> 55
+    55 [label="55 Infix Dot"]
+    55 -> 54
+    54 [label="54 this"]
+    55 -> 56
+    56 [label="56 Identifier\lcolor_pieza"]
+    57 -> 59
+    59 [label="59 Identifier\lNINGUNO"]
+    45 [label="45 Block"]
+    45 -> 60
+    60 [label="60 Expression"]
+    60 -> 64
+    64 [label="64 Assign\l-------------\l="]
+    64 -> 62
+    62 [label="62 Infix Dot"]
+    62 -> 61
+    61 [label="61 this"]
+    62 -> 63
+    63 [label="63 Identifier\lseleccionada"]
+    64 -> 66
+    66 [label="66 Bool\l0"]
+    42 -> 67
+    67 [label="67 Function Declare\l-----------------------\lclone"]
+    67 -> 68
+    68 [label="68 Block"]
+    68 -> 69
+    69 [label="69 Var Declare\l-----------------\lnueva"]
+    71 [label ="69 Var : nueva"]
+    69 -> 71
+    71 [label="71 Call\lTCasilla()"]
+    68 [label="68 Block"]
+    68 -> 72
+    72 [label="72 Expression"]
+    72 -> 76
+    76 [label="76 Assign\l-------------\l="]
+    76 -> 74
+    74 [label="74 Infix Dot"]
+    74 -> 73
+    73 [label="73 Identifier\lnueva"]
+    74 -> 75
+    75 [label="75 Identifier\lpieza"]
+    76 -> 79
+    79 [label="79 Infix Dot"]
+    79 -> 78
+    78 [label="78 this"]
+    79 -> 80
+    80 [label="80 Identifier\lpieza"]
+    68 [label="68 Block"]
+    68 -> 81
+    81 [label="81 Expression"]
+    81 -> 85
+    85 [label="85 Assign\l-------------\l="]
+    85 -> 83
+    83 [label="83 Infix Dot"]
+    83 -> 82
+    82 [label="82 Identifier\lnueva"]
+    83 -> 84
+    84 [label="84 Identifier\lcolor_pieza"]
+    85 -> 88
+    88 [label="88 Infix Dot"]
+    88 -> 87
+    87 [label="87 this"]
+    88 -> 89
+    89 [label="89 Identifier\lcolor_pieza"]
+    68 [label="68 Block"]
+    68 -> 90
+    90 [label="90 Expression"]
+    90 -> 94
+    94 [label="94 Assign\l-------------\l="]
+    94 -> 92
+    92 [label="92 Infix Dot"]
+    92 -> 91
+    91 [label="91 Identifier\lnueva"]
+    92 -> 93
+    93 [label="93 Identifier\lseleccionada"]
+    94 -> 97
+    97 [label="97 Infix Dot"]
+    97 -> 96
+    96 [label="96 this"]
+    97 -> 98
+    98 [label="98 Identifier\lseleccionada"]
+    68 [label="68 Block"]
+    68 -> 99
+    99 [label="99 Return"]
+    99 -> 100
+    100 [label="100 Identifier\lnueva"]
+    0 [label="0 Root\l--------"]
+    0 -> 101
+    101 [label="101 Class Declare\lTEstado"]
+    101 -> 103
+    103 [label="103 Function Declare\l-----------------------\linit@0"]
+    103 -> 104
+    104 [label="104 Block"]
+    104 -> 105
+    105 [label="105 Expression"]
+    105 -> 109
+    109 [label="109 Assign\l-------------\l="]
+    109 -> 107
+    107 [label="107 Infix Dot"]
+    107 -> 106
+    106 [label="106 this"]
+    107 -> 108
+    108 [label="108 Identifier\lturno"]
+    109 -> 111
+    111 [label="111 Identifier\lBLANCO"]
+    104 [label="104 Block"]
+    104 -> 112
+    112 [label="112 Expression"]
+    112 -> 116
+    116 [label="116 Assign\l-------------\l="]
+    116 -> 114
+    114 [label="114 Infix Dot"]
+    114 -> 113
+    113 [label="113 this"]
+    114 -> 115
+    115 [label="115 Identifier\lmovimientos"]
+    116 -> 118
+    118 [label="118 Integer\l0"]
+    104 [label="104 Block"]
+    104 -> 119
+    119 [label="119 Expression"]
+    119 -> 123
+    123 [label="123 Assign\l-------------\l="]
+    123 -> 121
+    121 [label="121 Infix Dot"]
+    121 -> 120
+    120 [label="120 this"]
+    121 -> 122
+    122 [label="122 Identifier\ljaque_blanco"]
+    123 -> 125
+    125 [label="125 Bool\l0"]
+    104 [label="104 Block"]
+    104 -> 126
+    126 [label="126 Expression"]
+    126 -> 130
+    130 [label="130 Assign\l-------------\l="]
+    130 -> 128
+    128 [label="128 Infix Dot"]
+    128 -> 127
+    127 [label="127 this"]
+    128 -> 129
+    129 [label="129 Identifier\ljaque_negro"]
+    130 -> 132
+    132 [label="132 Bool\l0"]
+    104 [label="104 Block"]
+    104 -> 133
+    133 [label="133 Expression"]
+    133 -> 137
+    137 [label="137 Assign\l-------------\l="]
+    137 -> 135
+    135 [label="135 Infix Dot"]
+    135 -> 134
+    134 [label="134 this"]
+    135 -> 136
+    136 [label="136 Identifier\lterminar"]
+    137 -> 139
+    139 [label="139 Bool\l0"]
+    101 -> 140
+    140 [label="140 Function Declare\l-----------------------\linit@2"]
+    140 -> 143
+    143 [label="143 Block"]
+    143 -> 144
+    144 [label="144 Expression"]
+    144 -> 148
+    148 [label="148 Assign\l-------------\l="]
+    148 -> 146
+    146 [label="146 Infix Dot"]
+    146 -> 145
+    145 [label="145 this"]
+    146 -> 147
+    147 [label="147 Identifier\lturno"]
+    148 -> 150
+    150 [label="150 Identifier\lBLANCO"]
+    143 [label="143 Block"]
+    143 -> 151
+    151 [label="151 Expression"]
+    151 -> 155
+    155 [label="155 Assign\l-------------\l="]
+    155 -> 153
+    153 [label="153 Infix Dot"]
+    153 -> 152
+    152 [label="152 this"]
+    153 -> 154
+    154 [label="154 Identifier\lmovimientos"]
+    155 -> 157
+    157 [label="157 Integer\l0"]
+    143 [label="143 Block"]
+    143 -> 158
+    158 [label="158 Expression"]
+    158 -> 162
+    162 [label="162 Assign\l-------------\l="]
+    162 -> 160
+    160 [label="160 Infix Dot"]
+    160 -> 159
+    159 [label="159 this"]
+    160 -> 161
+    161 [label="161 Identifier\ljaque_blanco"]
+    162 -> 164
+    164 [label="164 Identifier\lx"]
+    143 [label="143 Block"]
+    143 -> 165
+    165 [label="165 Expression"]
+    165 -> 169
+    169 [label="169 Assign\l-------------\l="]
+    169 -> 167
+    167 [label="167 Infix Dot"]
+    167 -> 166
+    166 [label="166 this"]
+    167 -> 168
+    168 [label="168 Identifier\ljaque_negro"]
+    169 -> 171
+    171 [label="171 Identifier\ly"]
+    143 [label="143 Block"]
+    143 -> 172
+    172 [label="172 Expression"]
+    172 -> 176
+    176 [label="176 Assign\l-------------\l="]
+    176 -> 174
+    174 [label="174 Infix Dot"]
+    174 -> 173
+    173 [label="173 this"]
+    174 -> 175
+    175 [label="175 Identifier\lterminar"]
+    176 -> 178
+    178 [label="178 Bool\l0"]
+    101 -> 179
+    179 [label="179 Function Declare\l-----------------------\lclone"]
+    179 -> 180
+    180 [label="180 Block"]
+    180 -> 181
+    181 [label="181 Var Declare\l-----------------\lnuevo"]
+    183 [label ="181 Var : nuevo"]
+    181 -> 183
+    183 [label="183 Call\lTEstado()"]
+    180 [label="180 Block"]
+    180 -> 184
+    184 [label="184 Expression"]
+    184 -> 188
+    188 [label="188 Assign\l-------------\l="]
+    188 -> 186
+    186 [label="186 Infix Dot"]
+    186 -> 185
+    185 [label="185 Identifier\lnuevo"]
+    186 -> 187
+    187 [label="187 Identifier\lturno"]
+    188 -> 191
+    191 [label="191 Infix Dot"]
+    191 -> 190
+    190 [label="190 this"]
+    191 -> 192
+    192 [label="192 Identifier\lturno"]
+    180 [label="180 Block"]
+    180 -> 193
+    193 [label="193 Expression"]
+    193 -> 197
+    197 [label="197 Assign\l-------------\l="]
+    197 -> 195
+    195 [label="195 Infix Dot"]
+    195 -> 194
+    194 [label="194 Identifier\lnuevo"]
+    195 -> 196
+    196 [label="196 Identifier\lmovimientos"]
+    197 -> 200
+    200 [label="200 Infix Dot"]
+    200 -> 199
+    199 [label="199 this"]
+    200 -> 201
+    201 [label="201 Identifier\lmovimientos"]
+    180 [label="180 Block"]
+    180 -> 202
+    202 [label="202 Expression"]
+    202 -> 206
+    206 [label="206 Assign\l-------------\l="]
+    206 -> 204
+    204 [label="204 Infix Dot"]
+    204 -> 203
+    203 [label="203 Identifier\lnuevo"]
+    204 -> 205
+    205 [label="205 Identifier\ljaque_blanco"]
+    206 -> 209
+    209 [label="209 Infix Dot"]
+    209 -> 208
+    208 [label="208 this"]
+    209 -> 210
+    210 [label="210 Identifier\ljaque_blanco"]
+    180 [label="180 Block"]
+    180 -> 211
+    211 [label="211 Expression"]
+    211 -> 215
+    215 [label="215 Assign\l-------------\l="]
+    215 -> 213
+    213 [label="213 Infix Dot"]
+    213 -> 212
+    212 [label="212 Identifier\lnuevo"]
+    213 -> 214
+    214 [label="214 Identifier\ljaque_negro"]
+    215 -> 218
+    218 [label="218 Infix Dot"]
+    218 -> 217
+    217 [label="217 this"]
+    218 -> 219
+    219 [label="219 Identifier\ljaque_negro"]
+    180 [label="180 Block"]
+    180 -> 220
+    220 [label="220 Expression"]
+    220 -> 224
+    224 [label="224 Assign\l-------------\l="]
+    224 -> 222
+    222 [label="222 Infix Dot"]
+    222 -> 221
+    221 [label="221 Identifier\lnuevo"]
+    222 -> 223
+    223 [label="223 Identifier\lterminar"]
+    224 -> 227
+    227 [label="227 Infix Dot"]
+    227 -> 226
+    226 [label="226 this"]
+    227 -> 228
+    228 [label="228 Identifier\lterminar"]
+    180 [label="180 Block"]
+    180 -> 229
+    229 [label="229 Return"]
+    229 -> 230
+    230 [label="230 Identifier\lnuevo"]
+    0 [label="0 Root\l--------"]
+    0 -> 232
+    232 [label="232 Import\lchess_types"]
+    0 [label="0 Root\l--------"]
+    0 -> 233
+    233 [label="233 Var Declare\l-----------------\lTablero"]
+    234 [label ="233 Var : Tablero"]
+    233 -> 234
+    234 [label="234 List"]
+    0 [label="0 Root\l--------"]
+    0 -> 235
+    235 [label="235 Var Declare\l-----------------\lEstado"]
+    237 [label ="235 Var : Estado"]
+    235 -> 237
+    237 [label="237 Call\lTEstado()"]
+    0 [label="0 Root\l--------"]
+    0 -> 238
+    238 [label="238 Expression"]
+    238 -> 239
+    239 [label="239 Function Declare\l-----------------------\liniciar_tablero"]
+    239 -> 240
+    240 [label="240 Block"]
+    240 -> 241
+    241 [label="241 Var Declare\l-----------------\lpiezas"]
+    242 [label ="241 Var : piezas"]
+    241 -> 242
+    242 [label="242 List"]
+    242 -> 243
+    243 [label="243 Identifier\lTORRE"]
+    242 -> 244
+    244 [label="244 Identifier\lCABALLO"]
+    242 -> 245
+    245 [label="245 Identifier\lALFIL"]
+    242 -> 246
+    246 [label="246 Identifier\lDAMA"]
+    242 -> 247
+    247 [label="247 Identifier\lREY"]
+    242 -> 248
+    248 [label="248 Identifier\lALFIL"]
+    242 -> 249
+    249 [label="249 Identifier\lCABALLO"]
+    242 -> 250
+    250 [label="250 Identifier\lTORRE"]
+    240 [label="240 Block"]
+    240 -> 251
+    251 [label="251 For Loop\l------------"]
+    251 -> 252
+    252 [label="252 Var Declare\l-----------------\li"]
+    253 [label ="252 Var : i"]
+    252 -> 253
+    253 [label="253 Integer\l0"]
+    251 -> 255
+    255 [label="255 Infix Expr\l<"]
+    255 -> 254
+    254 [label="254 Identifier\li"]
+    255 [label="255 Infix Expr\l<"]
+    255 -> 256
+    256 [label="256 Integer\l8"]
+    251 -> 257
+    257 [label="257 Postfix Expr\l++"]
+    257 -> 258
+    258 [label="258 Identifier\li"]
+    251 -> 259
+    259 [label="259 Block"]
+    259 -> 260
+    260 [label="260 Expression"]
+    260 -> 262
+    262 [label="262 Infix Dot"]
+    262 -> 261
+    261 [label="261 Identifier\lTablero"]
+    262 -> 264
+    264 [label="264 Call\linsert()"]
+    264 -> 265
+    265 [label="265 List"]
+    265 -> 267
+    267 [label="267 Call\lTCasilla()"]
+    265 -> 269
+    269 [label="269 Call\lTCasilla()"]
+    265 -> 271
+    271 [label="271 Call\lTCasilla()"]
+    265 -> 273
+    273 [label="273 Call\lTCasilla()"]
+    265 -> 275
+    275 [label="275 Call\lTCasilla()"]
+    265 -> 277
+    277 [label="277 Call\lTCasilla()"]
+    265 -> 279
+    279 [label="279 Call\lTCasilla()"]
+    265 -> 281
+    281 [label="281 Call\lTCasilla()"]
+    240 [label="240 Block"]
+    240 -> 282
+    282 [label="282 For Loop\l------------"]
+    282 -> 283
+    283 [label="283 Var Declare\l-----------------\li"]
+    284 [label ="283 Var : i"]
+    283 -> 284
+    284 [label="284 Integer\l0"]
+    282 -> 286
+    286 [label="286 Infix Expr\l<"]
+    286 -> 285
+    285 [label="285 Identifier\li"]
+    286 [label="286 Infix Expr\l<"]
+    286 -> 287
+    287 [label="287 Integer\l8"]
+    282 -> 288
+    288 [label="288 Postfix Expr\l++"]
+    288 -> 289
+    289 [label="289 Identifier\li"]
+    282 -> 290
+    290 [label="290 Block"]
+    290 -> 291
+    291 [label="291 Expression"]
+    291 -> 298
+    298 [label="298 Assign\l-------------\l="]
+    298 -> 296
+    296 [label="296 Infix Dot"]
+    296 -> 293
+    293 [label="293 Index Expr\l"]
+    293 -> 292
+    292 [label="292 Identifier\lTablero"]
+    293 -> 294
+    294 [label="294 Identifier\li"]
+    293 -> 295
+    295 [label="295 Integer\l0"]
+    296 -> 297
+    297 [label="297 Identifier\lpieza"]
+    298 -> 301
+    301 [label="301 Index Expr\l"]
+    301 -> 300
+    300 [label="300 Identifier\lpiezas"]
+    301 -> 302
+    302 [label="302 Identifier\li"]
+    290 [label="290 Block"]
+    290 -> 303
+    303 [label="303 Expression"]
+    303 -> 310
+    310 [label="310 Assign\l-------------\l="]
+    310 -> 308
+    308 [label="308 Infix Dot"]
+    308 -> 305
+    305 [label="305 Index Expr\l"]
+    305 -> 304
+    304 [label="304 Identifier\lTablero"]
+    305 -> 306
+    306 [label="306 Identifier\li"]
+    305 -> 307
+    307 [label="307 Integer\l0"]
+    308 -> 309
+    309 [label="309 Identifier\lcolor_pieza"]
+    310 -> 312
+    312 [label="312 Identifier\lNEGRO"]
+    290 [label="290 Block"]
+    290 -> 313
+    313 [label="313 Expression"]
+    313 -> 320
+    320 [label="320 Assign\l-------------\l="]
+    320 -> 318
+    318 [label="318 Infix Dot"]
+    318 -> 315
+    315 [label="315 Index Expr\l"]
+    315 -> 314
+    314 [label="314 Identifier\lTablero"]
+    315 -> 316
+    316 [label="316 Identifier\li"]
+    315 -> 317
+    317 [label="317 Integer\l1"]
+    318 -> 319
+    319 [label="319 Identifier\lpieza"]
+    320 -> 322
+    322 [label="322 Identifier\lPEON"]
+    290 [label="290 Block"]
+    290 -> 323
+    323 [label="323 Expression"]
+    323 -> 330
+    330 [label="330 Assign\l-------------\l="]
+    330 -> 328
+    328 [label="328 Infix Dot"]
+    328 -> 325
+    325 [label="325 Index Expr\l"]
+    325 -> 324
+    324 [label="324 Identifier\lTablero"]
+    325 -> 326
+    326 [label="326 Identifier\li"]
+    325 -> 327
+    327 [label="327 Integer\l1"]
+    328 -> 329
+    329 [label="329 Identifier\lcolor_pieza"]
+    330 -> 332
+    332 [label="332 Identifier\lNEGRO"]
+    290 [label="290 Block"]
+    290 -> 333
+    333 [label="333 Expression"]
+    333 -> 340
+    340 [label="340 Assign\l-------------\l="]
+    340 -> 338
+    338 [label="338 Infix Dot"]
+    338 -> 335
+    335 [label="335 Index Expr\l"]
+    335 -> 334
+    334 [label="334 Identifier\lTablero"]
+    335 -> 336
+    336 [label="336 Identifier\li"]
+    335 -> 337
+    337 [label="337 Integer\l6"]
+    338 -> 339
+    339 [label="339 Identifier\lpieza"]
+    340 -> 342
+    342 [label="342 Identifier\lPEON"]
+    290 [label="290 Block"]
+    290 -> 343
+    343 [label="343 Expression"]
+    343 -> 350
+    350 [label="350 Assign\l-------------\l="]
+    350 -> 348
+    348 [label="348 Infix Dot"]
+    348 -> 345
+    345 [label="345 Index Expr\l"]
+    345 -> 344
+    344 [label="344 Identifier\lTablero"]
+    345 -> 346
+    346 [label="346 Identifier\li"]
+    345 -> 347
+    347 [label="347 Integer\l6"]
+    348 -> 349
+    349 [label="349 Identifier\lcolor_pieza"]
+    350 -> 352
+    352 [label="352 Identifier\lBLANCO"]
+    290 [label="290 Block"]
+    290 -> 353
+    353 [label="353 Expression"]
+    353 -> 360
+    360 [label="360 Assign\l-------------\l="]
+    360 -> 358
+    358 [label="358 Infix Dot"]
+    358 -> 355
+    355 [label="355 Index Expr\l"]
+    355 -> 354
+    354 [label="354 Identifier\lTablero"]
+    355 -> 356
+    356 [label="356 Identifier\li"]
+    355 -> 357
+    357 [label="357 Integer\l7"]
+    358 -> 359
+    359 [label="359 Identifier\lpieza"]
+    360 -> 363
+    363 [label="363 Index Expr\l"]
+    363 -> 362
+    362 [label="362 Identifier\lpiezas"]
+    363 -> 364
+    364 [label="364 Identifier\li"]
+    290 [label="290 Block"]
+    290 -> 365
+    365 [label="365 Expression"]
+    365 -> 372
+    372 [label="372 Assign\l-------------\l="]
+    372 -> 370
+    370 [label="370 Infix Dot"]
+    370 -> 367
+    367 [label="367 Index Expr\l"]
+    367 -> 366
+    366 [label="366 Identifier\lTablero"]
+    367 -> 368
+    368 [label="368 Identifier\li"]
+    367 -> 369
+    369 [label="369 Integer\l7"]
+    370 -> 371
+    371 [label="371 Identifier\lcolor_pieza"]
+    372 -> 374
+    374 [label="374 Identifier\lBLANCO"]
+    0 [label="0 Root\l--------"]
+    0 -> 375
+    375 [label="375 Expression"]
+    375 -> 376
+    376 [label="376 Function Declare\l-----------------------\lmostrar_tablero"]
+    376 -> 377
+    377 [label="377 Block"]
+    377 -> 378
+    378 [label="378 Expression"]
+    378 -> 380
+    380 [label="380 Call\lprintln()"]
+    380 -> 381
+    381 [label="381 String\l    a  b  c  d  e  f  g  h"]
+    377 [label="377 Block"]
+    377 -> 382
+    382 [label="382 Expression"]
+    382 -> 384
+    384 [label="384 Call\lprintln()"]
+    384 -> 385
+    385 [label="385 String\l  -------------------------"]
+    377 [label="377 Block"]
+    377 -> 386
+    386 [label="386 For Loop\l------------"]
+    386 -> 387
+    387 [label="387 Var Declare\l-----------------\ly"]
+    388 [label ="387 Var : y"]
+    387 -> 388
+    388 [label="388 Integer\l0"]
+    386 -> 390
+    390 [label="390 Infix Expr\l<"]
+    390 -> 389
+    389 [label="389 Identifier\ly"]
+    390 [label="390 Infix Expr\l<"]
+    390 -> 391
+    391 [label="391 Integer\l8"]
+    386 -> 392
+    392 [label="392 Postfix Expr\l++"]
+    392 -> 393
+    393 [label="393 Identifier\ly"]
+    386 -> 394
+    394 [label="394 Block"]
+    394 -> 395
+    395 [label="395 Expression"]
+    395 -> 397
+    397 [label="397 Call\lprint()"]
+    397 -> 399
+    399 [label="399 Infix Expr\l-"]
+    399 -> 398
+    398 [label="398 Integer\l8"]
+    399 [label="399 Infix Expr\l-"]
+    399 -> 400
+    400 [label="400 Identifier\ly"]
+    397 -> 401
+    401 [label="401 String\l |"]
+    394 [label="394 Block"]
+    394 -> 402
+    402 [label="402 For Loop\l------------"]
+    402 -> 403
+    403 [label="403 Var Declare\l-----------------\lx"]
+    404 [label ="403 Var : x"]
+    403 -> 404
+    404 [label="404 Integer\l0"]
+    402 -> 406
+    406 [label="406 Infix Expr\l<"]
+    406 -> 405
+    405 [label="405 Identifier\lx"]
+    406 [label="406 Infix Expr\l<"]
+    406 -> 407
+    407 [label="407 Integer\l8"]
+    402 -> 408
+    408 [label="408 Postfix Expr\l++"]
+    408 -> 409
+    409 [label="409 Identifier\lx"]
+    402 -> 410
+    410 [label="410 Block"]
+    410 -> 411
+    411 [label="411 Var Declare\l-----------------\lpieza"]
+    416 [label ="411 Var : pieza"]
+    411 -> 416
+    416 [label="416 Infix Dot"]
+    416 -> 413
+    413 [label="413 Index Expr\l"]
+    413 -> 412
+    412 [label="412 Identifier\lTablero"]
+    413 -> 414
+    414 [label="414 Identifier\lx"]
+    413 -> 415
+    415 [label="415 Identifier\ly"]
+    416 -> 417
+    417 [label="417 Identifier\lpieza"]
+    410 [label="410 Block"]
+    410 -> 418
+    418 [label="418 If Then\l--------"]
+    418 -> 422
+    422 [label="422 Block"]
+    422 -> 423
+    423 [label="423 Expression"]
+    423 -> 425
+    425 [label="425 Call\lprint()"]
+    425 -> 426
+    426 [label="426 String\l "]
+    425 -> 428
+    428 [label="428 Index Expr\l"]
+    428 -> 427
+    427 [label="427 Identifier\lpiezas_dict"]
+    428 -> 429
+    429 [label="429 Identifier\lpieza"]
+    425 -> 434
+    434 [label="434 Infix Dot"]
+    434 -> 431
+    431 [label="431 Index Expr\l"]
+    431 -> 430
+    430 [label="430 Identifier\lTablero"]
+    431 -> 432
+    432 [label="432 Identifier\lx"]
+    431 -> 433
+    433 [label="433 Identifier\ly"]
+    434 -> 435
+    435 [label="435 Identifier\lcolor_pieza"]
+    394 [label="394 Block"]
+    394 -> 441
+    441 [label="441 Expression"]
+    441 -> 443
+    443 [label="443 Call\lprintln()"]
+    443 -> 444
+    444 [label="444 String\l|"]
+    377 [label="377 Block"]
+    377 -> 445
+    445 [label="445 Expression"]
+    445 -> 447
+    447 [label="447 Call\lprintln()"]
+    447 -> 448
+    448 [label="448 String\l  -------------------------"]
+    0 [label="0 Root\l--------"]
+    0 -> 450
+    450 [label="450 Import\lchess_types"]
+    0 [label="0 Root\l--------"]
+    0 -> 451
+    451 [label="451 Expression"]
+    451 -> 452
+    452 [label="452 Function Declare\l-----------------------\lconvertir_a_numero"]
+    452 -> 454
+    454 [label="454 Block"]
+    454 -> 455
+    455 [label="455 Var Declare\l-----------------\lnum"]
+    456 [label ="455 Var : num"]
+    455 -> 456
+    456 [label="456 Integer\l0"]
+    454 [label="454 Block"]
+    454 -> 457
+    454 [label="454 Block"]
+    454 -> 531
+    531 [label="531 Return"]
+    531 -> 532
+    532 [label="532 Identifier\lnum"]
+    0 [label="0 Root\l--------"]
+    0 -> 533
+    533 [label="533 Expression"]
+    533 -> 534
+    534 [label="534 Function Declare\l-----------------------\lesta_en_tablero"]
+    534 -> 537
+    537 [label="537 Block"]
+    537 -> 538
+    538 [label="538 Return"]
+    538 -> 550
+    550 [label="550 Infix Expr\land"]
+    550 -> 546
+    546 [label="546 Infix Expr\land"]
+    546 -> 542
+    542 [label="542 Infix Expr\land"]
+    542 -> 540
+    540 [label="540 Infix Expr\l>="]
+    540 -> 539
+    539 [label="539 Identifier\lx"]
+    540 [label="540 Infix Expr\l>="]
+    540 -> 541
+    541 [label="541 Integer\l0"]
+    542 [label="542 Infix Expr\land"]
+    542 -> 544
+    544 [label="544 Infix Expr\l<"]
+    544 -> 543
+    543 [label="543 Identifier\lx"]
+    544 [label="544 Infix Expr\l<"]
+    544 -> 545
+    545 [label="545 Integer\l8"]
+    546 [label="546 Infix Expr\land"]
+    546 -> 548
+    548 [label="548 Infix Expr\l>="]
+    548 -> 547
+    547 [label="547 Identifier\ly"]
+    548 [label="548 Infix Expr\l>="]
+    548 -> 549
+    549 [label="549 Integer\l0"]
+    550 [label="550 Infix Expr\land"]
+    550 -> 552
+    552 [label="552 Infix Expr\l<"]
+    552 -> 551
+    551 [label="551 Identifier\ly"]
+    552 [label="552 Infix Expr\l<"]
+    552 -> 553
+    553 [label="553 Integer\l8"]
+    0 [label="0 Root\l--------"]
+    0 -> 554
+    554 [label="554 Expression"]
+    554 -> 555
+    555 [label="555 Function Declare\l-----------------------\lhay_pieza_mismo_color"]
+    555 -> 559
+    559 [label="559 Block"]
+    559 -> 560
+    560 [label="560 Return"]
+    560 -> 567
+    567 [label="567 Infix Expr\l=="]
+    567 -> 565
+    565 [label="565 Infix Dot"]
+    565 -> 562
+    562 [label="562 Index Expr\l"]
+    562 -> 561
+    561 [label="561 Identifier\lTablero"]
+    562 -> 563
+    563 [label="563 Identifier\lx_dest"]
+    562 -> 564
+    564 [label="564 Identifier\ly_dest"]
+    565 -> 566
+    566 [label="566 Identifier\lcolor_pieza"]
+    567 [label="567 Infix Expr\l=="]
+    567 -> 568
+    568 [label="568 Identifier\lcolor"]
+    0 [label="0 Root\l--------"]
+    0 -> 569
+    569 [label="569 Expression"]
+    569 -> 570
+    570 [label="570 Function Declare\l-----------------------\lvalidar_peon"]
+    570 -> 576
+    576 [label="576 Block"]
+    576 -> 577
+    577 [label="577 Var Declare\l-----------------\ldireccion"]
+    581 [label ="577 Var : direccion"]
+    577 -> 581
+    576 [label="576 Block"]
+    576 -> 585
+    585 [label="585 Var Declare\l-----------------\lfila_inicial"]
+    589 [label ="585 Var : fila_inicial"]
+    585 -> 589
+    576 [label="576 Block"]
+    576 -> 592
+    592 [label="592 If Then\l--------"]
+    592 -> 610
+    610 [label="610 Block"]
+    610 -> 611
+    611 [label="611 If Then\l--------"]
+    611 -> 625
+    625 [label="625 Block"]
+    625 -> 626
+    626 [label="626 Return"]
+    626 -> 627
+    627 [label="627 Bool\l1"]
+    576 [label="576 Block"]
+    576 -> 631
+    631 [label="631 If Then\l--------"]
+    631 -> 641
+    641 [label="641 Block"]
+    641 -> 642
+    642 [label="642 Return"]
+    642 -> 649
+    649 [label="649 Infix Expr\l=="]
+    649 -> 647
+    647 [label="647 Infix Dot"]
+    647 -> 644
+    644 [label="644 Index Expr\l"]
+    644 -> 643
+    643 [label="643 Identifier\lTablero"]
+    644 -> 645
+    645 [label="645 Identifier\lx_dest"]
+    644 -> 646
+    646 [label="646 Identifier\ly_dest"]
+    647 -> 648
+    648 [label="648 Identifier\lpieza"]
+    649 [label="649 Infix Expr\l=="]
+    649 -> 650
+    650 [label="650 Identifier\lNINGUNA"]
+    576 [label="576 Block"]
+    576 -> 651
+    651 [label="651 If Then\l--------"]
+    651 -> 667
+    667 [label="667 Block"]
+    667 -> 668
+    668 [label="668 Return"]
+    668 -> 677
+    677 [label="677 Infix Expr\land"]
+    677 -> 675
+    675 [label="675 Infix Expr\l=="]
+    675 -> 673
+    673 [label="673 Infix Dot"]
+    673 -> 670
+    670 [label="670 Index Expr\l"]
+    670 -> 669
+    669 [label="669 Identifier\lTablero"]
+    670 -> 671
+    671 [label="671 Identifier\lx_dest"]
+    670 -> 672
+    672 [label="672 Identifier\ly_dest"]
+    673 -> 674
+    674 [label="674 Identifier\lpieza"]
+    675 [label="675 Infix Expr\l=="]
+    675 -> 676
+    676 [label="676 Identifier\lNINGUNA"]
+    677 [label="677 Infix Expr\land"]
+    677 -> 686
+    686 [label="686 Infix Expr\l=="]
+    686 -> 684
+    684 [label="684 Infix Dot"]
+    684 -> 679
+    679 [label="679 Index Expr\l"]
+    679 -> 678
+    678 [label="678 Identifier\lTablero"]
+    679 -> 680
+    680 [label="680 Identifier\lx_dest"]
+    679 -> 682
+    682 [label="682 Infix Expr\l+"]
+    682 -> 681
+    681 [label="681 Identifier\ly_orig"]
+    682 [label="682 Infix Expr\l+"]
+    682 -> 683
+    683 [label="683 Identifier\ldireccion"]
+    684 -> 685
+    685 [label="685 Identifier\lpieza"]
+    686 [label="686 Infix Expr\l=="]
+    686 -> 687
+    687 [label="687 Identifier\lNINGUNA"]
+    576 [label="576 Block"]
+    576 -> 688
+    688 [label="688 Return"]
+    688 -> 689
+    689 [label="689 Bool\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 690
+    690 [label="690 Expression"]
+    690 -> 691
+    691 [label="691 Function Declare\l-----------------------\lvalidar_torre"]
+    691 -> 696
+    696 [label="696 Block"]
+    696 -> 697
+    697 [label="697 If Then\l--------"]
+    697 -> 705
+    705 [label="705 Block"]
+    705 -> 706
+    706 [label="706 Return"]
+    706 -> 707
+    707 [label="707 Bool\l0"]
+    696 [label="696 Block"]
+    696 -> 708
+    708 [label="708 If Then\l--------"]
+    708 -> 712
+    712 [label="712 Block"]
+    712 -> 713
+    713 [label="713 Var Declare\l-----------------\lpaso"]
+    717 [label ="713 Var : paso"]
+    713 -> 717
+    712 [label="712 Block"]
+    712 -> 721
+    721 [label="721 Var Declare\l-----------------\ly"]
+    723 [label ="721 Var : y"]
+    721 -> 723
+    723 [label="723 Infix Expr\l+"]
+    723 -> 722
+    722 [label="722 Identifier\ly_orig"]
+    723 [label="723 Infix Expr\l+"]
+    723 -> 724
+    724 [label="724 Identifier\lpaso"]
+    712 [label="712 Block"]
+    712 -> 725
+    725 [label="725 While"]
+    725 -> 729
+    729 [label="729 Block"]
+    729 -> 730
+    730 [label="730 If Then\l--------"]
+    730 -> 739
+    739 [label="739 Block"]
+    739 -> 740
+    740 [label="740 Return"]
+    740 -> 741
+    741 [label="741 Bool\l0"]
+    729 [label="729 Block"]
+    729 -> 742
+    742 [label="742 Expression"]
+    742 -> 744
+    744 [label="744 Assign\l-------------\l="]
+    744 -> 743
+    743 [label="743 Identifier\ly"]
+    744 -> 745
+    745 [label="745 Infix Expr\l+"]
+    745 -> 743
+    743 [label="743 Identifier\ly"]
+    745 [label="745 Infix Expr\l+"]
+    745 -> 746
+    746 [label="746 Identifier\lpaso"]
+    696 [label="696 Block"]
+    696 -> 782
+    782 [label="782 Return"]
+    782 -> 783
+    783 [label="783 Bool\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 784
+    784 [label="784 Expression"]
+    784 -> 785
+    785 [label="785 Function Declare\l-----------------------\lvalidar_alfil"]
+    785 -> 790
+    790 [label="790 Block"]
+    790 -> 791
+    791 [label="791 If Then\l--------"]
+    791 -> 799
+    799 [label="799 Block"]
+    799 -> 800
+    800 [label="800 Return"]
+    800 -> 801
+    801 [label="801 Bool\l0"]
+    790 [label="790 Block"]
+    790 -> 802
+    802 [label="802 If Then\l--------"]
+    802 -> 814
+    814 [label="814 Block"]
+    814 -> 815
+    815 [label="815 Return"]
+    815 -> 816
+    816 [label="816 Bool\l0"]
+    790 [label="790 Block"]
+    790 -> 817
+    817 [label="817 Var Declare\l-----------------\lpaso_x"]
+    821 [label ="817 Var : paso_x"]
+    817 -> 821
+    790 [label="790 Block"]
+    790 -> 825
+    825 [label="825 Var Declare\l-----------------\lpaso_y"]
+    829 [label ="825 Var : paso_y"]
+    825 -> 829
+    790 [label="790 Block"]
+    790 -> 833
+    833 [label="833 Var Declare\l-----------------\lx"]
+    835 [label ="833 Var : x"]
+    833 -> 835
+    835 [label="835 Infix Expr\l+"]
+    835 -> 834
+    834 [label="834 Identifier\lx_orig"]
+    835 [label="835 Infix Expr\l+"]
+    835 -> 836
+    836 [label="836 Identifier\lpaso_x"]
+    790 [label="790 Block"]
+    790 -> 837
+    837 [label="837 Var Declare\l-----------------\ly"]
+    839 [label ="837 Var : y"]
+    837 -> 839
+    839 [label="839 Infix Expr\l+"]
+    839 -> 838
+    838 [label="838 Identifier\ly_orig"]
+    839 [label="839 Infix Expr\l+"]
+    839 -> 840
+    840 [label="840 Identifier\lpaso_y"]
+    790 [label="790 Block"]
+    790 -> 841
+    841 [label="841 While"]
+    841 -> 845
+    845 [label="845 Block"]
+    845 -> 846
+    846 [label="846 If Then\l--------"]
+    846 -> 855
+    855 [label="855 Block"]
+    855 -> 856
+    856 [label="856 Return"]
+    856 -> 857
+    857 [label="857 Bool\l0"]
+    845 [label="845 Block"]
+    845 -> 858
+    858 [label="858 Expression"]
+    858 -> 860
+    860 [label="860 Assign\l-------------\l="]
+    860 -> 859
+    859 [label="859 Identifier\lx"]
+    860 -> 861
+    861 [label="861 Infix Expr\l+"]
+    861 -> 859
+    859 [label="859 Identifier\lx"]
+    861 [label="861 Infix Expr\l+"]
+    861 -> 862
+    862 [label="862 Identifier\lpaso_x"]
+    845 [label="845 Block"]
+    845 -> 863
+    863 [label="863 Expression"]
+    863 -> 865
+    865 [label="865 Assign\l-------------\l="]
+    865 -> 864
+    864 [label="864 Identifier\ly"]
+    865 -> 866
+    866 [label="866 Infix Expr\l+"]
+    866 -> 864
+    864 [label="864 Identifier\ly"]
+    866 [label="866 Infix Expr\l+"]
+    866 -> 867
+    867 [label="867 Identifier\lpaso_y"]
+    790 [label="790 Block"]
+    790 -> 868
+    868 [label="868 Return"]
+    868 -> 869
+    869 [label="869 Bool\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 870
+    870 [label="870 Expression"]
+    870 -> 871
+    871 [label="871 Function Declare\l-----------------------\lvalidar_caballo"]
+    871 -> 876
+    876 [label="876 Block"]
+    876 -> 877
+    877 [label="877 Var Declare\l-----------------\ldx"]
+    879 [label ="877 Var : dx"]
+    877 -> 879
+    879 [label="879 Call\labs()"]
+    879 -> 881
+    881 [label="881 Infix Expr\l-"]
+    881 -> 880
+    880 [label="880 Identifier\lx_dest"]
+    881 [label="881 Infix Expr\l-"]
+    881 -> 882
+    882 [label="882 Identifier\lx_orig"]
+    876 [label="876 Block"]
+    876 -> 883
+    883 [label="883 Var Declare\l-----------------\ldy"]
+    885 [label ="883 Var : dy"]
+    883 -> 885
+    885 [label="885 Call\labs()"]
+    885 -> 887
+    887 [label="887 Infix Expr\l-"]
+    887 -> 886
+    886 [label="886 Identifier\ly_dest"]
+    887 [label="887 Infix Expr\l-"]
+    887 -> 888
+    888 [label="888 Identifier\ly_orig"]
+    876 [label="876 Block"]
+    876 -> 889
+    889 [label="889 Return"]
+    889 -> 897
+    897 [label="897 Infix Expr\lor"]
+    897 -> 893
+    893 [label="893 Infix Expr\land"]
+    893 -> 891
+    891 [label="891 Infix Expr\l=="]
+    891 -> 890
+    890 [label="890 Identifier\ldx"]
+    891 [label="891 Infix Expr\l=="]
+    891 -> 892
+    892 [label="892 Integer\l1"]
+    893 [label="893 Infix Expr\land"]
+    893 -> 895
+    895 [label="895 Infix Expr\l=="]
+    895 -> 894
+    894 [label="894 Identifier\ldy"]
+    895 [label="895 Infix Expr\l=="]
+    895 -> 896
+    896 [label="896 Integer\l2"]
+    897 [label="897 Infix Expr\lor"]
+    897 -> 901
+    901 [label="901 Infix Expr\land"]
+    901 -> 899
+    899 [label="899 Infix Expr\l=="]
+    899 -> 898
+    898 [label="898 Identifier\ldx"]
+    899 [label="899 Infix Expr\l=="]
+    899 -> 900
+    900 [label="900 Integer\l2"]
+    901 [label="901 Infix Expr\land"]
+    901 -> 903
+    903 [label="903 Infix Expr\l=="]
+    903 -> 902
+    902 [label="902 Identifier\ldy"]
+    903 [label="903 Infix Expr\l=="]
+    903 -> 904
+    904 [label="904 Integer\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 905
+    905 [label="905 Expression"]
+    905 -> 906
+    906 [label="906 Function Declare\l-----------------------\lvalidar_dama"]
+    906 -> 911
+    911 [label="911 Block"]
+    911 -> 912
+    912 [label="912 Return"]
+    912 -> 919
+    919 [label="919 Infix Expr\lor"]
+    919 -> 914
+    914 [label="914 Call\lvalidar_torre()"]
+    914 -> 915
+    915 [label="915 Identifier\lx_orig"]
+    914 -> 916
+    916 [label="916 Identifier\ly_orig"]
+    914 -> 917
+    917 [label="917 Identifier\lx_dest"]
+    914 -> 918
+    918 [label="918 Identifier\ly_dest"]
+    919 [label="919 Infix Expr\lor"]
+    919 -> 921
+    921 [label="921 Call\lvalidar_alfil()"]
+    921 -> 922
+    922 [label="922 Identifier\lx_orig"]
+    921 -> 923
+    923 [label="923 Identifier\ly_orig"]
+    921 -> 924
+    924 [label="924 Identifier\lx_dest"]
+    921 -> 925
+    925 [label="925 Identifier\ly_dest"]
+    0 [label="0 Root\l--------"]
+    0 -> 926
+    926 [label="926 Expression"]
+    926 -> 927
+    927 [label="927 Function Declare\l-----------------------\lvalidar_rey"]
+    927 -> 932
+    932 [label="932 Block"]
+    932 -> 933
+    933 [label="933 If Then\l--------"]
+    933 -> 941
+    941 [label="941 Block"]
+    941 -> 942
+    942 [label="942 Return"]
+    942 -> 943
+    943 [label="943 Bool\l0"]
+    932 [label="932 Block"]
+    932 -> 944
+    944 [label="944 Return"]
+    944 -> 952
+    952 [label="952 Infix Expr\land"]
+    952 -> 950
+    950 [label="950 Infix Expr\l<="]
+    950 -> 946
+    946 [label="946 Call\labs()"]
+    946 -> 948
+    948 [label="948 Infix Expr\l-"]
+    948 -> 947
+    947 [label="947 Identifier\lx_dest"]
+    948 [label="948 Infix Expr\l-"]
+    948 -> 949
+    949 [label="949 Identifier\lx_orig"]
+    950 [label="950 Infix Expr\l<="]
+    950 -> 951
+    951 [label="951 Integer\l1"]
+    952 [label="952 Infix Expr\land"]
+    952 -> 958
+    958 [label="958 Infix Expr\l<="]
+    958 -> 954
+    954 [label="954 Call\labs()"]
+    954 -> 956
+    956 [label="956 Infix Expr\l-"]
+    956 -> 955
+    955 [label="955 Identifier\ly_dest"]
+    956 [label="956 Infix Expr\l-"]
+    956 -> 957
+    957 [label="957 Identifier\ly_orig"]
+    958 [label="958 Infix Expr\l<="]
+    958 -> 959
+    959 [label="959 Integer\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 960
+    960 [label="960 Expression"]
+    960 -> 961
+    961 [label="961 Function Declare\l-----------------------\lvalidar_movimiento"]
+    961 -> 966
+    966 [label="966 Block"]
+    966 -> 967
+    967 [label="967 If Then\l--------"]
+    967 -> 979
+    979 [label="979 Block"]
+    979 -> 980
+    980 [label="980 Return"]
+    980 -> 981
+    981 [label="981 Bool\l0"]
+    966 [label="966 Block"]
+    966 -> 982
+    982 [label="982 If Then\l--------"]
+    982 -> 991
+    991 [label="991 Block"]
+    991 -> 992
+    992 [label="992 Return"]
+    992 -> 993
+    993 [label="993 Bool\l0"]
+    966 [label="966 Block"]
+    966 -> 994
+    994 [label="994 Var Declare\l-----------------\lcolor"]
+    999 [label ="994 Var : color"]
+    994 -> 999
+    999 [label="999 Infix Dot"]
+    999 -> 996
+    996 [label="996 Index Expr\l"]
+    996 -> 995
+    995 [label="995 Identifier\lTablero"]
+    996 -> 997
+    997 [label="997 Identifier\lx_orig"]
+    996 -> 998
+    998 [label="998 Identifier\ly_orig"]
+    999 -> 1000
+    1000 [label="1000 Identifier\lcolor_pieza"]
+    966 [label="966 Block"]
+    966 -> 1001
+    1001 [label="1001 If Then\l--------"]
+    1001 -> 1007
+    1007 [label="1007 Block"]
+    1007 -> 1008
+    1008 [label="1008 Return"]
+    1008 -> 1009
+    1009 [label="1009 Bool\l0"]
+    966 [label="966 Block"]
+    966 -> 1010
+    1010 [label="1010 Var Declare\l-----------------\lvalido"]
+    1011 [label ="1010 Var : valido"]
+    1010 -> 1011
+    1011 [label="1011 Bool\l0"]
+    966 [label="966 Block"]
+    966 -> 1012
+    966 [label="966 Block"]
+    966 -> 1098
+    1098 [label="1098 Return"]
+    1098 -> 1099
+    1099 [label="1099 Identifier\lvalido"]
+    0 [label="0 Root\l--------"]
+    0 -> 1100
+    1100 [label="1100 Expression"]
+    1100 -> 1101
+    1101 [label="1101 Function Declare\l-----------------------\lrealizar_movimiento"]
+    1101 -> 1106
+    1106 [label="1106 Block"]
+    1106 -> 1107
+    1107 [label="1107 If Then\l--------"]
+    1107 -> 1115
+    1115 [label="1115 Block"]
+    1115 -> 1116
+    1116 [label="1116 Return"]
+    1116 -> 1117
+    1117 [label="1117 Bool\l0"]
+    1106 [label="1106 Block"]
+    1106 -> 1118
+    1118 [label="1118 Expression"]
+    1118 -> 1125
+    1125 [label="1125 Assign\l-------------\l="]
+    1125 -> 1123
+    1123 [label="1123 Infix Dot"]
+    1123 -> 1120
+    1120 [label="1120 Index Expr\l"]
+    1120 -> 1119
+    1119 [label="1119 Identifier\lTablero"]
+    1120 -> 1121
+    1121 [label="1121 Identifier\lx_dest"]
+    1120 -> 1122
+    1122 [label="1122 Identifier\ly_dest"]
+    1123 -> 1124
+    1124 [label="1124 Identifier\lpieza"]
+    1125 -> 1131
+    1131 [label="1131 Infix Dot"]
+    1131 -> 1128
+    1128 [label="1128 Index Expr\l"]
+    1128 -> 1127
+    1127 [label="1127 Identifier\lTablero"]
+    1128 -> 1129
+    1129 [label="1129 Identifier\lx_orig"]
+    1128 -> 1130
+    1130 [label="1130 Identifier\ly_orig"]
+    1131 -> 1132
+    1132 [label="1132 Identifier\lpieza"]
+    1106 [label="1106 Block"]
+    1106 -> 1133
+    1133 [label="1133 Expression"]
+    1133 -> 1140
+    1140 [label="1140 Assign\l-------------\l="]
+    1140 -> 1138
+    1138 [label="1138 Infix Dot"]
+    1138 -> 1135
+    1135 [label="1135 Index Expr\l"]
+    1135 -> 1134
+    1134 [label="1134 Identifier\lTablero"]
+    1135 -> 1136
+    1136 [label="1136 Identifier\lx_dest"]
+    1135 -> 1137
+    1137 [label="1137 Identifier\ly_dest"]
+    1138 -> 1139
+    1139 [label="1139 Identifier\lcolor_pieza"]
+    1140 -> 1146
+    1146 [label="1146 Infix Dot"]
+    1146 -> 1143
+    1143 [label="1143 Index Expr\l"]
+    1143 -> 1142
+    1142 [label="1142 Identifier\lTablero"]
+    1143 -> 1144
+    1144 [label="1144 Identifier\lx_orig"]
+    1143 -> 1145
+    1145 [label="1145 Identifier\ly_orig"]
+    1146 -> 1147
+    1147 [label="1147 Identifier\lcolor_pieza"]
+    1106 [label="1106 Block"]
+    1106 -> 1148
+    1148 [label="1148 Expression"]
+    1148 -> 1155
+    1155 [label="1155 Assign\l-------------\l="]
+    1155 -> 1153
+    1153 [label="1153 Infix Dot"]
+    1153 -> 1150
+    1150 [label="1150 Index Expr\l"]
+    1150 -> 1149
+    1149 [label="1149 Identifier\lTablero"]
+    1150 -> 1151
+    1151 [label="1151 Identifier\lx_orig"]
+    1150 -> 1152
+    1152 [label="1152 Identifier\ly_orig"]
+    1153 -> 1154
+    1154 [label="1154 Identifier\lpieza"]
+    1155 -> 1157
+    1157 [label="1157 Identifier\lNINGUNA"]
+    1106 [label="1106 Block"]
+    1106 -> 1158
+    1158 [label="1158 Expression"]
+    1158 -> 1165
+    1165 [label="1165 Assign\l-------------\l="]
+    1165 -> 1163
+    1163 [label="1163 Infix Dot"]
+    1163 -> 1160
+    1160 [label="1160 Index Expr\l"]
+    1160 -> 1159
+    1159 [label="1159 Identifier\lTablero"]
+    1160 -> 1161
+    1161 [label="1161 Identifier\lx_orig"]
+    1160 -> 1162
+    1162 [label="1162 Identifier\ly_orig"]
+    1163 -> 1164
+    1164 [label="1164 Identifier\lcolor_pieza"]
+    1165 -> 1167
+    1167 [label="1167 Identifier\lNINGUNO"]
+    1106 [label="1106 Block"]
+    1106 -> 1168
+    1168 [label="1168 Expression"]
+    1168 -> 1173
+    1173 [label="1173 Postfix Expr\l++"]
+    1173 -> 1170
+    1170 [label="1170 Infix Dot"]
+    1170 -> 1169
+    1169 [label="1169 Identifier\lEstado"]
+    1170 -> 1172
+    1172 [label="1172 Identifier\lmovimientos"]
+    1106 [label="1106 Block"]
+    1106 -> 1174
+    1174 [label="1174 Expression"]
+    1174 -> 1178
+    1178 [label="1178 Assign\l-------------\l="]
+    1178 -> 1176
+    1176 [label="1176 Infix Dot"]
+    1176 -> 1175
+    1175 [label="1175 Identifier\lEstado"]
+    1176 -> 1177
+    1177 [label="1177 Identifier\lturno"]
+    1178 -> 1185
+    1106 [label="1106 Block"]
+    1106 -> 1188
+    1188 [label="1188 Return"]
+    1188 -> 1189
+    1189 [label="1189 Bool\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 1191
+    1191 [label="1191 Import\lchess_types"]
+    0 [label="0 Root\l--------"]
+    0 -> 1192
+    1192 [label="1192 Import\lchess_moves"]
+    0 [label="0 Root\l--------"]
+    0 -> 1193
+    1193 [label="1193 Expression"]
+    1193 -> 1194
+    1194 [label="1194 Function Declare\l-----------------------\labs"]
+    1194 -> 1196
+    1196 [label="1196 Block"]
+    1196 -> 1197
+    1197 [label="1197 Return"]
+    1197 -> 1201
+    0 [label="0 Root\l--------"]
+    0 -> 1205
+    1205 [label="1205 Expression"]
+    1205 -> 1206
+    1206 [label="1206 Function Declare\l-----------------------\lsign"]
+    1206 -> 1208
+    1208 [label="1208 Block"]
+    1208 -> 1209
+    1209 [label="1209 If Then\l--------"]
+    1209 -> 1213
+    1213 [label="1213 Block"]
+    1213 -> 1214
+    1214 [label="1214 Return"]
+    1214 -> 1215
+    1215 [label="1215 Integer\l1"]
+    1208 [label="1208 Block"]
+    1208 -> 1216
+    1216 [label="1216 If Then\l--------"]
+    1216 -> 1220
+    1220 [label="1220 Block"]
+    1220 -> 1221
+    1221 [label="1221 Return"]
+    1221 -> 1222
+    1222 [label="1222 Prefix Expr\l-"]
+    1222 -> 1223
+    1223 [label="1223 Integer\l1"]
+    1208 [label="1208 Block"]
+    1208 -> 1224
+    1224 [label="1224 Return"]
+    1224 -> 1225
+    1225 [label="1225 Integer\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 1226
+    1226 [label="1226 Expression"]
+    1226 -> 1227
+    1227 [label="1227 Function Declare\l-----------------------\lcasilla_amenazada"]
+    1227 -> 1231
+    1231 [label="1231 Block"]
+    1231 -> 1232
+    1232 [label="1232 For Loop\l------------"]
+    1232 -> 1233
+    1233 [label="1233 Var Declare\l-----------------\lx0"]
+    1234 [label ="1233 Var : x0"]
+    1233 -> 1234
+    1234 [label="1234 Integer\l0"]
+    1232 -> 1236
+    1236 [label="1236 Infix Expr\l<"]
+    1236 -> 1235
+    1235 [label="1235 Identifier\lx0"]
+    1236 [label="1236 Infix Expr\l<"]
+    1236 -> 1237
+    1237 [label="1237 Integer\l8"]
+    1232 -> 1238
+    1238 [label="1238 Postfix Expr\l++"]
+    1238 -> 1239
+    1239 [label="1239 Identifier\lx0"]
+    1232 -> 1240
+    1240 [label="1240 Block"]
+    1240 -> 1241
+    1241 [label="1241 For Loop\l------------"]
+    1241 -> 1242
+    1242 [label="1242 Var Declare\l-----------------\ly0"]
+    1243 [label ="1242 Var : y0"]
+    1242 -> 1243
+    1243 [label="1243 Integer\l0"]
+    1241 -> 1245
+    1245 [label="1245 Infix Expr\l<"]
+    1245 -> 1244
+    1244 [label="1244 Identifier\ly0"]
+    1245 [label="1245 Infix Expr\l<"]
+    1245 -> 1246
+    1246 [label="1246 Integer\l8"]
+    1241 -> 1247
+    1247 [label="1247 Postfix Expr\l++"]
+    1247 -> 1248
+    1248 [label="1248 Identifier\ly0"]
+    1241 -> 1249
+    1249 [label="1249 Block"]
+    1249 -> 1250
+    1250 [label="1250 If Then\l--------"]
+    1250 -> 1259
+    1259 [label="1259 Block"]
+    1259 -> 1260
+    1260 [label="1260 If Then\l--------"]
+    1260 -> 1268
+    1268 [label="1268 Block"]
+    1268 -> 1269
+    1269 [label="1269 Continue"]
+    1259 [label="1259 Block"]
+    1259 -> 1270
+    1270 [label="1270 Var Declare\l-----------------\lpieza"]
+    1275 [label ="1270 Var : pieza"]
+    1270 -> 1275
+    1275 [label="1275 Infix Dot"]
+    1275 -> 1272
+    1272 [label="1272 Index Expr\l"]
+    1272 -> 1271
+    1271 [label="1271 Identifier\lTablero"]
+    1272 -> 1273
+    1273 [label="1273 Identifier\lx0"]
+    1272 -> 1274
+    1274 [label="1274 Identifier\ly0"]
+    1275 -> 1276
+    1276 [label="1276 Identifier\lpieza"]
+    1259 [label="1259 Block"]
+    1259 -> 1277
+    1277 [label="1277 If Then\l--------"]
+    1277 -> 1281
+    1281 [label="1281 Block"]
+    1281 -> 1282
+    1282 [label="1282 If Then\l--------"]
+    1282 -> 1286
+    1286 [label="1286 Block"]
+    1286 -> 1287
+    1287 [label="1287 If Then\l--------"]
+    1287 -> 1305
+    1305 [label="1305 Block"]
+    1305 -> 1306
+    1306 [label="1306 Return"]
+    1306 -> 1307
+    1307 [label="1307 Bool\l1"]
+    1259 [label="1259 Block"]
+    1259 -> 1330
+    1330 [label="1330 If Then\l--------"]
+    1330 -> 1334
+    1334 [label="1334 Block"]
+    1334 -> 1335
+    1335 [label="1335 If Then\l--------"]
+    1335 -> 1342
+    1342 [label="1342 Block"]
+    1342 -> 1343
+    1343 [label="1343 Return"]
+    1343 -> 1344
+    1344 [label="1344 Bool\l1"]
+    1259 [label="1259 Block"]
+    1259 -> 1345
+    1345 [label="1345 If Then\l--------"]
+    1345 -> 1349
+    1349 [label="1349 Block"]
+    1349 -> 1350
+    1350 [label="1350 If Then\l--------"]
+    1350 -> 1357
+    1357 [label="1357 Block"]
+    1357 -> 1358
+    1358 [label="1358 Return"]
+    1358 -> 1359
+    1359 [label="1359 Bool\l1"]
+    1259 [label="1259 Block"]
+    1259 -> 1360
+    1360 [label="1360 If Then\l--------"]
+    1360 -> 1364
+    1364 [label="1364 Block"]
+    1364 -> 1365
+    1365 [label="1365 If Then\l--------"]
+    1365 -> 1372
+    1372 [label="1372 Block"]
+    1372 -> 1373
+    1373 [label="1373 Return"]
+    1373 -> 1374
+    1374 [label="1374 Bool\l1"]
+    1259 [label="1259 Block"]
+    1259 -> 1375
+    1375 [label="1375 If Then\l--------"]
+    1375 -> 1379
+    1379 [label="1379 Block"]
+    1379 -> 1380
+    1380 [label="1380 If Then\l--------"]
+    1380 -> 1387
+    1387 [label="1387 Block"]
+    1387 -> 1388
+    1388 [label="1388 Return"]
+    1388 -> 1389
+    1389 [label="1389 Bool\l1"]
+    1259 [label="1259 Block"]
+    1259 -> 1390
+    1390 [label="1390 If Then\l--------"]
+    1390 -> 1394
+    1394 [label="1394 Block"]
+    1394 -> 1395
+    1395 [label="1395 If Then\l--------"]
+    1395 -> 1411
+    1411 [label="1411 Block"]
+    1411 -> 1412
+    1412 [label="1412 Return"]
+    1412 -> 1413
+    1413 [label="1413 Bool\l1"]
+    1231 [label="1231 Block"]
+    1231 -> 1414
+    1414 [label="1414 Return"]
+    1414 -> 1415
+    1415 [label="1415 Bool\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 1416
+    1416 [label="1416 Expression"]
+    1416 -> 1417
+    1417 [label="1417 Function Declare\l-----------------------\les_ataque_deslizante"]
+    1417 -> 1422
+    1422 [label="1422 Block"]
+    1422 -> 1423
+    1423 [label="1423 Var Declare\l-----------------\ldx"]
+    1425 [label ="1423 Var : dx"]
+    1423 -> 1425
+    1425 [label="1425 Call\lsign()"]
+    1425 -> 1427
+    1427 [label="1427 Infix Expr\l-"]
+    1427 -> 1426
+    1426 [label="1426 Identifier\lx1"]
+    1427 [label="1427 Infix Expr\l-"]
+    1427 -> 1428
+    1428 [label="1428 Identifier\lx0"]
+    1422 [label="1422 Block"]
+    1422 -> 1429
+    1429 [label="1429 Var Declare\l-----------------\ldy"]
+    1431 [label ="1429 Var : dy"]
+    1429 -> 1431
+    1431 [label="1431 Call\lsign()"]
+    1431 -> 1433
+    1433 [label="1433 Infix Expr\l-"]
+    1433 -> 1432
+    1432 [label="1432 Identifier\ly1"]
+    1433 [label="1433 Infix Expr\l-"]
+    1433 -> 1434
+    1434 [label="1434 Identifier\ly0"]
+    1422 [label="1422 Block"]
+    1422 -> 1435
+    1435 [label="1435 If Then\l--------"]
+    1435 -> 1463
+    1463 [label="1463 Block"]
+    1463 -> 1464
+    1464 [label="1464 Return"]
+    1464 -> 1465
+    1465 [label="1465 Bool\l0"]
+    1422 [label="1422 Block"]
+    1422 -> 1466
+    1466 [label="1466 Var Declare\l-----------------\lcx"]
+    1468 [label ="1466 Var : cx"]
+    1466 -> 1468
+    1468 [label="1468 Infix Expr\l+"]
+    1468 -> 1467
+    1467 [label="1467 Identifier\lx0"]
+    1468 [label="1468 Infix Expr\l+"]
+    1468 -> 1469
+    1469 [label="1469 Identifier\ldx"]
+    1422 [label="1422 Block"]
+    1422 -> 1470
+    1470 [label="1470 Var Declare\l-----------------\lcy"]
+    1472 [label ="1470 Var : cy"]
+    1470 -> 1472
+    1472 [label="1472 Infix Expr\l+"]
+    1472 -> 1471
+    1471 [label="1471 Identifier\ly0"]
+    1472 [label="1472 Infix Expr\l+"]
+    1472 -> 1473
+    1473 [label="1473 Identifier\ldy"]
+    1422 [label="1422 Block"]
+    1422 -> 1474
+    1474 [label="1474 While"]
+    1474 -> 1482
+    1482 [label="1482 Block"]
+    1482 -> 1483
+    1483 [label="1483 If Then\l--------"]
+    1483 -> 1492
+    1492 [label="1492 Block"]
+    1492 -> 1493
+    1493 [label="1493 Return"]
+    1493 -> 1494
+    1494 [label="1494 Bool\l0"]
+    1482 [label="1482 Block"]
+    1482 -> 1495
+    1495 [label="1495 Expression"]
+    1495 -> 1497
+    1497 [label="1497 Assign\l-------------\l="]
+    1497 -> 1496
+    1496 [label="1496 Identifier\lcx"]
+    1497 -> 1498
+    1498 [label="1498 Infix Expr\l+"]
+    1498 -> 1496
+    1496 [label="1496 Identifier\lcx"]
+    1498 [label="1498 Infix Expr\l+"]
+    1498 -> 1499
+    1499 [label="1499 Identifier\ldx"]
+    1482 [label="1482 Block"]
+    1482 -> 1500
+    1500 [label="1500 Expression"]
+    1500 -> 1502
+    1502 [label="1502 Assign\l-------------\l="]
+    1502 -> 1501
+    1501 [label="1501 Identifier\lcy"]
+    1502 -> 1503
+    1503 [label="1503 Infix Expr\l+"]
+    1503 -> 1501
+    1501 [label="1501 Identifier\lcy"]
+    1503 [label="1503 Infix Expr\l+"]
+    1503 -> 1504
+    1504 [label="1504 Identifier\ldy"]
+    1422 [label="1422 Block"]
+    1422 -> 1505
+    1505 [label="1505 Return"]
+    1505 -> 1506
+    1506 [label="1506 Bool\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 1507
+    1507 [label="1507 Expression"]
+    1507 -> 1508
+    1508 [label="1508 Function Declare\l-----------------------\lpuede_atacar"]
+    1508 -> 1513
+    1513 [label="1513 Block"]
+    1513 -> 1514
+    1514 [label="1514 Var Declare\l-----------------\lpieza"]
+    1516 [label ="1514 Var : pieza"]
+    1514 -> 1516
+    1516 [label="1516 Index Expr\l"]
+    1516 -> 1515
+    1515 [label="1515 Identifier\lTablero"]
+    1516 -> 1517
+    1517 [label="1517 Identifier\lx0"]
+    1516 -> 1518
+    1518 [label="1518 Identifier\ly0"]
+    1513 [label="1513 Block"]
+    1513 -> 1519
+    1519 [label="1519 Var Declare\l-----------------\ldx"]
+    1521 [label ="1519 Var : dx"]
+    1519 -> 1521
+    1521 [label="1521 Infix Expr\l-"]
+    1521 -> 1520
+    1520 [label="1520 Identifier\lx1"]
+    1521 [label="1521 Infix Expr\l-"]
+    1521 -> 1522
+    1522 [label="1522 Identifier\lx0"]
+    1513 [label="1513 Block"]
+    1513 -> 1523
+    1523 [label="1523 Var Declare\l-----------------\ldy"]
+    1525 [label ="1523 Var : dy"]
+    1523 -> 1525
+    1525 [label="1525 Infix Expr\l-"]
+    1525 -> 1524
+    1524 [label="1524 Identifier\ly1"]
+    1525 [label="1525 Infix Expr\l-"]
+    1525 -> 1526
+    1526 [label="1526 Identifier\ly0"]
+    1513 [label="1513 Block"]
+    1513 -> 1527
+    1527 [label="1527 Var Declare\l-----------------\ladx"]
+    1529 [label ="1527 Var : adx"]
+    1527 -> 1529
+    1529 [label="1529 Call\labs()"]
+    1529 -> 1530
+    1530 [label="1530 Identifier\ldx"]
+    1513 [label="1513 Block"]
+    1513 -> 1531
+    1531 [label="1531 Var Declare\l-----------------\lady"]
+    1533 [label ="1531 Var : ady"]
+    1531 -> 1533
+    1533 [label="1533 Call\labs()"]
+    1533 -> 1534
+    1534 [label="1534 Identifier\ldy"]
+    1513 [label="1513 Block"]
+    1513 -> 1535
+    1513 [label="1513 Block"]
+    1513 -> 1677
+    1677 [label="1677 Return"]
+    1677 -> 1678
+    1678 [label="1678 Bool\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 1679
+    1679 [label="1679 Expression"]
+    1679 -> 1680
+    1680 [label="1680 Function Declare\l-----------------------\lcasilla_bajo_ataque"]
+    1680 -> 1684
+    1684 [label="1684 Block"]
+    1684 -> 1685
+    1685 [label="1685 For Loop\l------------"]
+    1685 -> 1686
+    1686 [label="1686 Var Declare\l-----------------\lxi"]
+    1687 [label ="1686 Var : xi"]
+    1686 -> 1687
+    1687 [label="1687 Integer\l0"]
+    1685 -> 1689
+    1689 [label="1689 Infix Expr\l<"]
+    1689 -> 1688
+    1688 [label="1688 Identifier\lxi"]
+    1689 [label="1689 Infix Expr\l<"]
+    1689 -> 1690
+    1690 [label="1690 Integer\l8"]
+    1685 -> 1691
+    1691 [label="1691 Postfix Expr\l++"]
+    1691 -> 1692
+    1692 [label="1692 Identifier\lxi"]
+    1685 -> 1693
+    1693 [label="1693 Block"]
+    1693 -> 1694
+    1694 [label="1694 For Loop\l------------"]
+    1694 -> 1695
+    1695 [label="1695 Var Declare\l-----------------\lyi"]
+    1696 [label ="1695 Var : yi"]
+    1695 -> 1696
+    1696 [label="1696 Integer\l0"]
+    1694 -> 1698
+    1698 [label="1698 Infix Expr\l<"]
+    1698 -> 1697
+    1697 [label="1697 Identifier\lyi"]
+    1698 [label="1698 Infix Expr\l<"]
+    1698 -> 1699
+    1699 [label="1699 Integer\l8"]
+    1694 -> 1700
+    1700 [label="1700 Postfix Expr\l++"]
+    1700 -> 1701
+    1701 [label="1701 Identifier\lyi"]
+    1694 -> 1702
+    1702 [label="1702 Block"]
+    1702 -> 1703
+    1703 [label="1703 If Then\l--------"]
+    1703 -> 1712
+    1712 [label="1712 Block"]
+    1712 -> 1713
+    1713 [label="1713 If Then\l--------"]
+    1713 -> 1720
+    1720 [label="1720 Block"]
+    1720 -> 1721
+    1721 [label="1721 Return"]
+    1721 -> 1722
+    1722 [label="1722 Bool\l1"]
+    1684 [label="1684 Block"]
+    1684 -> 1723
+    1723 [label="1723 Return"]
+    1723 -> 1724
+    1724 [label="1724 Bool\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 1725
+    1725 [label="1725 Expression"]
+    1725 -> 1726
+    1726 [label="1726 Function Declare\l-----------------------\lencontrar_rey"]
+    1726 -> 1728
+    1728 [label="1728 Block"]
+    1728 -> 1729
+    1729 [label="1729 For Loop\l------------"]
+    1729 -> 1730
+    1730 [label="1730 Var Declare\l-----------------\lx"]
+    1731 [label ="1730 Var : x"]
+    1730 -> 1731
+    1731 [label="1731 Integer\l0"]
+    1729 -> 1733
+    1733 [label="1733 Infix Expr\l<"]
+    1733 -> 1732
+    1732 [label="1732 Identifier\lx"]
+    1733 [label="1733 Infix Expr\l<"]
+    1733 -> 1734
+    1734 [label="1734 Integer\l8"]
+    1729 -> 1735
+    1735 [label="1735 Postfix Expr\l++"]
+    1735 -> 1736
+    1736 [label="1736 Identifier\lx"]
+    1729 -> 1737
+    1737 [label="1737 Block"]
+    1737 -> 1738
+    1738 [label="1738 For Loop\l------------"]
+    1738 -> 1739
+    1739 [label="1739 Var Declare\l-----------------\ly"]
+    1740 [label ="1739 Var : y"]
+    1739 -> 1740
+    1740 [label="1740 Integer\l0"]
+    1738 -> 1742
+    1742 [label="1742 Infix Expr\l<"]
+    1742 -> 1741
+    1741 [label="1741 Identifier\ly"]
+    1742 [label="1742 Infix Expr\l<"]
+    1742 -> 1743
+    1743 [label="1743 Integer\l8"]
+    1738 -> 1744
+    1744 [label="1744 Postfix Expr\l++"]
+    1744 -> 1745
+    1745 [label="1745 Identifier\ly"]
+    1738 -> 1746
+    1746 [label="1746 Block"]
+    1746 -> 1747
+    1747 [label="1747 If Then\l--------"]
+    1747 -> 1765
+    1765 [label="1765 Block"]
+    1765 -> 1766
+    1766 [label="1766 Return"]
+    1766 -> 1767
+    1767 [label="1767 List"]
+    1767 -> 1768
+    1768 [label="1768 Identifier\lx"]
+    1767 -> 1769
+    1769 [label="1769 Identifier\ly"]
+    1728 [label="1728 Block"]
+    1728 -> 1770
+    1770 [label="1770 Return"]
+    1770 -> 1771
+    1771 [label="1771 nil"]
+    0 [label="0 Root\l--------"]
+    0 -> 1772
+    1772 [label="1772 Expression"]
+    1772 -> 1773
+    1773 [label="1773 Function Declare\l-----------------------\lesta_en_jaque"]
+    1773 -> 1775
+    1775 [label="1775 Block"]
+    1775 -> 1776
+    1776 [label="1776 Var Declare\l-----------------\lpos_rey"]
+    1778 [label ="1776 Var : pos_rey"]
+    1776 -> 1778
+    1778 [label="1778 Call\lencontrar_rey()"]
+    1778 -> 1779
+    1779 [label="1779 Identifier\lcolor"]
+    1775 [label="1775 Block"]
+    1775 -> 1780
+    1780 [label="1780 If Then\l--------"]
+    1780 -> 1784
+    1784 [label="1784 Block"]
+    1784 -> 1785
+    1785 [label="1785 Return"]
+    1785 -> 1786
+    1786 [label="1786 Bool\l0"]
+    1775 [label="1775 Block"]
+    1775 -> 1787
+    1787 [label="1787 Var Declare\l-----------------\lcolor_atacante"]
+    1791 [label ="1787 Var : color_atacante"]
+    1787 -> 1791
+    1775 [label="1775 Block"]
+    1775 -> 1794
+    1794 [label="1794 Return"]
+    1794 -> 1796
+    1796 [label="1796 Call\lcasilla_bajo_ataque()"]
+    1796 -> 1798
+    1798 [label="1798 Index Expr\l"]
+    1798 -> 1797
+    1797 [label="1797 Identifier\lpos_rey"]
+    1798 -> 1799
+    1799 [label="1799 Integer\l0"]
+    1796 -> 1801
+    1801 [label="1801 Index Expr\l"]
+    1801 -> 1800
+    1800 [label="1800 Identifier\lpos_rey"]
+    1801 -> 1802
+    1802 [label="1802 Integer\l1"]
+    1796 -> 1803
+    1803 [label="1803 Identifier\lcolor_atacante"]
+    0 [label="0 Root\l--------"]
+    0 -> 1804
+    1804 [label="1804 Expression"]
+    1804 -> 1805
+    1805 [label="1805 Function Declare\l-----------------------\lmovimiento_deja_en_jaque"]
+    1805 -> 1810
+    1810 [label="1810 Block"]
+    1810 -> 1811
+    1811 [label="1811 Var Declare\l-----------------\lestado_backup"]
+    1813 [label ="1811 Var : estado_backup"]
+    1811 -> 1813
+    1813 [label="1813 Infix Dot"]
+    1813 -> 1812
+    1812 [label="1812 Identifier\lEstado"]
+    1813 -> 1815
+    1815 [label="1815 Call\lclone()"]
+    1810 [label="1810 Block"]
+    1810 -> 1816
+    1816 [label="1816 Var Declare\l-----------------\lpieza_orig"]
+    1821 [label ="1816 Var : pieza_orig"]
+    1816 -> 1821
+    1821 [label="1821 Infix Dot"]
+    1821 -> 1818
+    1818 [label="1818 Index Expr\l"]
+    1818 -> 1817
+    1817 [label="1817 Identifier\lTablero"]
+    1818 -> 1819
+    1819 [label="1819 Identifier\lx_orig"]
+    1818 -> 1820
+    1820 [label="1820 Identifier\ly_orig"]
+    1821 -> 1823
+    1823 [label="1823 Call\lclone()"]
+    1810 [label="1810 Block"]
+    1810 -> 1824
+    1824 [label="1824 Var Declare\l-----------------\lpieza_dest"]
+    1829 [label ="1824 Var : pieza_dest"]
+    1824 -> 1829
+    1829 [label="1829 Infix Dot"]
+    1829 -> 1826
+    1826 [label="1826 Index Expr\l"]
+    1826 -> 1825
+    1825 [label="1825 Identifier\lTablero"]
+    1826 -> 1827
+    1827 [label="1827 Identifier\lx_dest"]
+    1826 -> 1828
+    1828 [label="1828 Identifier\ly_dest"]
+    1829 -> 1831
+    1831 [label="1831 Call\lclone()"]
+    1810 [label="1810 Block"]
+    1810 -> 1832
+    1832 [label="1832 Expression"]
+    1832 -> 1839
+    1839 [label="1839 Assign\l-------------\l="]
+    1839 -> 1837
+    1837 [label="1837 Infix Dot"]
+    1837 -> 1834
+    1834 [label="1834 Index Expr\l"]
+    1834 -> 1833
+    1833 [label="1833 Identifier\lTablero"]
+    1834 -> 1835
+    1835 [label="1835 Identifier\lx_dest"]
+    1834 -> 1836
+    1836 [label="1836 Identifier\ly_dest"]
+    1837 -> 1838
+    1838 [label="1838 Identifier\lpieza"]
+    1839 -> 1842
+    1842 [label="1842 Infix Dot"]
+    1842 -> 1841
+    1841 [label="1841 Identifier\lpieza_orig"]
+    1842 -> 1843
+    1843 [label="1843 Identifier\lpieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1844
+    1844 [label="1844 Expression"]
+    1844 -> 1851
+    1851 [label="1851 Assign\l-------------\l="]
+    1851 -> 1849
+    1849 [label="1849 Infix Dot"]
+    1849 -> 1846
+    1846 [label="1846 Index Expr\l"]
+    1846 -> 1845
+    1845 [label="1845 Identifier\lTablero"]
+    1846 -> 1847
+    1847 [label="1847 Identifier\lx_dest"]
+    1846 -> 1848
+    1848 [label="1848 Identifier\ly_dest"]
+    1849 -> 1850
+    1850 [label="1850 Identifier\lcolor_pieza"]
+    1851 -> 1854
+    1854 [label="1854 Infix Dot"]
+    1854 -> 1853
+    1853 [label="1853 Identifier\lpieza_orig"]
+    1854 -> 1855
+    1855 [label="1855 Identifier\lcolor_pieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1856
+    1856 [label="1856 Expression"]
+    1856 -> 1863
+    1863 [label="1863 Assign\l-------------\l="]
+    1863 -> 1861
+    1861 [label="1861 Infix Dot"]
+    1861 -> 1858
+    1858 [label="1858 Index Expr\l"]
+    1858 -> 1857
+    1857 [label="1857 Identifier\lTablero"]
+    1858 -> 1859
+    1859 [label="1859 Identifier\lx_orig"]
+    1858 -> 1860
+    1860 [label="1860 Identifier\ly_orig"]
+    1861 -> 1862
+    1862 [label="1862 Identifier\lpieza"]
+    1863 -> 1865
+    1865 [label="1865 Identifier\lNINGUNA"]
+    1810 [label="1810 Block"]
+    1810 -> 1866
+    1866 [label="1866 Expression"]
+    1866 -> 1873
+    1873 [label="1873 Assign\l-------------\l="]
+    1873 -> 1871
+    1871 [label="1871 Infix Dot"]
+    1871 -> 1868
+    1868 [label="1868 Index Expr\l"]
+    1868 -> 1867
+    1867 [label="1867 Identifier\lTablero"]
+    1868 -> 1869
+    1869 [label="1869 Identifier\lx_orig"]
+    1868 -> 1870
+    1870 [label="1870 Identifier\ly_orig"]
+    1871 -> 1872
+    1872 [label="1872 Identifier\lcolor_pieza"]
+    1873 -> 1875
+    1875 [label="1875 Identifier\lNINGUNO"]
+    1810 [label="1810 Block"]
+    1810 -> 1876
+    1876 [label="1876 Var Declare\l-----------------\len_jaque"]
+    1878 [label ="1876 Var : en_jaque"]
+    1876 -> 1878
+    1878 [label="1878 Call\lesta_en_jaque()"]
+    1878 -> 1880
+    1880 [label="1880 Infix Dot"]
+    1880 -> 1879
+    1879 [label="1879 Identifier\lpieza_orig"]
+    1880 -> 1881
+    1881 [label="1881 Identifier\lcolor_pieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1882
+    1882 [label="1882 Expression"]
+    1882 -> 1889
+    1889 [label="1889 Assign\l-------------\l="]
+    1889 -> 1887
+    1887 [label="1887 Infix Dot"]
+    1887 -> 1884
+    1884 [label="1884 Index Expr\l"]
+    1884 -> 1883
+    1883 [label="1883 Identifier\lTablero"]
+    1884 -> 1885
+    1885 [label="1885 Identifier\lx_orig"]
+    1884 -> 1886
+    1886 [label="1886 Identifier\ly_orig"]
+    1887 -> 1888
+    1888 [label="1888 Identifier\lpieza"]
+    1889 -> 1892
+    1892 [label="1892 Infix Dot"]
+    1892 -> 1891
+    1891 [label="1891 Identifier\lpieza_orig"]
+    1892 -> 1893
+    1893 [label="1893 Identifier\lpieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1894
+    1894 [label="1894 Expression"]
+    1894 -> 1901
+    1901 [label="1901 Assign\l-------------\l="]
+    1901 -> 1899
+    1899 [label="1899 Infix Dot"]
+    1899 -> 1896
+    1896 [label="1896 Index Expr\l"]
+    1896 -> 1895
+    1895 [label="1895 Identifier\lTablero"]
+    1896 -> 1897
+    1897 [label="1897 Identifier\lx_orig"]
+    1896 -> 1898
+    1898 [label="1898 Identifier\ly_orig"]
+    1899 -> 1900
+    1900 [label="1900 Identifier\lcolor_pieza"]
+    1901 -> 1904
+    1904 [label="1904 Infix Dot"]
+    1904 -> 1903
+    1903 [label="1903 Identifier\lpieza_orig"]
+    1904 -> 1905
+    1905 [label="1905 Identifier\lcolor_pieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1906
+    1906 [label="1906 Expression"]
+    1906 -> 1913
+    1913 [label="1913 Assign\l-------------\l="]
+    1913 -> 1911
+    1911 [label="1911 Infix Dot"]
+    1911 -> 1908
+    1908 [label="1908 Index Expr\l"]
+    1908 -> 1907
+    1907 [label="1907 Identifier\lTablero"]
+    1908 -> 1909
+    1909 [label="1909 Identifier\lx_dest"]
+    1908 -> 1910
+    1910 [label="1910 Identifier\ly_dest"]
+    1911 -> 1912
+    1912 [label="1912 Identifier\lpieza"]
+    1913 -> 1916
+    1916 [label="1916 Infix Dot"]
+    1916 -> 1915
+    1915 [label="1915 Identifier\lpieza_dest"]
+    1916 -> 1917
+    1917 [label="1917 Identifier\lpieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1918
+    1918 [label="1918 Expression"]
+    1918 -> 1925
+    1925 [label="1925 Assign\l-------------\l="]
+    1925 -> 1923
+    1923 [label="1923 Infix Dot"]
+    1923 -> 1920
+    1920 [label="1920 Index Expr\l"]
+    1920 -> 1919
+    1919 [label="1919 Identifier\lTablero"]
+    1920 -> 1921
+    1921 [label="1921 Identifier\lx_dest"]
+    1920 -> 1922
+    1922 [label="1922 Identifier\ly_dest"]
+    1923 -> 1924
+    1924 [label="1924 Identifier\lcolor_pieza"]
+    1925 -> 1928
+    1928 [label="1928 Infix Dot"]
+    1928 -> 1927
+    1927 [label="1927 Identifier\lpieza_dest"]
+    1928 -> 1929
+    1929 [label="1929 Identifier\lcolor_pieza"]
+    1810 [label="1810 Block"]
+    1810 -> 1930
+    1930 [label="1930 Expression"]
+    1930 -> 1932
+    1932 [label="1932 Assign\l-------------\l="]
+    1932 -> 1931
+    1931 [label="1931 Identifier\lEstado"]
+    1932 -> 1934
+    1934 [label="1934 Identifier\lestado_backup"]
+    1810 [label="1810 Block"]
+    1810 -> 1935
+    1935 [label="1935 Return"]
+    1935 -> 1936
+    1936 [label="1936 Identifier\len_jaque"]
+    0 [label="0 Root\l--------"]
+    0 -> 1937
+    1937 [label="1937 Expression"]
+    1937 -> 1938
+    1938 [label="1938 Function Declare\l-----------------------\lmovimientos_legales"]
+    1938 -> 1940
+    1940 [label="1940 Block"]
+    1940 -> 1941
+    1941 [label="1941 Var Declare\l-----------------\llista"]
+    1942 [label ="1941 Var : lista"]
+    1941 -> 1942
+    1942 [label="1942 List"]
+    1940 [label="1940 Block"]
+    1940 -> 1943
+    1943 [label="1943 For Loop\l------------"]
+    1943 -> 1944
+    1944 [label="1944 Var Declare\l-----------------\lx0"]
+    1945 [label ="1944 Var : x0"]
+    1944 -> 1945
+    1945 [label="1945 Integer\l0"]
+    1943 -> 1947
+    1947 [label="1947 Infix Expr\l<"]
+    1947 -> 1946
+    1946 [label="1946 Identifier\lx0"]
+    1947 [label="1947 Infix Expr\l<"]
+    1947 -> 1948
+    1948 [label="1948 Integer\l8"]
+    1943 -> 1949
+    1949 [label="1949 Postfix Expr\l++"]
+    1949 -> 1950
+    1950 [label="1950 Identifier\lx0"]
+    1943 -> 1951
+    1951 [label="1951 Block"]
+    1951 -> 1952
+    1952 [label="1952 For Loop\l------------"]
+    1952 -> 1953
+    1953 [label="1953 Var Declare\l-----------------\ly0"]
+    1954 [label ="1953 Var : y0"]
+    1953 -> 1954
+    1954 [label="1954 Integer\l0"]
+    1952 -> 1956
+    1956 [label="1956 Infix Expr\l<"]
+    1956 -> 1955
+    1955 [label="1955 Identifier\ly0"]
+    1956 [label="1956 Infix Expr\l<"]
+    1956 -> 1957
+    1957 [label="1957 Integer\l8"]
+    1952 -> 1958
+    1958 [label="1958 Postfix Expr\l++"]
+    1958 -> 1959
+    1959 [label="1959 Identifier\ly0"]
+    1952 -> 1960
+    1960 [label="1960 Block"]
+    1960 -> 1961
+    1961 [label="1961 If Then\l--------"]
+    1961 -> 1970
+    1970 [label="1970 Block"]
+    1970 -> 1971
+    1971 [label="1971 Continue"]
+    1960 [label="1960 Block"]
+    1960 -> 1972
+    1972 [label="1972 For Loop\l------------"]
+    1972 -> 1973
+    1973 [label="1973 Var Declare\l-----------------\lx1"]
+    1974 [label ="1973 Var : x1"]
+    1973 -> 1974
+    1974 [label="1974 Integer\l0"]
+    1972 -> 1976
+    1976 [label="1976 Infix Expr\l<"]
+    1976 -> 1975
+    1975 [label="1975 Identifier\lx1"]
+    1976 [label="1976 Infix Expr\l<"]
+    1976 -> 1977
+    1977 [label="1977 Integer\l8"]
+    1972 -> 1978
+    1978 [label="1978 Postfix Expr\l++"]
+    1978 -> 1979
+    1979 [label="1979 Identifier\lx1"]
+    1972 -> 1980
+    1980 [label="1980 Block"]
+    1980 -> 1981
+    1981 [label="1981 For Loop\l------------"]
+    1981 -> 1982
+    1982 [label="1982 Var Declare\l-----------------\ly1"]
+    1983 [label ="1982 Var : y1"]
+    1982 -> 1983
+    1983 [label="1983 Integer\l0"]
+    1981 -> 1985
+    1985 [label="1985 Infix Expr\l<"]
+    1985 -> 1984
+    1984 [label="1984 Identifier\ly1"]
+    1985 [label="1985 Infix Expr\l<"]
+    1985 -> 1986
+    1986 [label="1986 Integer\l8"]
+    1981 -> 1987
+    1987 [label="1987 Postfix Expr\l++"]
+    1987 -> 1988
+    1988 [label="1988 Identifier\ly1"]
+    1981 -> 1989
+    1989 [label="1989 Block"]
+    1989 -> 1990
+    1990 [label="1990 If Then\l--------"]
+    1990 -> 2005
+    2005 [label="2005 Block"]
+    2005 -> 2006
+    2006 [label="2006 Expression"]
+    2006 -> 2008
+    2008 [label="2008 Infix Dot"]
+    2008 -> 2007
+    2007 [label="2007 Identifier\llista"]
+    2008 -> 2010
+    2010 [label="2010 Call\linsert()"]
+    2010 -> 2011
+    2011 [label="2011 List"]
+    2011 -> 2012
+    2012 [label="2012 Identifier\lx0"]
+    2011 -> 2013
+    2013 [label="2013 Identifier\ly0"]
+    2011 -> 2014
+    2014 [label="2014 Identifier\lx1"]
+    2011 -> 2015
+    2015 [label="2015 Identifier\ly1"]
+    1940 [label="1940 Block"]
+    1940 -> 2016
+    2016 [label="2016 Return"]
+    2016 -> 2017
+    2017 [label="2017 Identifier\llista"]
+    0 [label="0 Root\l--------"]
+    0 -> 2018
+    2018 [label="2018 Expression"]
+    2018 -> 2019
+    2019 [label="2019 Function Declare\l-----------------------\les_jaque_mate"]
+    2019 -> 2021
+    2021 [label="2021 Block"]
+    2021 -> 2022
+    2022 [label="2022 If Then\l--------"]
+    2022 -> 2027
+    2027 [label="2027 Block"]
+    2027 -> 2028
+    2028 [label="2028 Return"]
+    2028 -> 2029
+    2029 [label="2029 Bool\l0"]
+    2021 [label="2021 Block"]
+    2021 -> 2030
+    2030 [label="2030 Var Declare\l-----------------\ljugadas"]
+    2032 [label ="2030 Var : jugadas"]
+    2030 -> 2032
+    2032 [label="2032 Call\lmovimientos_legales()"]
+    2032 -> 2033
+    2033 [label="2033 Identifier\lcolor"]
+    2021 [label="2021 Block"]
+    2021 -> 2034
+    2034 [label="2034 Return"]
+    2034 -> 2039
+    2039 [label="2039 Infix Expr\l=="]
+    2039 -> 2036
+    2036 [label="2036 Infix Dot"]
+    2036 -> 2035
+    2035 [label="2035 Identifier\ljugadas"]
+    2036 -> 2038
+    2038 [label="2038 Call\lsize()"]
+    2039 [label="2039 Infix Expr\l=="]
+    2039 -> 2040
+    2040 [label="2040 Integer\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 2041
+    2041 [label="2041 Expression"]
+    2041 -> 2042
+    2042 [label="2042 Function Declare\l-----------------------\lrealizar_movimiento_seguro"]
+    2042 -> 2047
+    2047 [label="2047 Block"]
+    2047 -> 2048
+    2048 [label="2048 If Then\l--------"]
+    2048 -> 2056
+    2056 [label="2056 Block"]
+    2056 -> 2057
+    2057 [label="2057 Return"]
+    2057 -> 2058
+    2058 [label="2058 Bool\l0"]
+    2047 [label="2047 Block"]
+    2047 -> 2059
+    2059 [label="2059 If Then\l--------"]
+    2059 -> 2066
+    2066 [label="2066 Block"]
+    2066 -> 2067
+    2067 [label="2067 Expression"]
+    2067 -> 2069
+    2069 [label="2069 Call\lprintln()"]
+    2069 -> 2070
+    2070 [label="2070 String\lMovimiento inválido: deja a tu rey en jaque."]
+    2066 [label="2066 Block"]
+    2066 -> 2071
+    2071 [label="2071 Return"]
+    2071 -> 2072
+    2072 [label="2072 Bool\l0"]
+    2047 [label="2047 Block"]
+    2047 -> 2073
+    2073 [label="2073 Var Declare\l-----------------\lcapturada"]
+    2078 [label ="2073 Var : capturada"]
+    2073 -> 2078
+    2078 [label="2078 Infix Dot"]
+    2078 -> 2075
+    2075 [label="2075 Index Expr\l"]
+    2075 -> 2074
+    2074 [label="2074 Identifier\lTablero"]
+    2075 -> 2076
+    2076 [label="2076 Identifier\lx_dest"]
+    2075 -> 2077
+    2077 [label="2077 Identifier\ly_dest"]
+    2078 -> 2080
+    2080 [label="2080 Call\lclone()"]
+    2047 [label="2047 Block"]
+    2047 -> 2081
+    2081 [label="2081 Expression"]
+    2081 -> 2088
+    2088 [label="2088 Assign\l-------------\l="]
+    2088 -> 2086
+    2086 [label="2086 Infix Dot"]
+    2086 -> 2083
+    2083 [label="2083 Index Expr\l"]
+    2083 -> 2082
+    2082 [label="2082 Identifier\lTablero"]
+    2083 -> 2084
+    2084 [label="2084 Identifier\lx_dest"]
+    2083 -> 2085
+    2085 [label="2085 Identifier\ly_dest"]
+    2086 -> 2087
+    2087 [label="2087 Identifier\lpieza"]
+    2088 -> 2094
+    2094 [label="2094 Infix Dot"]
+    2094 -> 2091
+    2091 [label="2091 Index Expr\l"]
+    2091 -> 2090
+    2090 [label="2090 Identifier\lTablero"]
+    2091 -> 2092
+    2092 [label="2092 Identifier\lx_orig"]
+    2091 -> 2093
+    2093 [label="2093 Identifier\ly_orig"]
+    2094 -> 2095
+    2095 [label="2095 Identifier\lpieza"]
+    2047 [label="2047 Block"]
+    2047 -> 2096
+    2096 [label="2096 Expression"]
+    2096 -> 2103
+    2103 [label="2103 Assign\l-------------\l="]
+    2103 -> 2101
+    2101 [label="2101 Infix Dot"]
+    2101 -> 2098
+    2098 [label="2098 Index Expr\l"]
+    2098 -> 2097
+    2097 [label="2097 Identifier\lTablero"]
+    2098 -> 2099
+    2099 [label="2099 Identifier\lx_dest"]
+    2098 -> 2100
+    2100 [label="2100 Identifier\ly_dest"]
+    2101 -> 2102
+    2102 [label="2102 Identifier\lcolor_pieza"]
+    2103 -> 2109
+    2109 [label="2109 Infix Dot"]
+    2109 -> 2106
+    2106 [label="2106 Index Expr\l"]
+    2106 -> 2105
+    2105 [label="2105 Identifier\lTablero"]
+    2106 -> 2107
+    2107 [label="2107 Identifier\lx_orig"]
+    2106 -> 2108
+    2108 [label="2108 Identifier\ly_orig"]
+    2109 -> 2110
+    2110 [label="2110 Identifier\lcolor_pieza"]
+    2047 [label="2047 Block"]
+    2047 -> 2111
+    2111 [label="2111 Expression"]
+    2111 -> 2118
+    2118 [label="2118 Assign\l-------------\l="]
+    2118 -> 2116
+    2116 [label="2116 Infix Dot"]
+    2116 -> 2113
+    2113 [label="2113 Index Expr\l"]
+    2113 -> 2112
+    2112 [label="2112 Identifier\lTablero"]
+    2113 -> 2114
+    2114 [label="2114 Identifier\lx_orig"]
+    2113 -> 2115
+    2115 [label="2115 Identifier\ly_orig"]
+    2116 -> 2117
+    2117 [label="2117 Identifier\lpieza"]
+    2118 -> 2120
+    2120 [label="2120 Identifier\lNINGUNA"]
+    2047 [label="2047 Block"]
+    2047 -> 2121
+    2121 [label="2121 Expression"]
+    2121 -> 2128
+    2128 [label="2128 Assign\l-------------\l="]
+    2128 -> 2126
+    2126 [label="2126 Infix Dot"]
+    2126 -> 2123
+    2123 [label="2123 Index Expr\l"]
+    2123 -> 2122
+    2122 [label="2122 Identifier\lTablero"]
+    2123 -> 2124
+    2124 [label="2124 Identifier\lx_orig"]
+    2123 -> 2125
+    2125 [label="2125 Identifier\ly_orig"]
+    2126 -> 2127
+    2127 [label="2127 Identifier\lcolor_pieza"]
+    2128 -> 2130
+    2130 [label="2130 Identifier\lNINGUNO"]
+    2047 [label="2047 Block"]
+    2047 -> 2131
+    2131 [label="2131 Var Declare\l-----------------\loponente"]
+    2137 [label ="2131 Var : oponente"]
+    2131 -> 2137
+    2047 [label="2047 Block"]
+    2047 -> 2140
+    2140 [label="2140 If Then\l--------"]
+    2140 -> 2144
+    2144 [label="2144 Block"]
+    2144 -> 2145
+    2145 [label="2145 If Then\l--------"]
+    2145 -> 2149
+    2149 [label="2149 Block"]
+    2149 -> 2150
+    2150 [label="2150 Expression"]
+    2150 -> 2152
+    2152 [label="2152 Call\lprintln()"]
+    2152 -> 2153
+    2153 [label="2153 String\l
+¡JAQUE MATE!"]
+    2149 [label="2149 Block"]
+    2149 -> 2154
+    2154 [label="2154 Expression"]
+    2154 -> 2158
+    2158 [label="2158 Assign\l-------------\l="]
+    2158 -> 2156
+    2156 [label="2156 Infix Dot"]
+    2156 -> 2155
+    2155 [label="2155 Identifier\lEstado"]
+    2156 -> 2157
+    2157 [label="2157 Identifier\lterminar"]
+    2158 -> 2160
+    2160 [label="2160 Bool\l1"]
+    2047 [label="2047 Block"]
+    2047 -> 2166
+    2166 [label="2166 Expression"]
+    2166 -> 2170
+    2170 [label="2170 Assign\l-------------\l="]
+    2170 -> 2168
+    2168 [label="2168 Infix Dot"]
+    2168 -> 2167
+    2167 [label="2167 Identifier\lEstado"]
+    2168 -> 2169
+    2169 [label="2169 Identifier\lturno"]
+    2170 -> 2172
+    2172 [label="2172 Identifier\loponente"]
+    2047 [label="2047 Block"]
+    2047 -> 2173
+    2173 [label="2173 Expression"]
+    2173 -> 2178
+    2178 [label="2178 Postfix Expr\l++"]
+    2178 -> 2175
+    2175 [label="2175 Infix Dot"]
+    2175 -> 2174
+    2174 [label="2174 Identifier\lEstado"]
+    2175 -> 2177
+    2177 [label="2177 Identifier\lmovimientos"]
+    2047 [label="2047 Block"]
+    2047 -> 2179
+    2179 [label="2179 Return"]
+    2179 -> 2180
+    2180 [label="2180 Bool\l1"]
+    0 [label="0 Root\l--------"]
+    0 -> 2182
+    2182 [label="2182 Use Math"]
+    2182 -> 
+    0 [label="0 Root\l--------"]
+    0 -> 2183
+    2183 [label="2183 Import\lchess_types"]
+    0 [label="0 Root\l--------"]
+    0 -> 2184
+    2184 [label="2184 Import\lchess_moves"]
+    0 [label="0 Root\l--------"]
+    0 -> 2185
+    2185 [label="2185 Import\lchess-check"]
+    0 [label="0 Root\l--------"]
+    0 -> 2186
+    2186 [label="2186 Import\lchess_init"]
+    0 [label="0 Root\l--------"]
+    0 -> 2187
+    2187 [label="2187 Constant\l--------"]
+    2187 -> 2188
+    2188 [label="2188 Integer\l100"]
+    0 [label="0 Root\l--------"]
+    0 -> 2189
+    2189 [label="2189 Constant\l--------"]
+    2189 -> 2190
+    2190 [label="2190 Integer\l320"]
+    0 [label="0 Root\l--------"]
+    0 -> 2191
+    2191 [label="2191 Constant\l--------"]
+    2191 -> 2192
+    2192 [label="2192 Integer\l330"]
+    0 [label="0 Root\l--------"]
+    0 -> 2193
+    2193 [label="2193 Constant\l--------"]
+    2193 -> 2194
+    2194 [label="2194 Integer\l500"]
+    0 [label="0 Root\l--------"]
+    0 -> 2195
+    2195 [label="2195 Constant\l--------"]
+    2195 -> 2196
+    2196 [label="2196 Integer\l900"]
+    0 [label="0 Root\l--------"]
+    0 -> 2197
+    2197 [label="2197 Constant\l--------"]
+    2197 -> 2198
+    2198 [label="2198 Integer\l20000"]
+    0 [label="0 Root\l--------"]
+    0 -> 2199
+    2199 [label="2199 Constant\l--------"]
+    2199 -> 2200
+    2200 [label="2200 Integer\l3"]
+    0 [label="0 Root\l--------"]
+    0 -> 2201
+    2201 [label="2201 Constant\l--------"]
+    2201 -> 2202
+    2202 [label="2202 List"]
+    2202 -> 2203
+    2203 [label="2203 List"]
+    2203 -> 2204
+    2204 [label="2204 Integer\l0"]
+    2203 -> 2205
+    2205 [label="2205 Integer\l0"]
+    2203 -> 2206
+    2206 [label="2206 Integer\l0"]
+    2203 -> 2207
+    2207 [label="2207 Integer\l0"]
+    2203 -> 2208
+    2208 [label="2208 Integer\l0"]
+    2203 -> 2209
+    2209 [label="2209 Integer\l0"]
+    2203 -> 2210
+    2210 [label="2210 Integer\l0"]
+    2203 -> 2211
+    2211 [label="2211 Integer\l0"]
+    2202 -> 2212
+    2212 [label="2212 List"]
+    2212 -> 2213
+    2213 [label="2213 Integer\l50"]
+    2212 -> 2214
+    2214 [label="2214 Integer\l50"]
+    2212 -> 2215
+    2215 [label="2215 Integer\l50"]
+    2212 -> 2216
+    2216 [label="2216 Integer\l50"]
+    2212 -> 2217
+    2217 [label="2217 Integer\l50"]
+    2212 -> 2218
+    2218 [label="2218 Integer\l50"]
+    2212 -> 2219
+    2219 [label="2219 Integer\l50"]
+    2212 -> 2220
+    2220 [label="2220 Integer\l50"]
+    2202 -> 2221
+    2221 [label="2221 List"]
+    2221 -> 2222
+    2222 [label="2222 Integer\l10"]
+    2221 -> 2223
+    2223 [label="2223 Integer\l10"]
+    2221 -> 2224
+    2224 [label="2224 Integer\l20"]
+    2221 -> 2225
+    2225 [label="2225 Integer\l30"]
+    2221 -> 2226
+    2226 [label="2226 Integer\l30"]
+    2221 -> 2227
+    2227 [label="2227 Integer\l20"]
+    2221 -> 2228
+    2228 [label="2228 Integer\l10"]
+    2221 -> 2229
+    2229 [label="2229 Integer\l10"]
+    2202 -> 2230
+    2230 [label="2230 List"]
+    2230 -> 2231
+    2231 [label="2231 Integer\l5"]
+    2230 -> 2232
+    2232 [label="2232 Integer\l5"]
+    2230 -> 2233
+    2233 [label="2233 Integer\l10"]
+    2230 -> 2234
+    2234 [label="2234 Integer\l25"]
+    2230 -> 2235
+    2235 [label="2235 Integer\l25"]
+    2230 -> 2236
+    2236 [label="2236 Integer\l10"]
+    2230 -> 2237
+    2237 [label="2237 Integer\l5"]
+    2230 -> 2238
+    2238 [label="2238 Integer\l5"]
+    2202 -> 2239
+    2239 [label="2239 List"]
+    2239 -> 2240
+    2240 [label="2240 Integer\l0"]
+    2239 -> 2241
+    2241 [label="2241 Integer\l0"]
+    2239 -> 2242
+    2242 [label="2242 Integer\l0"]
+    2239 -> 2243
+    2243 [label="2243 Integer\l20"]
+    2239 -> 2244
+    2244 [label="2244 Integer\l20"]
+    2239 -> 2245
+    2245 [label="2245 Integer\l0"]
+    2239 -> 2246
+    2246 [label="2246 Integer\l0"]
+    2239 -> 2247
+    2247 [label="2247 Integer\l0"]
+    2202 -> 2248
+    2248 [label="2248 List"]
+    2248 -> 2249
+    2249 [label="2249 Integer\l5"]
+    2248 -> 2250
+    2250 [label="2250 Prefix Expr\l-"]
+    2250 -> 2251
+    2251 [label="2251 Integer\l5"]
+    2248 -> 2252
+    2252 [label="2252 Prefix Expr\l-"]
+    2252 -> 2253
+    2253 [label="2253 Integer\l10"]
+    2248 -> 2254
+    2254 [label="2254 Integer\l0"]
+    2248 -> 2255
+    2255 [label="2255 Integer\l0"]
+    2248 -> 2256
+    2256 [label="2256 Prefix Expr\l-"]
+    2256 -> 2257
+    2257 [label="2257 Integer\l10"]
+    2248 -> 2258
+    2258 [label="2258 Prefix Expr\l-"]
+    2258 -> 2259
+    2259 [label="2259 Integer\l5"]
+    2248 -> 2260
+    2260 [label="2260 Integer\l5"]
+    2202 -> 2261
+    2261 [label="2261 List"]
+    2261 -> 2262
+    2262 [label="2262 Integer\l5"]
+    2261 -> 2263
+    2263 [label="2263 Integer\l10"]
+    2261 -> 2264
+    2264 [label="2264 Integer\l10"]
+    2261 -> 2265
+    2265 [label="2265 Prefix Expr\l-"]
+    2265 -> 2266
+    2266 [label="2266 Integer\l20"]
+    2261 -> 2267
+    2267 [label="2267 Prefix Expr\l-"]
+    2267 -> 2268
+    2268 [label="2268 Integer\l20"]
+    2261 -> 2269
+    2269 [label="2269 Integer\l10"]
+    2261 -> 2270
+    2270 [label="2270 Integer\l10"]
+    2261 -> 2271
+    2271 [label="2271 Integer\l5"]
+    2202 -> 2272
+    2272 [label="2272 List"]
+    2272 -> 2273
+    2273 [label="2273 Integer\l0"]
+    2272 -> 2274
+    2274 [label="2274 Integer\l0"]
+    2272 -> 2275
+    2275 [label="2275 Integer\l0"]
+    2272 -> 2276
+    2276 [label="2276 Integer\l0"]
+    2272 -> 2277
+    2277 [label="2277 Integer\l0"]
+    2272 -> 2278
+    2278 [label="2278 Integer\l0"]
+    2272 -> 2279
+    2279 [label="2279 Integer\l0"]
+    2272 -> 2280
+    2280 [label="2280 Integer\l0"]
+    0 [label="0 Root\l--------"]
+    0 -> 2281
+    2281 [label="2281 Constant\l--------"]
+    2281 -> 2282
+    2282 [label="2282 List"]
+    2282 -> 2283
+    2283 [label="2283 List"]
+    2283 -> 2284
+    2284 [label="2284 Prefix Expr\l-"]
+    2284 -> 2285
+    2285 [label="2285 Integer\l50"]
+    2283 -> 2286
+    2286 [label="2286 Prefix Expr\l-"]
+    2286 -> 2287
+    2287 [label="2287 Integer\l40"]
+    2283 -> 2288
+    2288 [label="2288 Prefix Expr\l-"]
+    2288 -> 2289
+    2289 [label="2289 Integer\l30"]
+    2283 -> 2290
+    2290 [label="2290 Prefix Expr\l-"]
+    2290 -> 2291
+    2291 [label="2291 Integer\l30"]
+    2283 -> 2292
+    2292 [label="2292 Prefix Expr\l-"]
+    2292 -> 2293
+    2293 [label="2293 Integer\l30"]
+    2283 -> 2294
+    2294 [label="2294 Prefix Expr\l-"]
+    2294 -> 2295
+    2295 [label="2295 Integer\l30"]
+    2283 -> 2296
+    2296 [label="2296 Prefix Expr\l-"]
+    2296 -> 2297
+    2297 [label="2297 Integer\l40"]
+    2283 -> 2298
+    2298 [label="2298 Prefix Expr\l-"]
+    2298 -> 2299
+    2299 [label="2299 Integer\l50"]
+    2282 -> 2300
+    2300 [label="2300 List"]
+    2300 -> 2301
+    2301 [label="2301 Prefix Expr\l-"]
+    2301 -> 2302
+    2302 [label="2302 Integer\l40"]
+    2300 -> 2303
+    2303 [label="2303 Prefix Expr\l-"]
+    2303 -> 2304
+    2304 [label="2304 Integer\l20"]
+    2300 -> 2305
+    2305 [label="2305 Integer\l0"]
+    2300 -> 2306
+    2306 [label="2306 Integer\l0"]
+    2300 -> 2307
+    2307 [label="2307 Integer\l0"]
+    2300 -> 2308
+    2308 [label="2308 Integer\l0"]
+    2300 -> 2309
+    2309 [label="2309 Prefix Expr\l-"]
+    2309 -> 2310
+    2310 [label="2310 Integer\l20"]
+    2300 -> 2311
+    2311 [label="2311 Prefix Expr\l-"]
+    2311 -> 2312
+    2312 [label="2312 Integer\l40"]
+    2282 -> 2313
+    2313 [label="2313 List"]
+    2313 -> 2314
+    2314 [label="2314 Prefix Expr\l-"]
+    2314 -> 2315
+    2315 [label="2315 Integer\l30"]
+    2313 -> 2316
+    2316 [label="2316 Integer\l0"]
+    2313 -> 2317
+    2317 [label="2317 Integer\l10"]
+    2313 -> 2318
+    2318 [label="2318 Integer\l15"]
+    2313 -> 2319
+    2319 [label="2319 Integer\l15"]
+    2313 -> 2320
+    2320 [label="2320 Integer\l10"]
+    2313 -> 2321
+    2321 [label="2321 Integer\l0"]
+    2313 -> 2322
+    2322 [label="2322 Prefix Expr\l-"]
+    2322 -> 2323
+    2323 [label="2323 Integer\l30"]
+    2282 -> 2324
+    2324 [label="2324 List"]
+    2324 -> 2325
+    2325 [label="2325 Prefix Expr\l-"]
+    2325 -> 2326
+    2326 [label="2326 Integer\l30"]
+    2324 -> 2327
+    2327 [label="2327 Integer\l5"]
+    2324 -> 2328
+    2328 [label="2328 Integer\l15"]
+    2324 -> 2329
+    2329 [label="2329 Integer\l20"]
+    2324 -> 2330
+    2330 [label="2330 Integer\l20"]
+    2324 -> 2331
+    2331 [label="2331 Integer\l15"]
+    2324 -> 2332
+    2332 [label="2332 Integer\l5"]
+    2324 -> 2333
+    2333 [label="2333 Prefix Expr\l-"]
+    2333 -> 2334
+    2334 [label="2334 Integer\l30"]
+    2282 -> 2335
+    2335 [label="2335 List"]
+    2335 -> 2336
+    2336 [label="2336 Prefix Expr\l-"]
+    2336 -> 2337
+    2337 [label="2337 Integer\l30"]
+    2335 -> 2338
+    2338 [label="2338 Integer\l0"]
+    2335 -> 2339
+    2339 [label="2339 Integer\l15"]
+    2335 -> 2340
+    2340 [label="2340 Integer\l20"]
+    2335 -> 2341
+    2341 [label="2341 Integer\l20"]
+    2335 -> 2342
+    2342 [label="2342 Integer\l15"]
+    2335 -> 2343
+    2343 [label="2343 Integer\l0"]
+    2335 -> 2344
+    2344 [label="2344 Prefix Expr\l-"]
+    2344 -> 2345
+    2345 [label="2345 Integer\l30"]
+    2282 -> 2346
+    2346 [label="2346 List"]
+    2346 -> 2347
+    2347 [label="2347 Prefix Expr\l-"]
+    2347 -> 2348
+    2348 [label="2348 Integer\l30"]
+    2346 -> 2349
+    2349 [label="2349 Integer\l5"]
+    2346 -> 2350
+    2350 [label="2350 Integer\l10"]
+    2346 -> 2351
+    2351 [label="2351 Integer\l15"]
+    2346 -> 2352
+    2352 [label="2352 Integer\l15"]
+    2346 -> 2353
+    2353 [label="2353 Integer\l10"]
+    2346 -> 2354
+    2354 [label="2354 Integer\l5"]
+    2346 -> 2355
+    2355 [label="2355 Prefix Expr\l-"]
+    2355 -> 2356
+    2356 [label="2356 Integer\l30"]
+    2282 -> 2357
+    2357 [label="2357 List"]
+    2357 -> 2358
+    2358 [label="2358 Prefix Expr\l-"]
+    2358 -> 2359
+    2359 [label="2359 Integer\l40"]
+    2357 -> 2360
+    2360 [label="2360 Prefix Expr\l-"]
+    2360 -> 2361
+    2361 [label="2361 Integer\l20"]
+    2357 -> 2362
+    2362 [label="2362 Integer\l0"]
+    2357 -> 2363
+    2363 [label="2363 Integer\l5"]
+    2357 -> 2364
+    2364 [label="2364 Integer\l5"]
+    2357 -> 2365
+    2365 [label="2365 Integer\l0"]
+    2357 -> 2366
+    2366 [label="2366 Prefix Expr\l-"]
+    2366 -> 2367
+    2367 [label="2367 Integer\l20"]
+    2357 -> 2368
+    2368 [label="2368 Prefix Expr\l-"]
+    2368 -> 2369
+    2369 [label="2369 Integer\l40"]
+    2282 -> 2370
+    2370 [label="2370 List"]
+    2370 -> 2371
+    2371 [label="2371 Prefix Expr\l-"]
+    2371 -> 2372
+    2372 [label="2372 Integer\l50"]
+    2370 -> 2373
+    2373 [label="2373 Prefix Expr\l-"]
+    2373 -> 2374
+    2374 [label="2374 Integer\l40"]
+    2370 -> 2375
+    2375 [label="2375 Prefix Expr\l-"]
+    2375 -> 2376
+    2376 [label="2376 Integer\l30"]
+    2370 -> 2377
+    2377 [label="2377 Prefix Expr\l-"]
+    2377 -> 2378
+    2378 [label="2378 Integer\l30"]
+    2370 -> 2379
+    2379 [label="2379 Prefix Expr\l-"]
+    2379 -> 2380
+    2380 [label="2380 Integer\l30"]
+    2370 -> 2381
+    2381 [label="2381 Prefix Expr\l-"]
+    2381 -> 2382
+    2382 [label="2382 Integer\l30"]
+    2370 -> 2383
+    2383 [label="2383 Prefix Expr\l-"]
+    2383 -> 2384
+    2384 [label="2384 Integer\l40"]
+    2370 -> 2385
+    2385 [label="2385 Prefix Expr\l-"]
+    2385 -> 2386
+    2386 [label="2386 Integer\l50"]
+    0 [label="0 Root\l--------"]
+    0 -> 2387
+    2387 [label="2387 Expression"]
+    2387 -> 2388
+    2388 [label="2388 Function Declare\l-----------------------\lgenerar_movimiento_ia"]
+    2388 -> 2390
+    2390 [label="2390 Block"]
+    2390 -> 2391
+    2391 [label="2391 Var Declare\l-----------------\lmejor_valor"]
+    2392 [label ="2391 Var : mejor_valor"]
+    2391 -> 2392
+    2392 [label="2392 Prefix Expr\l-"]
+    2392 -> 2393
+    2393 [label="2393 Integer\l999999"]
+    2390 [label="2390 Block"]
+    2390 -> 2394
+    2394 [label="2394 Var Declare\l-----------------\lmejor_movimiento"]
+    2395 [label ="2394 Var : mejor_movimiento"]
+    2394 -> 2395
+    2395 [label="2395 nil"]
+    2390 [label="2390 Block"]
+    2390 -> 2396
+    2396 [label="2396 Var Declare\l-----------------\lpieza_orig_tipo"]
+    2397 [label ="2396 Var : pieza_orig_tipo"]
+    2396 -> 2397
+    2397 [label="2397 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2398
+    2398 [label="2398 Var Declare\l-----------------\lpieza_orig_color"]
+    2399 [label ="2398 Var : pieza_orig_color"]
+    2398 -> 2399
+    2399 [label="2399 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2400
+    2400 [label="2400 Var Declare\l-----------------\lpieza_dest_tipo"]
+    2401 [label ="2400 Var : pieza_dest_tipo"]
+    2400 -> 2401
+    2401 [label="2401 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2402
+    2402 [label="2402 Var Declare\l-----------------\lpieza_dest_color"]
+    2403 [label ="2402 Var : pieza_dest_color"]
+    2402 -> 2403
+    2403 [label="2403 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2404
+    2404 [label="2404 Var Declare\l-----------------\lestado_orig"]
+    2405 [label ="2404 Var : estado_orig"]
+    2404 -> 2405
+    2405 [label="2405 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2406
+    2406 [label="2406 Var Declare\l-----------------\lcolor_oponente"]
+    2407 [label ="2406 Var : color_oponente"]
+    2406 -> 2407
+    2407 [label="2407 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2408
+    2408 [label="2408 Var Declare\l-----------------\lvalor"]
+    2409 [label ="2408 Var : valor"]
+    2408 -> 2409
+    2409 [label="2409 Integer\l0"]
+    2390 [label="2390 Block"]
+    2390 -> 2410
+    2410 [label="2410 For Loop\l------------"]
+    2410 -> 2411
+    2411 [label="2411 Var Declare\l-----------------\lx_orig"]
+    2412 [label ="2411 Var : x_orig"]
+    2411 -> 2412
+    2412 [label="2412 Integer\l0"]
+    2410 -> 2414
+    2414 [label="2414 Infix Expr\l<"]
+    2414 -> 2413
+    2413 [label="2413 Identifier\lx_orig"]
+    2414 [label="2414 Infix Expr\l<"]
+    2414 -> 2415
+    2415 [label="2415 Integer\l8"]
+    2410 -> 2416
+    2416 [label="2416 Postfix Expr\l++"]
+    2416 -> 2417
+    2417 [label="2417 Identifier\lx_orig"]
+    2410 -> 2418
+    2418 [label="2418 Block"]
+    2418 -> 2419
+    2419 [label="2419 For Loop\l------------"]
+    2419 -> 2420
+    2420 [label="2420 Var Declare\l-----------------\ly_orig"]
+    2421 [label ="2420 Var : y_orig"]
+    2420 -> 2421
+    2421 [label="2421 Integer\l0"]
+    2419 -> 2423
+    2423 [label="2423 Infix Expr\l<"]
+    2423 -> 2422
+    2422 [label="2422 Identifier\ly_orig"]
+    2423 [label="2423 Infix Expr\l<"]
+    2423 -> 2424
+    2424 [label="2424 Integer\l8"]
+    2419 -> 2425
+    2425 [label="2425 Postfix Expr\l++"]
+    2425 -> 2426
+    2426 [label="2426 Identifier\ly_orig"]
+    2419 -> 2427
+    2427 [label="2427 Block"]
+    2427 -> 2428
+    2428 [label="2428 If Then\l--------"]
+    2428 -> 2446
+    2446 [label="2446 Block"]
+    2446 -> 2447
+    2447 [label="2447 Continue"]
+    2427 [label="2427 Block"]
+    2427 -> 2448
+    2448 [label="2448 For Loop\l------------"]
+    2448 -> 2449
+    2449 [label="2449 Var Declare\l-----------------\lx_dest"]
+    2450 [label ="2449 Var : x_dest"]
+    2449 -> 2450
+    2450 [label="2450 Integer\l0"]
+    2448 -> 2452
+    2452 [label="2452 Infix Expr\l<"]
+    2452 -> 2451
+    2451 [label="2451 Identifier\lx_dest"]
+    2452 [label="2452 Infix Expr\l<"]
+    2452 -> 2453
+    2453 [label="2453 Integer\l8"]
+    2448 -> 2454
+    2454 [label="2454 Postfix Expr\l++"]
+    2454 -> 2455
+    2455 [label="2455 Identifier\lx_dest"]
+    2448 -> 2456
+    2456 [label="2456 Block"]
+    2456 -> 2457
+    2457 [label="2457 For Loop\l------------"]
+    2457 -> 2458
+    2458 [label="2458 Var Declare\l-----------------\ly_dest"]
+    2459 [label ="2458 Var : y_dest"]
+    2458 -> 2459
+    2459 [label="2459 Integer\l0"]
+    2457 -> 2461
+    2461 [label="2461 Infix Expr\l<"]
+    2461 -> 2460
+    2460 [label="2460 Identifier\ly_dest"]
+    2461 [label="2461 Infix Expr\l<"]
+    2461 -> 2462
+    2462 [label="2462 Integer\l8"]
+    2457 -> 2463
+    2463 [label="2463 Postfix Expr\l++"]
+    2463 -> 2464
+    2464 [label="2464 Identifier\ly_dest"]
+    2457 -> 2465
+    2465 [label="2465 Block"]
+    2465 -> 2466
+    2466 [label="2466 If Then\l--------"]
+    2466 -> 2481
+    2481 [label="2481 Block"]
+    2481 -> 2482
+    2482 [label="2482 Expression"]
+    2482 -> 2484
+    2484 [label="2484 Assign\l-------------\l="]
+    2484 -> 2483
+    2483 [label="2483 Identifier\lpieza_orig_tipo"]
+    2484 -> 2490
+    2490 [label="2490 Infix Dot"]
+    2490 -> 2487
+    2487 [label="2487 Index Expr\l"]
+    2487 -> 2486
+    2486 [label="2486 Identifier\lTablero"]
+    2487 -> 2488
+    2488 [label="2488 Identifier\lx_orig"]
+    2487 -> 2489
+    2489 [label="2489 Identifier\ly_orig"]
+    2490 -> 2491
+    2491 [label="2491 Identifier\lpieza"]
+    2481 [label="2481 Block"]
+    2481 -> 2492
+    2492 [label="2492 Expression"]
+    2492 -> 2494
+    2494 [label="2494 Assign\l-------------\l="]
+    2494 -> 2493
+    2493 [label="2493 Identifier\lpieza_orig_color"]
+    2494 -> 2500
+    2500 [label="2500 Infix Dot"]
+    2500 -> 2497
+    2497 [label="2497 Index Expr\l"]
+    2497 -> 2496
+    2496 [label="2496 Identifier\lTablero"]
+    2497 -> 2498
+    2498 [label="2498 Identifier\lx_orig"]
+    2497 -> 2499
+    2499 [label="2499 Identifier\ly_orig"]
+    2500 -> 2501
+    2501 [label="2501 Identifier\lcolor_pieza"]
+    2481 [label="2481 Block"]
+    2481 -> 2502
+    2502 [label="2502 Expression"]
+    2502 -> 2504
+    2504 [label="2504 Assign\l-------------\l="]
+    2504 -> 2503
+    2503 [label="2503 Identifier\lpieza_dest_tipo"]
+    2504 -> 2510
+    2510 [label="2510 Infix Dot"]
+    2510 -> 2507
+    2507 [label="2507 Index Expr\l"]
+    2507 -> 2506
+    2506 [label="2506 Identifier\lTablero"]
+    2507 -> 2508
+    2508 [label="2508 Identifier\lx_dest"]
+    2507 -> 2509
+    2509 [label="2509 Identifier\ly_dest"]
+    2510 -> 2511
+    2511 [label="2511 Identifier\lpieza"]
+    2481 [label="2481 Block"]
+    2481 -> 2512
+    2512 [label="2512 Expression"]
+    2512 -> 2514
+    2514 [label="2514 Assign\l-------------\l="]
+    2514 -> 2513
+    2513 [label="2513 Identifier\lpieza_dest_color"]
+    2514 -> 2520
+    2520 [label="2520 Infix Dot"]
+    2520 -> 2517
+    2517 [label="2517 Index Expr\l"]
+    2517 -> 2516
+    2516 [label="2516 Identifier\lTablero"]
+    2517 -> 2518
+    2518 [label="2518 Identifier\lx_dest"]
+    2517 -> 2519
+    2519 [label="2519 Identifier\ly_dest"]
+    2520 -> 2521
+    2521 [label="2521 Identifier\lcolor_pieza"]
+    2481 [label="2481 Block"]
+    2481 -> 2522
+    2522 [label="2522 Expression"]
+    2522 -> 2524
+    2524 [label="2524 Assign\l-------------\l="]
+    2524 -> 2523
+    2523 [label="2523 Identifier\lestado_orig"]
+    2524 -> 2527
+    2527 [label="2527 Infix Dot"]
+    2527 -> 2526
+    2526 [label="2526 Identifier\lEstado"]
+    2527 -> 2529
+    2529 [label="2529 Call\lclone()"]
+    2481 [label="2481 Block"]
+    2481 -> 2530
+    2530 [label="2530 Expression"]
+    2530 -> 2537
+    2537 [label="2537 Assign\l-------------\l="]
+    2537 -> 2535
+    2535 [label="2535 Infix Dot"]
+    2535 -> 2532
+    2532 [label="2532 Index Expr\l"]
+    2532 -> 2531
+    2531 [label="2531 Identifier\lTablero"]
+    2532 -> 2533
+    2533 [label="2533 Identifier\lx_dest"]
+    2532 -> 2534
+    2534 [label="2534 Identifier\ly_dest"]
+    2535 -> 2536
+    2536 [label="2536 Identifier\lpieza"]
+    2537 -> 2539
+    2539 [label="2539 Identifier\lpieza_orig_tipo"]
+    2481 [label="2481 Block"]
+    2481 -> 2540
+    2540 [label="2540 Expression"]
+    2540 -> 2547
+    2547 [label="2547 Assign\l-------------\l="]
+    2547 -> 2545
+    2545 [label="2545 Infix Dot"]
+    2545 -> 2542
+    2542 [label="2542 Index Expr\l"]
+    2542 -> 2541
+    2541 [label="2541 Identifier\lTablero"]
+    2542 -> 2543
+    2543 [label="2543 Identifier\lx_dest"]
+    2542 -> 2544
+    2544 [label="2544 Identifier\ly_dest"]
+    2545 -> 2546
+    2546 [label="2546 Identifier\lcolor_pieza"]
+    2547 -> 2549
+    2549 [label="2549 Identifier\lpieza_orig_color"]
+    2481 [label="2481 Block"]
+    2481 -> 2550
+    2550 [label="2550 Expression"]
+    2550 -> 2557
+    2557 [label="2557 Assign\l-------------\l="]
+    2557 -> 2555
+    2555 [label="2555 Infix Dot"]
+    2555 -> 2552
+    2552 [label="2552 Index Expr\l"]
+    2552 -> 2551
+    2551 [label="2551 Identifier\lTablero"]
+    2552 -> 2553
+    2553 [label="2553 Identifier\lx_orig"]
+    2552 -> 2554
+    2554 [label="2554 Identifier\ly_orig"]
+    2555 -> 2556
+    2556 [label="2556 Identifier\lpieza"]
+    2557 -> 2559
+    2559 [label="2559 Identifier\lNINGUNA"]
+    2481 [label="2481 Block"]
+    2481 -> 2560
+    2560 [label="2560 Expression"]
+    2560 -> 2567
+    2567 [label="2567 Assign\l-------------\l="]
+    2567 -> 2565
+    2565 [label="2565 Infix Dot"]
+    2565 -> 2562
+    2562 [label="2562 Index Expr\l"]
+    2562 -> 2561
+    2561 [label="2561 Identifier\lTablero"]
+    2562 -> 2563
+    2563 [label="2563 Identifier\lx_orig"]
+    2562 -> 2564
+    2564 [label="2564 Identifier\ly_orig"]
+    2565 -> 2566
+    2566 [label="2566 Identifier\lcolor_pieza"]
+    2567 -> 2569
+    2569 [label="2569 Identifier\lNINGUNO"]
+    2481 [label="2481 Block"]
+    2481 -> 2570
+    2570 [label="2570 Expression"]
+    2570 -> 2572
+    2572 [label="2572 Assign\l-------------\l="]
+    2572 -> 2571
+    2571 [label="2571 Identifier\lcolor_oponente"]
+    2572 -> 2577
+    2481 [label="2481 Block"]
+    2481 -> 2580
+    2580 [label="2580 Expression"]
+    2580 -> 2582
+    2582 [label="2582 Assign\l-------------\l="]
+    2582 -> 2581
+    2581 [label="2581 Identifier\lvalor"]
+    2582 -> 2584
+    2584 [label="2584 Prefix Expr\l-"]
+    2584 -> 2586
+    2586 [label="2586 Call\lminimax()"]
+    2586 -> 2588
+    2588 [label="2588 Infix Expr\l-"]
+    2588 -> 2587
+    2587 [label="2587 Identifier\lPROFUNDIDAD_BUSQUEDA"]
+    2588 [label="2588 Infix Expr\l-"]
+    2588 -> 2589
+    2589 [label="2589 Integer\l1"]
+    2586 -> 2590
+    2590 [label="2590 Prefix Expr\l-"]
+    2590 -> 2591
+    2591 [label="2591 Integer\l999999"]
+    2586 -> 2592
+    2592 [label="2592 Integer\l999999"]
+    2586 -> 2593
+    2593 [label="2593 Identifier\lcolor_oponente"]
+    2481 [label="2481 Block"]
+    2481 -> 2594
+    2594 [label="2594 Expression"]
+    2594 -> 2601
+    2601 [label="2601 Assign\l-------------\l="]
+    2601 -> 2599
+    2599 [label="2599 Infix Dot"]
+    2599 -> 2596
+    2596 [label="2596 Index Expr\l"]
+    2596 -> 2595
+    2595 [label="2595 Identifier\lTablero"]
+    2596 -> 2597
+    2597 [label="2597 Identifier\lx_orig"]
+    2596 -> 2598
+    2598 [label="2598 Identifier\ly_orig"]
+    2599 -> 2600
+    2600 [label="2600 Identifier\lpieza"]
+    2601 -> 2603
+    2603 [label="2603 Identifier\lpieza_orig_tipo"]
+    2481 [label="2481 Block"]
+    2481 -> 2604
+    2604 [label="2604 Expression"]
+    2604 -> 2611
+    2611 [label="2611 Assign\l-------------\l="]
+    2611 -> 2609
+    2609 [label="2609 Infix Dot"]
+    2609 -> 2606
+    2606 [label="2606 Index Expr\l"]
+    2606 -> 2605
+    2605 [label="2605 Identifier\lTablero"]
+    2606 -> 2607
+    2607 [label="2607 Identifier\lx_orig"]
+    2606 -> 2608
+    2608 [label="2608 Identifier\ly_orig"]
+    2609 -> 2610
+    2610 [label="2610 Identifier\lcolor_pieza"]
+    2611 -> 2613
+    2613 [label="2613 Identifier\lpieza_orig_color"]
+    2481 [label="2481 Block"]
+    2481 -> 2614
+    2614 [label="2614 Expression"]
+    2614 -> 2621
+    2621 [label="2621 Assign\l-------------\l="]
+    2621 -> 2619
+    2619 [label="2619 Infix Dot"]
+    2619 -> 2616
+    2616 [label="2616 Index Expr\l"]
+    2616 -> 2615
+    2615 [label="2615 Identifier\lTablero"]
+    2616 -> 2617
+    2617 [label="2617 Identifier\lx_dest"]
+    2616 -> 2618
+    2618 [label="2618 Identifier\ly_dest"]
+    2619 -> 2620
+    2620 [label="2620 Identifier\lpieza"]
+    2621 -> 2623
+    2623 [label="2623 Identifier\lpieza_dest_tipo"]
+    2481 [label="2481 Block"]
+    2481 -> 2624
+    2624 [label="2624 Expression"]
+    2624 -> 2631
+    2631 [label="2631 Assign\l-------------\l="]
+    2631 -> 2629
+    2629 [label="2629 Infix Dot"]
+    2629 -> 2626
+    2626 [label="2626 Index Expr\l"]
+    2626 -> 2625
+    2625 [label="2625 Identifier\lTablero"]
+    2626 -> 2627
+    2627 [label="2627 Identifier\lx_dest"]
+    2626 -> 2628
+    2628 [label="2628 Identifier\ly_dest"]
+    2629 -> 2630
+    2630 [label="2630 Identifier\lcolor_pieza"]
+    2631 -> 2633
+    2633 [label="2633 Identifier\lpieza_dest_color"]
+    2481 [label="2481 Block"]
+    2481 -> 2634
+    2634 [label="2634 Expression"]
+    2634 -> 2636
+    2636 [label="2636 Assign\l-------------\l="]
+    2636 -> 2635
+    2635 [label="2635 Identifier\lEstado"]
+    2636 -> 2638
+    2638 [label="2638 Identifier\lestado_orig"]
+    2481 [label="2481 Block"]
+    2481 -> 2639
+    2639 [label="2639 If Then\l--------"]
+    2639 -> 2643
+    2643 [label="2643 Block"]
+    2643 -> 2644
+    2644 [label="2644 Expression"]
+    2644 -> 2646
+    2646 [label="2646 Assign\l-------------\l="]
+    2646 -> 2645
+    2645 [label="2645 Identifier\lmejor_valor"]
+    2646 -> 2648
+    2648 [label="2648 Identifier\lvalor"]
+    2643 [label="2643 Block"]
+    2643 -> 2649
+    2649 [label="2649 Expression"]
+    2649 -> 2651
+    2651 [label="2651 Assign\l-------------\l="]
+    2651 -> 2650
+    2650 [label="2650 Identifier\lmejor_movimiento"]
+    2651 -> 2653
+    2653 [label="2653 List"]
+    2653 -> 2654
+    2654 [label="2654 Identifier\lx_orig"]
+    2653 -> 2655
+    2655 [label="2655 Identifier\ly_orig"]
+    2653 -> 2656
+    2656 [label="2656 Identifier\lx_dest"]
+    2653 -> 2657
+    2657 [label="2657 Identifier\ly_dest"]
+    2390 [label="2390 Block"]
+    2390 -> 2658
+    2658 [label="2658 Return"]
+    2658 -> 2659
+    2659 [label="2659 Identifier\lmejor_movimiento"]
+    0 [label="0 Root\l--------"]
+    0 -> 2660
+    2660 [label="2660 Expression"]
+    2660 -> 2661
+    2661 [label="2661 Function Declare\l-----------------------\lminimax"]
+    2661 -> 2666
+    2666 [label="2666 Block"]
+    2666 -> 2667
+    2667 [label="2667 If Then\l--------"]
+    2667 -> 2671
+    2671 [label="2671 Block"]
+    2671 -> 2672
+    2672 [label="2672 Return"]
+    2672 -> 2674
+    2674 [label="2674 Call\levaluar_tablero()"]
+    2666 [label="2666 Block"]
+    2666 -> 2675
+    2675 [label="2675 If Then\l--------"]
+    2675 -> 2679
+    2679 [label="2679 Block"]
+    2679 -> 2680
+    2680 [label="2680 Return"]
+    2680 -> 2684
+    2666 [label="2666 Block"]
+    2666 -> 2688
+    2688 [label="2688 Var Declare\l-----------------\lvalor"]
+    2689 [label ="2688 Var : valor"]
+    2688 -> 2689
+    2689 [label="2689 Integer\l0"]
+    2666 [label="2666 Block"]
+    2666 -> 2690
+    2690 [label="2690 Var Declare\l-----------------\lmovimientos_legales"]
+    2692 [label ="2690 Var : movimientos_legales"]
+    2690 -> 2692
+    2692 [label="2692 Call\lgenerar_movimientos_legales()"]
+    2692 -> 2693
+    2693 [label="2693 Identifier\lcolor_turno"]
+    2666 [label="2666 Block"]
+    2666 -> 2694
+    2694 [label="2694 Expression"]
+    2694 -> 2696
+    2696 [label="2696 Assign\l-------------\l="]
+    2696 -> 2695
+    2695 [label="2695 Identifier\lvalor"]
+    2696 -> 2701
+    2666 [label="2666 Block"]
+    2666 -> 2705
+    2705 [label="2705 Var Declare\l-----------------\lcolor_oponente"]
+    2709 [label ="2705 Var : color_oponente"]
+    2705 -> 2709
+    2666 [label="2666 Block"]
+    2666 -> 2712
+    2712 [label="2712 For Loop\l------------"]
+    2712 -> 2713
+    2713 [label="2713 Var Declare\l-----------------\li"]
+    2714 [label ="2713 Var : i"]
+    2713 -> 2714
+    2714 [label="2714 Integer\l0"]
+    2712 -> 2716
+    2716 [label="2716 Infix Expr\l<"]
+    2716 -> 2715
+    2715 [label="2715 Identifier\li"]
+    2716 [label="2716 Infix Expr\l<"]
+    2716 -> 2718
+    2718 [label="2718 Infix Dot"]
+    2718 -> 2717
+    2717 [label="2717 Identifier\lmovimientos_legales"]
+    2718 -> 2720
+    2720 [label="2720 Call\lsize()"]
+    2712 -> 2721
+    2721 [label="2721 Postfix Expr\l++"]
+    2721 -> 2722
+    2722 [label="2722 Identifier\li"]
+    2712 -> 2723
+    2723 [label="2723 Block"]
+    2723 -> 2724
+    2724 [label="2724 Var Declare\l-----------------\lx_orig"]
+    2726 [label ="2724 Var : x_orig"]
+    2724 -> 2726
+    2726 [label="2726 Index Expr\l"]
+    2726 -> 2725
+    2725 [label="2725 Identifier\lmovimientos_legales"]
+    2726 -> 2727
+    2727 [label="2727 Identifier\li"]
+    2726 -> 2728
+    2728 [label="2728 Integer\l0"]
+    2723 [label="2723 Block"]
+    2723 -> 2729
+    2729 [label="2729 Var Declare\l-----------------\ly_orig"]
+    2731 [label ="2729 Var : y_orig"]
+    2729 -> 2731
+    2731 [label="2731 Index Expr\l"]
+    2731 -> 2730
+    2730 [label="2730 Identifier\lmovimientos_legales"]
+    2731 -> 2732
+    2732 [label="2732 Identifier\li"]
+    2731 -> 2733
+    2733 [label="2733 Integer\l1"]
+    2723 [label="2723 Block"]
+    2723 -> 2734
+    2734 [label="2734 Var Declare\l-----------------\lx_dest"]
+    2736 [label ="2734 Var : x_dest"]
+    2734 -> 2736
+    2736 [label="2736 Index Expr\l"]
+    2736 -> 2735
+    2735 [label="2735 Identifier\lmovimientos_legales"]
+    2736 -> 2737
+    2737 [label="2737 Identifier\li"]
+    2736 -> 2738
+    2738 [label="2738 Integer\l2"]
+    2723 [label="2723 Block"]
+    2723 -> 2739
+    2739 [label="2739 Var Declare\l-----------------\ly_dest"]
+    2741 [label ="2739 Var : y_dest"]
+    2739 -> 2741
+    2741 [label="2741 Index Expr\l"]
+    2741 -> 2740
+    2740 [label="2740 Identifier\lmovimientos_legales"]
+    2741 -> 2742
+    2742 [label="2742 Identifier\li"]
+    2741 -> 2743
+    2743 [label="2743 Integer\l3"]
+    2723 [label="2723 Block"]
+    2723 -> 2744
+    2744 [label="2744 Var Declare\l-----------------\lpieza_orig_tipo"]
+    2749 [label ="2744 Var : pieza_orig_tipo"]
+    2744 -> 2749
+    2749 [label="2749 Infix Dot"]
+    2749 -> 2746
+    2746 [label="2746 Index Expr\l"]
+    2746 -> 2745
+    2745 [label="2745 Identifier\lTablero"]
+    2746 -> 2747
+    2747 [label="2747 Identifier\lx_orig"]
+    2746 -> 2748
+    2748 [label="2748 Identifier\ly_orig"]
+    2749 -> 2750
+    2750 [label="2750 Identifier\lpieza"]
+    2723 [label="2723 Block"]
+    2723 -> 2751
+    2751 [label="2751 Var Declare\l-----------------\lpieza_orig_color"]
+    2756 [label ="2751 Var : pieza_orig_color"]
+    2751 -> 2756
+    2756 [label="2756 Infix Dot"]
+    2756 -> 2753
+    2753 [label="2753 Index Expr\l"]
+    2753 -> 2752
+    2752 [label="2752 Identifier\lTablero"]
+    2753 -> 2754
+    2754 [label="2754 Identifier\lx_orig"]
+    2753 -> 2755
+    2755 [label="2755 Identifier\ly_orig"]
+    2756 -> 2757
+    2757 [label="2757 Identifier\lcolor_pieza"]
+    2723 [label="2723 Block"]
+    2723 -> 2758
+    2758 [label="2758 Var Declare\l-----------------\lpieza_dest_tipo"]
+    2763 [label ="2758 Var : pieza_dest_tipo"]
+    2758 -> 2763
+    2763 [label="2763 Infix Dot"]
+    2763 -> 2760
+    2760 [label="2760 Index Expr\l"]
+    2760 -> 2759
+    2759 [label="2759 Identifier\lTablero"]
+    2760 -> 2761
+    2761 [label="2761 Identifier\lx_dest"]
+    2760 -> 2762
+    2762 [label="2762 Identifier\ly_dest"]
+    2763 -> 2764
+    2764 [label="2764 Identifier\lpieza"]
+    2723 [label="2723 Block"]
+    2723 -> 2765
+    2765 [label="2765 Var Declare\l-----------------\lpieza_dest_color"]
+    2770 [label ="2765 Var : pieza_dest_color"]
+    2765 -> 2770
+    2770 [label="2770 Infix Dot"]
+    2770 -> 2767
+    2767 [label="2767 Index Expr\l"]
+    2767 -> 2766
+    2766 [label="2766 Identifier\lTablero"]
+    2767 -> 2768
+    2768 [label="2768 Identifier\lx_dest"]
+    2767 -> 2769
+    2769 [label="2769 Identifier\ly_dest"]
+    2770 -> 2771
+    2771 [label="2771 Identifier\lcolor_pieza"]
+    2723 [label="2723 Block"]
+    2723 -> 2772
+    2772 [label="2772 Var Declare\l-----------------\lestado_orig"]
+    2774 [label ="2772 Var : estado_orig"]
+    2772 -> 2774
+    2774 [label="2774 Infix Dot"]
+    2774 -> 2773
+    2773 [label="2773 Identifier\lEstado"]
+    2774 -> 2776
+    2776 [label="2776 Call\lclone()"]
+    2723 [label="2723 Block"]
+    2723 -> 2777
+    2777 [label="2777 Expression"]
+    2777 -> 2784
+    2784 [label="2784 Assign\l-------------\l="]
+    2784 -> 2782
+    2782 [label="2782 Infix Dot"]
+    2782 -> 2779
+    2779 [label="2779 Index Expr\l"]
+    2779 -> 2778
+    2778 [label="2778 Identifier\lTablero"]
+    2779 -> 2780
+    2780 [label="2780 Identifier\lx_dest"]
+    2779 -> 2781
+    2781 [label="2781 Identifier\ly_dest"]
+    2782 -> 2783
+    2783 [label="2783 Identifier\lpieza"]
+    2784 -> 2786
+    2786 [label="2786 Identifier\lpieza_orig_tipo"]
+    2723 [label="2723 Block"]
+    2723 -> 2787
+    2787 [label="2787 Expression"]
+    2787 -> 2794
+    2794 [label="2794 Assign\l-------------\l="]
+    2794 -> 2792
+    2792 [label="2792 Infix Dot"]
+    2792 -> 2789
+    2789 [label="2789 Index Expr\l"]
+    2789 -> 2788
+    2788 [label="2788 Identifier\lTablero"]
+    2789 -> 2790
+    2790 [label="2790 Identifier\lx_dest"]
+    2789 -> 2791
+    2791 [label="2791 Identifier\ly_dest"]
+    2792 -> 2793
+    2793 [label="2793 Identifier\lcolor_pieza"]
+    2794 -> 2796
+    2796 [label="2796 Identifier\lpieza_orig_color"]
+    2723 [label="2723 Block"]
+    2723 -> 2797
+    2797 [label="2797 Expression"]
+    2797 -> 2804
+    2804 [label="2804 Assign\l-------------\l="]
+    2804 -> 2802
+    2802 [label="2802 Infix Dot"]
+    2802 -> 2799
+    2799 [label="2799 Index Expr\l"]
+    2799 -> 2798
+    2798 [label="2798 Identifier\lTablero"]
+    2799 -> 2800
+    2800 [label="2800 Identifier\lx_orig"]
+    2799 -> 2801
+    2801 [label="2801 Identifier\ly_orig"]
+    2802 -> 2803
+    2803 [label="2803 Identifier\lpieza"]
+    2804 -> 2806
+    2806 [label="2806 Identifier\lNINGUNA"]
+    2723 [label="2723 Block"]
+    2723 -> 2807
+    2807 [label="2807 Expression"]
+    2807 -> 2814
+    2814 [label="2814 Assign\l-------------\l="]
+    2814 -> 2812
+    2812 [label="2812 Infix Dot"]
+    2812 -> 2809
+    2809 [label="2809 Index Expr\l"]
+    2809 -> 2808
+    2808 [label="2808 Identifier\lTablero"]
+    2809 -> 2810
+    2810 [label="2810 Identifier\lx_orig"]
+    2809 -> 2811
+    2811 [label="2811 Identifier\ly_orig"]
+    2812 -> 2813
+    2813 [label="2813 Identifier\lcolor_pieza"]
+    2814 -> 2816
+    2816 [label="2816 Identifier\lNINGUNO"]
+    2723 [label="2723 Block"]
+    2723 -> 2817
+    2817 [label="2817 Var Declare\l-----------------\lnuevo_valor"]
+    2819 [label ="2817 Var : nuevo_valor"]
+    2817 -> 2819
+    2819 [label="2819 Call\lminimax()"]
+    2819 -> 2821
+    2821 [label="2821 Infix Expr\l-"]
+    2821 -> 2820
+    2820 [label="2820 Identifier\lprofundidad"]
+    2821 [label="2821 Infix Expr\l-"]
+    2821 -> 2822
+    2822 [label="2822 Integer\l1"]
+    2819 -> 2823
+    2823 [label="2823 Identifier\lalfa"]
+    2819 -> 2824
+    2824 [label="2824 Identifier\lbeta"]
+    2819 -> 2825
+    2825 [label="2825 Identifier\lcolor_oponente"]
+    2723 [label="2723 Block"]
+    2723 -> 2826
+    2826 [label="2826 Expression"]
+    2826 -> 2833
+    2833 [label="2833 Assign\l-------------\l="]
+    2833 -> 2831
+    2831 [label="2831 Infix Dot"]
+    2831 -> 2828
+    2828 [label="2828 Index Expr\l"]
+    2828 -> 2827
+    2827 [label="2827 Identifier\lTablero"]
+    2828 -> 2829
+    2829 [label="2829 Identifier\lx_orig"]
+    2828 -> 2830
+    2830 [label="2830 Identifier\ly_orig"]
+    2831 -> 2832
+    2832 [label="2832 Identifier\lpieza"]
+    2833 -> 2835
+    2835 [label="2835 Identifier\lpieza_orig_tipo"]
+    2723 [label="2723 Block"]
+    2723 -> 2836
+    2836 [label="2836 Expression"]
+    2836 -> 2843
+    2843 [label="2843 Assign\l-------------\l="]
+    2843 -> 2841
+    2841 [label="2841 Infix Dot"]
+    2841 -> 2838
+    2838 [label="2838 Index Expr\l"]
+    2838 -> 2837
+    2837 [label="2837 Identifier\lTablero"]
+    2838 -> 2839
+    2839 [label="2839 Identifier\lx_orig"]
+    2838 -> 2840
+    2840 [label="2840 Identifier\ly_orig"]
+    2841 -> 2842
+    2842 [label="2842 Identifier\lcolor_pieza"]
+    2843 -> 2845
+    2845 [label="2845 Identifier\lpieza_orig_color"]
+    2723 [label="2723 Block"]
+    2723 -> 2846
+    2846 [label="2846 Expression"]
+    2846 -> 2853
+    2853 [label="2853 Assign\l-------------\l="]
+    2853 -> 2851
+    2851 [label="2851 Infix Dot"]
+    2851 -> 2848
+    2848 [label="2848 Index Expr\l"]
+    2848 -> 2847
+    2847 [label="2847 Identifier\lTablero"]
+    2848 -> 2849
+    2849 [label="2849 Identifier\lx_dest"]
+    2848 -> 2850
+    2850 [label="2850 Identifier\ly_dest"]
+    2851 -> 2852
+    2852 [label="2852 Identifier\lpieza"]
+    2853 -> 2855
+    2855 [label="2855 Identifier\lpieza_dest_tipo"]
+    2723 [label="2723 Block"]
+    2723 -> 2856
+    2856 [label="2856 Expression"]
+    2856 -> 2863
+    2863 [label="2863 Assign\l-------------\l="]
+    2863 -> 2861
+    2861 [label="2861 Infix Dot"]
+    2861 -> 2858
+    2858 [label="2858 Index Expr\l"]
+    2858 -> 2857
+    2857 [label="2857 Identifier\lTablero"]
+    2858 -> 2859
+    2859 [label="2859 Identifier\lx_dest"]
+    2858 -> 2860
+    2860 [label="2860 Identifier\ly_dest"]
+    2861 -> 2862
+    2862 [label="2862 Identifier\lcolor_pieza"]
+    2863 -> 2865
+    2865 [label="2865 Identifier\lpieza_dest_color"]
+    2723 [label="2723 Block"]
+    2723 -> 2866
+    2866 [label="2866 Expression"]
+    2866 -> 2868
+    2868 [label="2868 Assign\l-------------\l="]
+    2868 -> 2867
+    2867 [label="2867 Identifier\lEstado"]
+    2868 -> 2870
+    2870 [label="2870 Identifier\lestado_orig"]
+    2723 [label="2723 Block"]
+    2723 -> 2871
+    2871 [label="2871 If Then\l--------"]
+    2871 -> 2875
+    2875 [label="2875 Block"]
+    2875 -> 2876
+    2876 [label="2876 Expression"]
+    2876 -> 2878
+    2878 [label="2878 Assign\l-------------\l="]
+    2878 -> 2877
+    2877 [label="2877 Identifier\lvalor"]
+    2878 -> 2881
+    2881 [label="2881 Infix Dot"]
+    2881 -> 2880
+    2880 [label="2880 Identifier\lMath"]
+    2881 -> 2883
+    2883 [label="2883 Call\lmax()"]
+    2883 -> 2884
+    2884 [label="2884 Identifier\lvalor"]
+    2883 -> 2885
+    2885 [label="2885 Identifier\lnuevo_valor"]
+    2875 [label="2875 Block"]
+    2875 -> 2886
+    2886 [label="2886 Expression"]
+    2886 -> 2888
+    2888 [label="2888 Assign\l-------------\l="]
+    2888 -> 2887
+    2887 [label="2887 Identifier\lalfa"]
+    2888 -> 2891
+    2891 [label="2891 Infix Dot"]
+    2891 -> 2890
+    2890 [label="2890 Identifier\lMath"]
+    2891 -> 2893
+    2893 [label="2893 Call\lmax()"]
+    2893 -> 2894
+    2894 [label="2894 Identifier\lalfa"]
+    2893 -> 2895
+    2895 [label="2895 Identifier\lnuevo_valor"]
+    2723 [label="2723 Block"]
+    2723 -> 2917
+    2917 [label="2917 If Then\l--------"]
+    2917 -> 2921
+    2921 [label="2921 Block"]
+    2921 -> 2922
+    2922 [label="2922 Return"]
+    2922 -> 2923
+    2923 [label="2923 Identifier\lvalor"]
+    2666 [label="2666 Block"]
+    2666 -> 2924
+    2924 [label="2924 Return"]
+    2924 -> 2925
+    2925 [label="2925 Identifier\lvalor"]
+    0 [label="0 Root\l--------"]
+    0 -> 2926
+    2926 [label="2926 Expression"]
+    2926 -> 2927
+    2927 [label="2927 Function Declare\l-----------------------\levaluar_tablero"]
+    2927 -> 2928
+    2928 [label="2928 Block"]
+    2928 -> 2929
+    2929 [label="2929 Var Declare\l-----------------\lvalor"]
+    2930 [label ="2929 Var : valor"]
+    2929 -> 2930
+    2930 [label="2930 Integer\l0"]
+    2928 [label="2928 Block"]
+    2928 -> 2931
+    2931 [label="2931 If Then\l--------"]
+    2931 -> 2935
+    2935 [label="2935 Block"]
+    2935 -> 2936
+    2936 [label="2936 Expression"]
+    2936 -> 2938
+    2938 [label="2938 Assign\l-------------\l="]
+    2938 -> 2937
+    2937 [label="2937 Identifier\lvalor"]
+    2938 -> 2939
+    2939 [label="2939 Infix Expr\l-"]
+    2939 -> 2937
+    2937 [label="2937 Identifier\lvalor"]
+    2939 [label="2939 Infix Expr\l-"]
+    2939 -> 2940
+    2940 [label="2940 Integer\l50"]
+    2928 [label="2928 Block"]
+    2928 -> 2941
+    2941 [label="2941 If Then\l--------"]
+    2941 -> 2945
+    2945 [label="2945 Block"]
+    2945 -> 2946
+    2946 [label="2946 Expression"]
+    2946 -> 2948
+    2948 [label="2948 Assign\l-------------\l="]
+    2948 -> 2947
+    2947 [label="2947 Identifier\lvalor"]
+    2948 -> 2949
+    2949 [label="2949 Infix Expr\l+"]
+    2949 -> 2947
+    2947 [label="2947 Identifier\lvalor"]
+    2949 [label="2949 Infix Expr\l+"]
+    2949 -> 2950
+    2950 [label="2950 Integer\l50"]
+    2928 [label="2928 Block"]
+    2928 -> 2951
+    2951 [label="2951 For Loop\l------------"]
+    2951 -> 2952
+    2952 [label="2952 Var Declare\l-----------------\lx"]
+    2953 [label ="2952 Var : x"]
+    2952 -> 2953
+    2953 [label="2953 Integer\l0"]
+    2951 -> 2955
+    2955 [label="2955 Infix Expr\l<"]
+    2955 -> 2954
+    2954 [label="2954 Identifier\lx"]
+    2955 [label="2955 Infix Expr\l<"]
+    2955 -> 2956
+    2956 [label="2956 Integer\l8"]
+    2951 -> 2957
+    2957 [label="2957 Postfix Expr\l++"]
+    2957 -> 2958
+    2958 [label="2958 Identifier\lx"]
+    2951 -> 2959
+    2959 [label="2959 Block"]
+    2959 -> 2960
+    2960 [label="2960 For Loop\l------------"]
+    2960 -> 2961
+    2961 [label="2961 Var Declare\l-----------------\ly"]
+    2962 [label ="2961 Var : y"]
+    2961 -> 2962
+    2962 [label="2962 Integer\l0"]
+    2960 -> 2964
+    2964 [label="2964 Infix Expr\l<"]
+    2964 -> 2963
+    2963 [label="2963 Identifier\ly"]
+    2964 [label="2964 Infix Expr\l<"]
+    2964 -> 2965
+    2965 [label="2965 Integer\l8"]
+    2960 -> 2966
+    2966 [label="2966 Postfix Expr\l++"]
+    2966 -> 2967
+    2967 [label="2967 Identifier\ly"]
+    2960 -> 2968
+    2968 [label="2968 Block"]
+    2968 -> 2969
+    2969 [label="2969 Var Declare\l-----------------\lpieza"]
+    2974 [label ="2969 Var : pieza"]
+    2969 -> 2974
+    2974 [label="2974 Infix Dot"]
+    2974 -> 2971
+    2971 [label="2971 Index Expr\l"]
+    2971 -> 2970
+    2970 [label="2970 Identifier\lTablero"]
+    2971 -> 2972
+    2972 [label="2972 Identifier\lx"]
+    2971 -> 2973
+    2973 [label="2973 Identifier\ly"]
+    2974 -> 2975
+    2975 [label="2975 Identifier\lpieza"]
+    2968 [label="2968 Block"]
+    2968 -> 2976
+    2976 [label="2976 Var Declare\l-----------------\lcolor"]
+    2981 [label ="2976 Var : color"]
+    2976 -> 2981
+    2981 [label="2981 Infix Dot"]
+    2981 -> 2978
+    2978 [label="2978 Index Expr\l"]
+    2978 -> 2977
+    2977 [label="2977 Identifier\lTablero"]
+    2978 -> 2979
+    2979 [label="2979 Identifier\lx"]
+    2978 -> 2980
+    2980 [label="2980 Identifier\ly"]
+    2981 -> 2982
+    2982 [label="2982 Identifier\lcolor_pieza"]
+    2968 [label="2968 Block"]
+    2968 -> 2983
+    2983 [label="2983 If Then\l--------"]
+    2983 -> 2987
+    2987 [label="2987 Block"]
+    2987 -> 2988
+    2988 [label="2988 Var Declare\l-----------------\lvalor_pieza"]
+    2989 [label ="2988 Var : valor_pieza"]
+    2988 -> 2989
+    2989 [label="2989 Integer\l0"]
+    2987 [label="2987 Block"]
+    2987 -> 2990
+    2990 [label="2990 Var Declare\l-----------------\lbonus_posicion"]
+    2991 [label ="2990 Var : bonus_posicion"]
+    2990 -> 2991
+    2991 [label="2991 Integer\l0"]
+    2987 [label="2987 Block"]
+    2987 -> 2992
+    2987 [label="2987 Block"]
+    2987 -> 3090
+    3090 [label="3090 If Then\l--------"]
+    3090 -> 3094
+    3094 [label="3094 Block"]
+    3094 -> 3095
+    3095 [label="3095 Expression"]
+    3095 -> 3097
+    3097 [label="3097 Assign\l-------------\l="]
+    3097 -> 3096
+    3096 [label="3096 Identifier\lvalor"]
+    3097 -> 3098
+    3098 [label="3098 Infix Expr\l+"]
+    3098 -> 3096
+    3096 [label="3096 Identifier\lvalor"]
+    3098 [label="3098 Infix Expr\l+"]
+    3098 -> 3100
+    3100 [label="3100 Infix Expr\l+"]
+    3100 -> 3099
+    3099 [label="3099 Identifier\lvalor_pieza"]
+    3100 [label="3100 Infix Expr\l+"]
+    3100 -> 3101
+    3101 [label="3101 Identifier\lbonus_posicion"]
+    2928 [label="2928 Block"]
+    2928 -> 3110
+    3110 [label="3110 Return"]
+    3110 -> 3111
+    3111 [label="3111 Identifier\lvalor"]
+    0 [label="0 Root\l--------"]
+    0 -> 3112
+    3112 [label="3112 Expression"]
+    3112 -> 3113
+    3113 [label="3113 Function Declare\l-----------------------\lgenerar_movimientos_legales"]
+    3113 -> 3115
+    3115 [label="3115 Block"]
+    3115 -> 3116
+    3116 [label="3116 Var Declare\l-----------------\lmovimientos"]
+    3117 [label ="3116 Var : movimientos"]
+    3116 -> 3117
+    3117 [label="3117 List"]
+    3115 [label="3115 Block"]
+    3115 -> 3118
+    3118 [label="3118 Var Declare\l-----------------\loponente"]
+    3122 [label ="3118 Var : oponente"]
+    3118 -> 3122
+    3115 [label="3115 Block"]
+    3115 -> 3125
+    3125 [label="3125 For Loop\l------------"]
+    3125 -> 3126
+    3126 [label="3126 Var Declare\l-----------------\lx_orig"]
+    3127 [label ="3126 Var : x_orig"]
+    3126 -> 3127
+    3127 [label="3127 Integer\l0"]
+    3125 -> 3129
+    3129 [label="3129 Infix Expr\l<"]
+    3129 -> 3128
+    3128 [label="3128 Identifier\lx_orig"]
+    3129 [label="3129 Infix Expr\l<"]
+    3129 -> 3130
+    3130 [label="3130 Integer\l8"]
+    3125 -> 3131
+    3131 [label="3131 Postfix Expr\l++"]
+    3131 -> 3132
+    3132 [label="3132 Identifier\lx_orig"]
+    3125 -> 3133
+    3133 [label="3133 Block"]
+    3133 -> 3134
+    3134 [label="3134 For Loop\l------------"]
+    3134 -> 3135
+    3135 [label="3135 Var Declare\l-----------------\ly_orig"]
+    3136 [label ="3135 Var : y_orig"]
+    3135 -> 3136
+    3136 [label="3136 Integer\l0"]
+    3134 -> 3138
+    3138 [label="3138 Infix Expr\l<"]
+    3138 -> 3137
+    3137 [label="3137 Identifier\ly_orig"]
+    3138 [label="3138 Infix Expr\l<"]
+    3138 -> 3139
+    3139 [label="3139 Integer\l8"]
+    3134 -> 3140
+    3140 [label="3140 Postfix Expr\l++"]
+    3140 -> 3141
+    3141 [label="3141 Identifier\ly_orig"]
+    3134 -> 3142
+    3142 [label="3142 Block"]
+    3142 -> 3143
+    3143 [label="3143 If Then\l--------"]
+    3143 -> 3161
+    3161 [label="3161 Block"]
+    3161 -> 3162
+    3162 [label="3162 Continue"]
+    3142 [label="3142 Block"]
+    3142 -> 3163
+    3163 [label="3163 Var Declare\l-----------------\lpieza"]
+    3168 [label ="3163 Var : pieza"]
+    3163 -> 3168
+    3168 [label="3168 Infix Dot"]
+    3168 -> 3165
+    3165 [label="3165 Index Expr\l"]
+    3165 -> 3164
+    3164 [label="3164 Identifier\lTablero"]
+    3165 -> 3166
+    3166 [label="3166 Identifier\lx_orig"]
+    3165 -> 3167
+    3167 [label="3167 Identifier\ly_orig"]
+    3168 -> 3169
+    3169 [label="3169 Identifier\lpieza"]
+    3142 [label="3142 Block"]
+    3142 -> 3170
+    3170 [label="3170 Var Declare\l-----------------\ldestinos"]
+    3171 [label ="3170 Var : destinos"]
+    3170 -> 3171
+    3171 [label="3171 List"]
+    3142 [label="3142 Block"]
+    3142 -> 3172
+    3172 [label="3172 If Then\l--------"]
+    3172 -> 3176
+    3176 [label="3176 Block"]
+    3176 -> 3177
+    3177 [label="3177 Expression"]
+    3177 -> 3179
+    3179 [label="3179 Assign\l-------------\l="]
+    3179 -> 3178
+    3178 [label="3178 Identifier\ldestinos"]
+    3179 -> 3182
+    3182 [label="3182 Call\lgenerar_destinos_peon()"]
+    3182 -> 3183
+    3183 [label="3183 Identifier\lx_orig"]
+    3182 -> 3184
+    3184 [label="3184 Identifier\ly_orig"]
+    3182 -> 3185
+    3185 [label="3185 Identifier\lcolor"]
+    3172 -> 3189
+    3189 [label="3189 Block"]
+    3189 -> 3190
+    3190 [label="3190 Expression"]
+    3190 -> 3192
+    3192 [label="3192 Assign\l-------------\l="]
+    3192 -> 3191
+    3191 [label="3191 Identifier\ldestinos"]
+    3192 -> 3195
+    3195 [label="3195 Call\lgenerar_destinos_alfil()"]
+    3195 -> 3196
+    3196 [label="3196 Identifier\lx_orig"]
+    3195 -> 3197
+    3197 [label="3197 Identifier\ly_orig"]
+    3172 -> 3201
+    3201 [label="3201 Block"]
+    3201 -> 3202
+    3202 [label="3202 Expression"]
+    3202 -> 3204
+    3204 [label="3204 Assign\l-------------\l="]
+    3204 -> 3203
+    3203 [label="3203 Identifier\ldestinos"]
+    3204 -> 3207
+    3207 [label="3207 Call\lgenerar_destinos_caballo()"]
+    3207 -> 3208
+    3208 [label="3208 Identifier\lx_orig"]
+    3207 -> 3209
+    3209 [label="3209 Identifier\ly_orig"]
+    3172 -> 3213
+    3213 [label="3213 Block"]
+    3213 -> 3214
+    3214 [label="3214 Expression"]
+    3214 -> 3216
+    3216 [label="3216 Assign\l-------------\l="]
+    3216 -> 3215
+    3215 [label="3215 Identifier\ldestinos"]
+    3216 -> 3219
+    3219 [label="3219 Call\lgenerar_destinos_torre()"]
+    3219 -> 3220
+    3220 [label="3220 Identifier\lx_orig"]
+    3219 -> 3221
+    3221 [label="3221 Identifier\ly_orig"]
+    3172 -> 3225
+    3225 [label="3225 Block"]
+    3225 -> 3226
+    3226 [label="3226 Expression"]
+    3226 -> 3228
+    3228 [label="3228 Assign\l-------------\l="]
+    3228 -> 3227
+    3227 [label="3227 Identifier\ldestinos"]
+    3228 -> 3231
+    3231 [label="3231 Call\lgenerar_destinos_alfil()"]
+    3231 -> 3232
+    3232 [label="3232 Identifier\lx_orig"]
+    3231 -> 3233
+    3233 [label="3233 Identifier\ly_orig"]
+    3225 [label="3225 Block"]
+    3225 -> 3234
+    3234 [label="3234 Var Declare\l-----------------\ldestinos_torre"]
+    3236 [label ="3234 Var : destinos_torre"]
+    3234 -> 3236
+    3236 [label="3236 Call\lgenerar_destinos_torre()"]
+    3236 -> 3237
+    3237 [label="3237 Identifier\lx_orig"]
+    3236 -> 3238
+    3238 [label="3238 Identifier\ly_orig"]
+    3225 [label="3225 Block"]
+    3225 -> 3239
+    3239 [label="3239 For Loop\l------------"]
+    3239 -> 3240
+    3240 [label="3240 Var Declare\l-----------------\lj"]
+    3241 [label ="3240 Var : j"]
+    3240 -> 3241
+    3241 [label="3241 Integer\l0"]
+    3239 -> 3243
+    3243 [label="3243 Infix Expr\l<"]
+    3243 -> 3242
+    3242 [label="3242 Identifier\lj"]
+    3243 [label="3243 Infix Expr\l<"]
+    3243 -> 3245
+    3245 [label="3245 Infix Dot"]
+    3245 -> 3244
+    3244 [label="3244 Identifier\ldestinos_torre"]
+    3245 -> 3247
+    3247 [label="3247 Call\lsize()"]
+    3239 -> 3248
+    3248 [label="3248 Postfix Expr\l++"]
+    3248 -> 3249
+    3249 [label="3249 Identifier\lj"]
+    3239 -> 3250
+    3250 [label="3250 Block"]
+    3250 -> 3251
+    3251 [label="3251 Expression"]
+    3251 -> 3253
+    3253 [label="3253 Infix Dot"]
+    3253 -> 3252
+    3252 [label="3252 Identifier\ldestinos"]
+    3253 -> 3255
+    3255 [label="3255 Call\linsert()"]
+    3255 -> 3257
+    3257 [label="3257 Index Expr\l"]
+    3257 -> 3256
+    3256 [label="3256 Identifier\ldestinos_torre"]
+    3257 -> 3258
+    3258 [label="3258 Identifier\lj"]
+    3172 -> 3262
+    3262 [label="3262 Block"]
+    3262 -> 3263
+    3263 [label="3263 Expression"]
+    3263 -> 3265
+    3265 [label="3265 Assign\l-------------\l="]
+    3265 -> 3264
+    3264 [label="3264 Identifier\ldestinos"]
+    3265 -> 3268
+    3268 [label="3268 Call\lgenerar_destinos_rey()"]
+    3268 -> 3269
+    3269 [label="3269 Identifier\lx_orig"]
+    3268 -> 3270
+    3270 [label="3270 Identifier\ly_orig"]
+    3142 [label="3142 Block"]
+    3142 -> 3271
+    3271 [label="3271 For Loop\l------------"]
+    3271 -> 3272
+    3272 [label="3272 Var Declare\l-----------------\li"]
+    3273 [label ="3272 Var : i"]
+    3272 -> 3273
+    3273 [label="3273 Integer\l0"]
+    3271 -> 3275
+    3275 [label="3275 Infix Expr\l<"]
+    3275 -> 3274
+    3274 [label="3274 Identifier\li"]
+    3275 [label="3275 Infix Expr\l<"]
+    3275 -> 3277
+    3277 [label="3277 Infix Dot"]
+    3277 -> 3276
+    3276 [label="3276 Identifier\ldestinos"]
+    3277 -> 3279
+    3279 [label="3279 Call\lsize()"]
+    3271 -> 3280
+    3280 [label="3280 Postfix Expr\l++"]
+    3280 -> 3281
+    3281 [label="3281 Identifier\li"]
+    3271 -> 3282
+    3282 [label="3282 Block"]
+    3282 -> 3283
+    3283 [label="3283 Var Declare\l-----------------\lx_dest"]
+    3285 [label ="3283 Var : x_dest"]
+    3283 -> 3285
+    3285 [label="3285 Index Expr\l"]
+    3285 -> 3284
+    3284 [label="3284 Identifier\ldestinos"]
+    3285 -> 3286
+    3286 [label="3286 Identifier\li"]
+    3285 -> 3287
+    3287 [label="3287 Integer\l0"]
+    3282 [label="3282 Block"]
+    3282 -> 3288
+    3288 [label="3288 Var Declare\l-----------------\ly_dest"]
+    3290 [label ="3288 Var : y_dest"]
+    3288 -> 3290
+    3290 [label="3290 Index Expr\l"]
+    3290 -> 3289
+    3289 [label="3289 Identifier\ldestinos"]
+    3290 -> 3291
+    3291 [label="3291 Identifier\li"]
+    3290 -> 3292
+    3292 [label="3292 Integer\l1"]
+    3282 [label="3282 Block"]
+    3282 -> 3293
+    3293 [label="3293 If Then\l--------"]
+    3293 -> 3319
+    3319 [label="3319 Block"]
+    3319 -> 3320
+    3320 [label="3320 Expression"]
+    3320 -> 3322
+    3322 [label="3322 Infix Dot"]
+    3322 -> 3321
+    3321 [label="3321 Identifier\lmovimientos"]
+    3322 -> 3324
+    3324 [label="3324 Call\linsert()"]
+    3324 -> 3325
+    3325 [label="3325 List"]
+    3325 -> 3326
+    3326 [label="3326 Identifier\lx_orig"]
+    3325 -> 3327
+    3327 [label="3327 Identifier\ly_orig"]
+    3325 -> 3328
+    3328 [label="3328 Identifier\lx_dest"]
+    3325 -> 3329
+    3329 [label="3329 Identifier\ly_dest"]
+    3115 [label="3115 Block"]
+    3115 -> 3330
+    3330 [label="3330 Return"]
+    3330 -> 3331
+    3331 [label="3331 Identifier\lmovimientos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3332
+    3332 [label="3332 Expression"]
+    3332 -> 3333
+    3333 [label="3333 Function Declare\l-----------------------\lgenerar_destinos_peon"]
+    3333 -> 3337
+    3337 [label="3337 Block"]
+    3337 -> 3338
+    3338 [label="3338 Var Declare\l-----------------\ldestinos"]
+    3339 [label ="3338 Var : destinos"]
+    3338 -> 3339
+    3339 [label="3339 List"]
+    3337 [label="3337 Block"]
+    3337 -> 3340
+    3340 [label="3340 Var Declare\l-----------------\ldir"]
+    3344 [label ="3340 Var : dir"]
+    3340 -> 3344
+    3337 [label="3337 Block"]
+    3337 -> 3348
+    3348 [label="3348 If Then\l--------"]
+    3348 -> 3360
+    3360 [label="3360 Block"]
+    3360 -> 3361
+    3361 [label="3361 If Then\l--------"]
+    3361 -> 3372
+    3372 [label="3372 Block"]
+    3372 -> 3373
+    3373 [label="3373 Expression"]
+    3373 -> 3375
+    3375 [label="3375 Infix Dot"]
+    3375 -> 3374
+    3374 [label="3374 Identifier\ldestinos"]
+    3375 -> 3377
+    3377 [label="3377 Call\linsert()"]
+    3377 -> 3378
+    3378 [label="3378 List"]
+    3378 -> 3379
+    3379 [label="3379 Identifier\lx"]
+    3378 -> 3381
+    3381 [label="3381 Infix Expr\l+"]
+    3381 -> 3380
+    3380 [label="3380 Identifier\ly"]
+    3381 [label="3381 Infix Expr\l+"]
+    3381 -> 3382
+    3382 [label="3382 Identifier\ldir"]
+    3372 [label="3372 Block"]
+    3372 -> 3383
+    3383 [label="3383 If Then\l--------"]
+    3383 -> 3399
+    3399 [label="3399 Block"]
+    3399 -> 3400
+    3400 [label="3400 Var Declare\l-----------------\ly2"]
+    3402 [label ="3400 Var : y2"]
+    3400 -> 3402
+    3402 [label="3402 Infix Expr\l+"]
+    3402 -> 3401
+    3401 [label="3401 Identifier\ly"]
+    3402 [label="3402 Infix Expr\l+"]
+    3402 -> 3404
+    3404 [label="3404 Infix Expr\l*"]
+    3404 -> 3403
+    3403 [label="3403 Integer\l2"]
+    3404 [label="3404 Infix Expr\l*"]
+    3404 -> 3405
+    3405 [label="3405 Identifier\ldir"]
+    3399 [label="3399 Block"]
+    3399 -> 3406
+    3406 [label="3406 If Then\l--------"]
+    3406 -> 3423
+    3423 [label="3423 Block"]
+    3423 -> 3424
+    3424 [label="3424 Expression"]
+    3424 -> 3426
+    3426 [label="3426 Infix Dot"]
+    3426 -> 3425
+    3425 [label="3425 Identifier\ldestinos"]
+    3426 -> 3428
+    3428 [label="3428 Call\linsert()"]
+    3428 -> 3429
+    3429 [label="3429 List"]
+    3429 -> 3430
+    3430 [label="3430 Identifier\lx"]
+    3429 -> 3431
+    3431 [label="3431 Identifier\ly2"]
+    3337 [label="3337 Block"]
+    3337 -> 3432
+    3432 [label="3432 For Loop\l------------"]
+    3432 -> 3433
+    3433 [label="3433 Var Declare\l-----------------\ldx"]
+    3434 [label ="3433 Var : dx"]
+    3433 -> 3434
+    3434 [label="3434 Prefix Expr\l-"]
+    3434 -> 3435
+    3435 [label="3435 Integer\l1"]
+    3432 -> 3437
+    3437 [label="3437 Infix Expr\l<="]
+    3437 -> 3436
+    3436 [label="3436 Identifier\ldx"]
+    3437 [label="3437 Infix Expr\l<="]
+    3437 -> 3438
+    3438 [label="3438 Integer\l1"]
+    3432 -> 3440
+    3440 [label="3440 Assign\l-------------\l="]
+    3440 -> 3439
+    3439 [label="3439 Identifier\ldx"]
+    3440 -> 3441
+    3441 [label="3441 Infix Expr\l+"]
+    3441 -> 3439
+    3439 [label="3439 Identifier\ldx"]
+    3441 [label="3441 Infix Expr\l+"]
+    3441 -> 3442
+    3442 [label="3442 Integer\l2"]
+    3432 -> 3443
+    3443 [label="3443 Block"]
+    3443 -> 3444
+    3444 [label="3444 Var Declare\l-----------------\lnx"]
+    3446 [label ="3444 Var : nx"]
+    3444 -> 3446
+    3446 [label="3446 Infix Expr\l+"]
+    3446 -> 3445
+    3445 [label="3445 Identifier\lx"]
+    3446 [label="3446 Infix Expr\l+"]
+    3446 -> 3447
+    3447 [label="3447 Identifier\ldx"]
+    3443 [label="3443 Block"]
+    3443 -> 3448
+    3448 [label="3448 Var Declare\l-----------------\lny"]
+    3450 [label ="3448 Var : ny"]
+    3448 -> 3450
+    3450 [label="3450 Infix Expr\l+"]
+    3450 -> 3449
+    3449 [label="3449 Identifier\ly"]
+    3450 [label="3450 Infix Expr\l+"]
+    3450 -> 3451
+    3451 [label="3451 Identifier\ldir"]
+    3443 [label="3443 Block"]
+    3443 -> 3452
+    3452 [label="3452 If Then\l--------"]
+    3452 -> 3468
+    3468 [label="3468 Block"]
+    3468 -> 3469
+    3469 [label="3469 If Then\l--------"]
+    3469 -> 3487
+    3487 [label="3487 Block"]
+    3487 -> 3488
+    3488 [label="3488 Expression"]
+    3488 -> 3490
+    3490 [label="3490 Infix Dot"]
+    3490 -> 3489
+    3489 [label="3489 Identifier\ldestinos"]
+    3490 -> 3492
+    3492 [label="3492 Call\linsert()"]
+    3492 -> 3493
+    3493 [label="3493 List"]
+    3493 -> 3494
+    3494 [label="3494 Identifier\lnx"]
+    3493 -> 3495
+    3495 [label="3495 Identifier\lny"]
+    3337 [label="3337 Block"]
+    3337 -> 3496
+    3496 [label="3496 Return"]
+    3496 -> 3497
+    3497 [label="3497 Identifier\ldestinos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3498
+    3498 [label="3498 Expression"]
+    3498 -> 3499
+    3499 [label="3499 Function Declare\l-----------------------\lgenerar_destinos_alfil"]
+    3499 -> 3502
+    3502 [label="3502 Block"]
+    3502 -> 3503
+    3503 [label="3503 Var Declare\l-----------------\ldestinos"]
+    3504 [label ="3503 Var : destinos"]
+    3503 -> 3504
+    3504 [label="3504 List"]
+    3502 [label="3502 Block"]
+    3502 -> 3505
+    3505 [label="3505 Var Declare\l-----------------\ldirecciones"]
+    3506 [label ="3505 Var : direcciones"]
+    3505 -> 3506
+    3506 [label="3506 List"]
+    3506 -> 3507
+    3507 [label="3507 List"]
+    3507 -> 3508
+    3508 [label="3508 Prefix Expr\l-"]
+    3508 -> 3509
+    3509 [label="3509 Integer\l1"]
+    3507 -> 3510
+    3510 [label="3510 Prefix Expr\l-"]
+    3510 -> 3511
+    3511 [label="3511 Integer\l1"]
+    3506 -> 3512
+    3512 [label="3512 List"]
+    3512 -> 3513
+    3513 [label="3513 Prefix Expr\l-"]
+    3513 -> 3514
+    3514 [label="3514 Integer\l1"]
+    3512 -> 3515
+    3515 [label="3515 Integer\l1"]
+    3506 -> 3516
+    3516 [label="3516 List"]
+    3516 -> 3517
+    3517 [label="3517 Integer\l1"]
+    3516 -> 3518
+    3518 [label="3518 Prefix Expr\l-"]
+    3518 -> 3519
+    3519 [label="3519 Integer\l1"]
+    3506 -> 3520
+    3520 [label="3520 List"]
+    3520 -> 3521
+    3521 [label="3521 Integer\l1"]
+    3520 -> 3522
+    3522 [label="3522 Integer\l1"]
+    3502 [label="3502 Block"]
+    3502 -> 3523
+    3523 [label="3523 For Loop\l------------"]
+    3523 -> 3524
+    3524 [label="3524 Var Declare\l-----------------\ld"]
+    3525 [label ="3524 Var : d"]
+    3524 -> 3525
+    3525 [label="3525 Integer\l0"]
+    3523 -> 3527
+    3527 [label="3527 Infix Expr\l<"]
+    3527 -> 3526
+    3526 [label="3526 Identifier\ld"]
+    3527 [label="3527 Infix Expr\l<"]
+    3527 -> 3529
+    3529 [label="3529 Infix Dot"]
+    3529 -> 3528
+    3528 [label="3528 Identifier\ldirecciones"]
+    3529 -> 3531
+    3531 [label="3531 Call\lsize()"]
+    3523 -> 3532
+    3532 [label="3532 Postfix Expr\l++"]
+    3532 -> 3533
+    3533 [label="3533 Identifier\ld"]
+    3523 -> 3534
+    3534 [label="3534 Block"]
+    3534 -> 3535
+    3535 [label="3535 Var Declare\l-----------------\ldx"]
+    3537 [label ="3535 Var : dx"]
+    3535 -> 3537
+    3537 [label="3537 Index Expr\l"]
+    3537 -> 3536
+    3536 [label="3536 Identifier\ldirecciones"]
+    3537 -> 3538
+    3538 [label="3538 Identifier\ld"]
+    3537 -> 3539
+    3539 [label="3539 Integer\l0"]
+    3534 [label="3534 Block"]
+    3534 -> 3540
+    3540 [label="3540 Var Declare\l-----------------\ldy"]
+    3542 [label ="3540 Var : dy"]
+    3540 -> 3542
+    3542 [label="3542 Index Expr\l"]
+    3542 -> 3541
+    3541 [label="3541 Identifier\ldirecciones"]
+    3542 -> 3543
+    3543 [label="3543 Identifier\ld"]
+    3542 -> 3544
+    3544 [label="3544 Integer\l1"]
+    3534 [label="3534 Block"]
+    3534 -> 3545
+    3545 [label="3545 Var Declare\l-----------------\lnx"]
+    3547 [label ="3545 Var : nx"]
+    3545 -> 3547
+    3547 [label="3547 Infix Expr\l+"]
+    3547 -> 3546
+    3546 [label="3546 Identifier\lx"]
+    3547 [label="3547 Infix Expr\l+"]
+    3547 -> 3548
+    3548 [label="3548 Identifier\ldx"]
+    3534 [label="3534 Block"]
+    3534 -> 3549
+    3549 [label="3549 Var Declare\l-----------------\lny"]
+    3551 [label ="3549 Var : ny"]
+    3549 -> 3551
+    3551 [label="3551 Infix Expr\l+"]
+    3551 -> 3550
+    3550 [label="3550 Identifier\ly"]
+    3551 [label="3551 Infix Expr\l+"]
+    3551 -> 3552
+    3552 [label="3552 Identifier\ldy"]
+    3534 [label="3534 Block"]
+    3534 -> 3553
+    3553 [label="3553 While"]
+    3553 -> 3569
+    3569 [label="3569 Block"]
+    3569 -> 3570
+    3570 [label="3570 Expression"]
+    3570 -> 3572
+    3572 [label="3572 Infix Dot"]
+    3572 -> 3571
+    3571 [label="3571 Identifier\ldestinos"]
+    3572 -> 3574
+    3574 [label="3574 Call\linsert()"]
+    3574 -> 3575
+    3575 [label="3575 List"]
+    3575 -> 3576
+    3576 [label="3576 Identifier\lnx"]
+    3575 -> 3577
+    3577 [label="3577 Identifier\lny"]
+    3569 [label="3569 Block"]
+    3569 -> 3578
+    3578 [label="3578 If Then\l--------"]
+    3578 -> 3587
+    3587 [label="3587 Block"]
+    3587 -> 3588
+    3588 [label="3588 Break"]
+    3569 [label="3569 Block"]
+    3569 -> 3589
+    3589 [label="3589 Expression"]
+    3589 -> 3591
+    3591 [label="3591 Assign\l-------------\l="]
+    3591 -> 3590
+    3590 [label="3590 Identifier\lnx"]
+    3591 -> 3592
+    3592 [label="3592 Infix Expr\l+"]
+    3592 -> 3590
+    3590 [label="3590 Identifier\lnx"]
+    3592 [label="3592 Infix Expr\l+"]
+    3592 -> 3593
+    3593 [label="3593 Identifier\ldx"]
+    3569 [label="3569 Block"]
+    3569 -> 3594
+    3594 [label="3594 Expression"]
+    3594 -> 3596
+    3596 [label="3596 Assign\l-------------\l="]
+    3596 -> 3595
+    3595 [label="3595 Identifier\lny"]
+    3596 -> 3597
+    3597 [label="3597 Infix Expr\l+"]
+    3597 -> 3595
+    3595 [label="3595 Identifier\lny"]
+    3597 [label="3597 Infix Expr\l+"]
+    3597 -> 3598
+    3598 [label="3598 Identifier\ldy"]
+    3502 [label="3502 Block"]
+    3502 -> 3599
+    3599 [label="3599 Return"]
+    3599 -> 3600
+    3600 [label="3600 Identifier\ldestinos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3601
+    3601 [label="3601 Expression"]
+    3601 -> 3602
+    3602 [label="3602 Function Declare\l-----------------------\lgenerar_destinos_caballo"]
+    3602 -> 3605
+    3605 [label="3605 Block"]
+    3605 -> 3606
+    3606 [label="3606 Var Declare\l-----------------\ldestinos"]
+    3607 [label ="3606 Var : destinos"]
+    3606 -> 3607
+    3607 [label="3607 List"]
+    3605 [label="3605 Block"]
+    3605 -> 3608
+    3608 [label="3608 Var Declare\l-----------------\lmovimientos"]
+    3609 [label ="3608 Var : movimientos"]
+    3608 -> 3609
+    3609 [label="3609 List"]
+    3609 -> 3610
+    3610 [label="3610 List"]
+    3610 -> 3611
+    3611 [label="3611 Prefix Expr\l-"]
+    3611 -> 3612
+    3612 [label="3612 Integer\l2"]
+    3610 -> 3613
+    3613 [label="3613 Prefix Expr\l-"]
+    3613 -> 3614
+    3614 [label="3614 Integer\l1"]
+    3609 -> 3615
+    3615 [label="3615 List"]
+    3615 -> 3616
+    3616 [label="3616 Prefix Expr\l-"]
+    3616 -> 3617
+    3617 [label="3617 Integer\l2"]
+    3615 -> 3618
+    3618 [label="3618 Integer\l1"]
+    3609 -> 3619
+    3619 [label="3619 List"]
+    3619 -> 3620
+    3620 [label="3620 Prefix Expr\l-"]
+    3620 -> 3621
+    3621 [label="3621 Integer\l1"]
+    3619 -> 3622
+    3622 [label="3622 Prefix Expr\l-"]
+    3622 -> 3623
+    3623 [label="3623 Integer\l2"]
+    3609 -> 3624
+    3624 [label="3624 List"]
+    3624 -> 3625
+    3625 [label="3625 Prefix Expr\l-"]
+    3625 -> 3626
+    3626 [label="3626 Integer\l1"]
+    3624 -> 3627
+    3627 [label="3627 Integer\l2"]
+    3609 -> 3628
+    3628 [label="3628 List"]
+    3628 -> 3629
+    3629 [label="3629 Integer\l1"]
+    3628 -> 3630
+    3630 [label="3630 Prefix Expr\l-"]
+    3630 -> 3631
+    3631 [label="3631 Integer\l2"]
+    3609 -> 3632
+    3632 [label="3632 List"]
+    3632 -> 3633
+    3633 [label="3633 Integer\l1"]
+    3632 -> 3634
+    3634 [label="3634 Integer\l2"]
+    3609 -> 3635
+    3635 [label="3635 List"]
+    3635 -> 3636
+    3636 [label="3636 Integer\l2"]
+    3635 -> 3637
+    3637 [label="3637 Prefix Expr\l-"]
+    3637 -> 3638
+    3638 [label="3638 Integer\l1"]
+    3609 -> 3639
+    3639 [label="3639 List"]
+    3639 -> 3640
+    3640 [label="3640 Integer\l2"]
+    3639 -> 3641
+    3641 [label="3641 Integer\l1"]
+    3605 [label="3605 Block"]
+    3605 -> 3642
+    3642 [label="3642 For Loop\l------------"]
+    3642 -> 3643
+    3643 [label="3643 Var Declare\l-----------------\lm"]
+    3644 [label ="3643 Var : m"]
+    3643 -> 3644
+    3644 [label="3644 Integer\l0"]
+    3642 -> 3646
+    3646 [label="3646 Infix Expr\l<"]
+    3646 -> 3645
+    3645 [label="3645 Identifier\lm"]
+    3646 [label="3646 Infix Expr\l<"]
+    3646 -> 3648
+    3648 [label="3648 Infix Dot"]
+    3648 -> 3647
+    3647 [label="3647 Identifier\lmovimientos"]
+    3648 -> 3650
+    3650 [label="3650 Call\lsize()"]
+    3642 -> 3651
+    3651 [label="3651 Postfix Expr\l++"]
+    3651 -> 3652
+    3652 [label="3652 Identifier\lm"]
+    3642 -> 3653
+    3653 [label="3653 Block"]
+    3653 -> 3654
+    3654 [label="3654 Var Declare\l-----------------\lnx"]
+    3656 [label ="3654 Var : nx"]
+    3654 -> 3656
+    3656 [label="3656 Infix Expr\l+"]
+    3656 -> 3655
+    3655 [label="3655 Identifier\lx"]
+    3656 [label="3656 Infix Expr\l+"]
+    3656 -> 3658
+    3658 [label="3658 Index Expr\l"]
+    3658 -> 3657
+    3657 [label="3657 Identifier\lmovimientos"]
+    3658 -> 3659
+    3659 [label="3659 Identifier\lm"]
+    3658 -> 3660
+    3660 [label="3660 Integer\l0"]
+    3653 [label="3653 Block"]
+    3653 -> 3661
+    3661 [label="3661 Var Declare\l-----------------\lny"]
+    3663 [label ="3661 Var : ny"]
+    3661 -> 3663
+    3663 [label="3663 Infix Expr\l+"]
+    3663 -> 3662
+    3662 [label="3662 Identifier\ly"]
+    3663 [label="3663 Infix Expr\l+"]
+    3663 -> 3665
+    3665 [label="3665 Index Expr\l"]
+    3665 -> 3664
+    3664 [label="3664 Identifier\lmovimientos"]
+    3665 -> 3666
+    3666 [label="3666 Identifier\lm"]
+    3665 -> 3667
+    3667 [label="3667 Integer\l1"]
+    3653 [label="3653 Block"]
+    3653 -> 3668
+    3668 [label="3668 If Then\l--------"]
+    3668 -> 3684
+    3684 [label="3684 Block"]
+    3684 -> 3685
+    3685 [label="3685 Expression"]
+    3685 -> 3687
+    3687 [label="3687 Infix Dot"]
+    3687 -> 3686
+    3686 [label="3686 Identifier\ldestinos"]
+    3687 -> 3689
+    3689 [label="3689 Call\linsert()"]
+    3689 -> 3690
+    3690 [label="3690 List"]
+    3690 -> 3691
+    3691 [label="3691 Identifier\lnx"]
+    3690 -> 3692
+    3692 [label="3692 Identifier\lny"]
+    3605 [label="3605 Block"]
+    3605 -> 3693
+    3693 [label="3693 Return"]
+    3693 -> 3694
+    3694 [label="3694 Identifier\ldestinos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3695
+    3695 [label="3695 Expression"]
+    3695 -> 3696
+    3696 [label="3696 Function Declare\l-----------------------\lgenerar_destinos_torre"]
+    3696 -> 3699
+    3699 [label="3699 Block"]
+    3699 -> 3700
+    3700 [label="3700 Var Declare\l-----------------\ldestinos"]
+    3701 [label ="3700 Var : destinos"]
+    3700 -> 3701
+    3701 [label="3701 List"]
+    3699 [label="3699 Block"]
+    3699 -> 3702
+    3702 [label="3702 Var Declare\l-----------------\ldirecciones"]
+    3703 [label ="3702 Var : direcciones"]
+    3702 -> 3703
+    3703 [label="3703 List"]
+    3703 -> 3704
+    3704 [label="3704 List"]
+    3704 -> 3705
+    3705 [label="3705 Prefix Expr\l-"]
+    3705 -> 3706
+    3706 [label="3706 Integer\l1"]
+    3704 -> 3707
+    3707 [label="3707 Integer\l0"]
+    3703 -> 3708
+    3708 [label="3708 List"]
+    3708 -> 3709
+    3709 [label="3709 Integer\l1"]
+    3708 -> 3710
+    3710 [label="3710 Integer\l0"]
+    3703 -> 3711
+    3711 [label="3711 List"]
+    3711 -> 3712
+    3712 [label="3712 Integer\l0"]
+    3711 -> 3713
+    3713 [label="3713 Prefix Expr\l-"]
+    3713 -> 3714
+    3714 [label="3714 Integer\l1"]
+    3703 -> 3715
+    3715 [label="3715 List"]
+    3715 -> 3716
+    3716 [label="3716 Integer\l0"]
+    3715 -> 3717
+    3717 [label="3717 Integer\l1"]
+    3699 [label="3699 Block"]
+    3699 -> 3718
+    3718 [label="3718 For Loop\l------------"]
+    3718 -> 3719
+    3719 [label="3719 Var Declare\l-----------------\ld"]
+    3720 [label ="3719 Var : d"]
+    3719 -> 3720
+    3720 [label="3720 Integer\l0"]
+    3718 -> 3722
+    3722 [label="3722 Infix Expr\l<"]
+    3722 -> 3721
+    3721 [label="3721 Identifier\ld"]
+    3722 [label="3722 Infix Expr\l<"]
+    3722 -> 3724
+    3724 [label="3724 Infix Dot"]
+    3724 -> 3723
+    3723 [label="3723 Identifier\ldirecciones"]
+    3724 -> 3726
+    3726 [label="3726 Call\lsize()"]
+    3718 -> 3727
+    3727 [label="3727 Postfix Expr\l++"]
+    3727 -> 3728
+    3728 [label="3728 Identifier\ld"]
+    3718 -> 3729
+    3729 [label="3729 Block"]
+    3729 -> 3730
+    3730 [label="3730 Var Declare\l-----------------\ldx"]
+    3732 [label ="3730 Var : dx"]
+    3730 -> 3732
+    3732 [label="3732 Index Expr\l"]
+    3732 -> 3731
+    3731 [label="3731 Identifier\ldirecciones"]
+    3732 -> 3733
+    3733 [label="3733 Identifier\ld"]
+    3732 -> 3734
+    3734 [label="3734 Integer\l0"]
+    3729 [label="3729 Block"]
+    3729 -> 3735
+    3735 [label="3735 Var Declare\l-----------------\ldy"]
+    3737 [label ="3735 Var : dy"]
+    3735 -> 3737
+    3737 [label="3737 Index Expr\l"]
+    3737 -> 3736
+    3736 [label="3736 Identifier\ldirecciones"]
+    3737 -> 3738
+    3738 [label="3738 Identifier\ld"]
+    3737 -> 3739
+    3739 [label="3739 Integer\l1"]
+    3729 [label="3729 Block"]
+    3729 -> 3740
+    3740 [label="3740 Var Declare\l-----------------\lnx"]
+    3742 [label ="3740 Var : nx"]
+    3740 -> 3742
+    3742 [label="3742 Infix Expr\l+"]
+    3742 -> 3741
+    3741 [label="3741 Identifier\lx"]
+    3742 [label="3742 Infix Expr\l+"]
+    3742 -> 3743
+    3743 [label="3743 Identifier\ldx"]
+    3729 [label="3729 Block"]
+    3729 -> 3744
+    3744 [label="3744 Var Declare\l-----------------\lny"]
+    3746 [label ="3744 Var : ny"]
+    3744 -> 3746
+    3746 [label="3746 Infix Expr\l+"]
+    3746 -> 3745
+    3745 [label="3745 Identifier\ly"]
+    3746 [label="3746 Infix Expr\l+"]
+    3746 -> 3747
+    3747 [label="3747 Identifier\ldy"]
+    3729 [label="3729 Block"]
+    3729 -> 3748
+    3748 [label="3748 While"]
+    3748 -> 3764
+    3764 [label="3764 Block"]
+    3764 -> 3765
+    3765 [label="3765 Expression"]
+    3765 -> 3767
+    3767 [label="3767 Infix Dot"]
+    3767 -> 3766
+    3766 [label="3766 Identifier\ldestinos"]
+    3767 -> 3769
+    3769 [label="3769 Call\linsert()"]
+    3769 -> 3770
+    3770 [label="3770 List"]
+    3770 -> 3771
+    3771 [label="3771 Identifier\lnx"]
+    3770 -> 3772
+    3772 [label="3772 Identifier\lny"]
+    3764 [label="3764 Block"]
+    3764 -> 3773
+    3773 [label="3773 If Then\l--------"]
+    3773 -> 3782
+    3782 [label="3782 Block"]
+    3782 -> 3783
+    3783 [label="3783 Break"]
+    3764 [label="3764 Block"]
+    3764 -> 3784
+    3784 [label="3784 Expression"]
+    3784 -> 3786
+    3786 [label="3786 Assign\l-------------\l="]
+    3786 -> 3785
+    3785 [label="3785 Identifier\lnx"]
+    3786 -> 3787
+    3787 [label="3787 Infix Expr\l+"]
+    3787 -> 3785
+    3785 [label="3785 Identifier\lnx"]
+    3787 [label="3787 Infix Expr\l+"]
+    3787 -> 3788
+    3788 [label="3788 Identifier\ldx"]
+    3764 [label="3764 Block"]
+    3764 -> 3789
+    3789 [label="3789 Expression"]
+    3789 -> 3791
+    3791 [label="3791 Assign\l-------------\l="]
+    3791 -> 3790
+    3790 [label="3790 Identifier\lny"]
+    3791 -> 3792
+    3792 [label="3792 Infix Expr\l+"]
+    3792 -> 3790
+    3790 [label="3790 Identifier\lny"]
+    3792 [label="3792 Infix Expr\l+"]
+    3792 -> 3793
+    3793 [label="3793 Identifier\ldy"]
+    3699 [label="3699 Block"]
+    3699 -> 3794
+    3794 [label="3794 Return"]
+    3794 -> 3795
+    3795 [label="3795 Identifier\ldestinos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3796
+    3796 [label="3796 Expression"]
+    3796 -> 3797
+    3797 [label="3797 Function Declare\l-----------------------\lgenerar_destinos_rey"]
+    3797 -> 3800
+    3800 [label="3800 Block"]
+    3800 -> 3801
+    3801 [label="3801 Var Declare\l-----------------\ldestinos"]
+    3802 [label ="3801 Var : destinos"]
+    3801 -> 3802
+    3802 [label="3802 List"]
+    3800 [label="3800 Block"]
+    3800 -> 3803
+    3803 [label="3803 For Loop\l------------"]
+    3803 -> 3804
+    3804 [label="3804 Var Declare\l-----------------\ldx"]
+    3805 [label ="3804 Var : dx"]
+    3804 -> 3805
+    3805 [label="3805 Prefix Expr\l-"]
+    3805 -> 3806
+    3806 [label="3806 Integer\l1"]
+    3803 -> 3808
+    3808 [label="3808 Infix Expr\l<="]
+    3808 -> 3807
+    3807 [label="3807 Identifier\ldx"]
+    3808 [label="3808 Infix Expr\l<="]
+    3808 -> 3809
+    3809 [label="3809 Integer\l1"]
+    3803 -> 3810
+    3810 [label="3810 Postfix Expr\l++"]
+    3810 -> 3811
+    3811 [label="3811 Identifier\ldx"]
+    3803 -> 3812
+    3812 [label="3812 Block"]
+    3812 -> 3813
+    3813 [label="3813 For Loop\l------------"]
+    3813 -> 3814
+    3814 [label="3814 Var Declare\l-----------------\ldy"]
+    3815 [label ="3814 Var : dy"]
+    3814 -> 3815
+    3815 [label="3815 Prefix Expr\l-"]
+    3815 -> 3816
+    3816 [label="3816 Integer\l1"]
+    3813 -> 3818
+    3818 [label="3818 Infix Expr\l<="]
+    3818 -> 3817
+    3817 [label="3817 Identifier\ldy"]
+    3818 [label="3818 Infix Expr\l<="]
+    3818 -> 3819
+    3819 [label="3819 Integer\l1"]
+    3813 -> 3820
+    3820 [label="3820 Postfix Expr\l++"]
+    3820 -> 3821
+    3821 [label="3821 Identifier\ldy"]
+    3813 -> 3822
+    3822 [label="3822 Block"]
+    3822 -> 3823
+    3823 [label="3823 If Then\l--------"]
+    3823 -> 3831
+    3831 [label="3831 Block"]
+    3831 -> 3832
+    3832 [label="3832 Continue"]
+    3822 [label="3822 Block"]
+    3822 -> 3833
+    3833 [label="3833 Var Declare\l-----------------\lnx"]
+    3835 [label ="3833 Var : nx"]
+    3833 -> 3835
+    3835 [label="3835 Infix Expr\l+"]
+    3835 -> 3834
+    3834 [label="3834 Identifier\lx"]
+    3835 [label="3835 Infix Expr\l+"]
+    3835 -> 3836
+    3836 [label="3836 Identifier\ldx"]
+    3822 [label="3822 Block"]
+    3822 -> 3837
+    3837 [label="3837 Var Declare\l-----------------\lny"]
+    3839 [label ="3837 Var : ny"]
+    3837 -> 3839
+    3839 [label="3839 Infix Expr\l+"]
+    3839 -> 3838
+    3838 [label="3838 Identifier\ly"]
+    3839 [label="3839 Infix Expr\l+"]
+    3839 -> 3840
+    3840 [label="3840 Identifier\ldy"]
+    3822 [label="3822 Block"]
+    3822 -> 3841
+    3841 [label="3841 If Then\l--------"]
+    3841 -> 3857
+    3857 [label="3857 Block"]
+    3857 -> 3858
+    3858 [label="3858 Expression"]
+    3858 -> 3860
+    3860 [label="3860 Infix Dot"]
+    3860 -> 3859
+    3859 [label="3859 Identifier\ldestinos"]
+    3860 -> 3862
+    3862 [label="3862 Call\linsert()"]
+    3862 -> 3863
+    3863 [label="3863 List"]
+    3863 -> 3864
+    3864 [label="3864 Identifier\lnx"]
+    3863 -> 3865
+    3865 [label="3865 Identifier\lny"]
+    3800 [label="3800 Block"]
+    3800 -> 3866
+    3866 [label="3866 Return"]
+    3866 -> 3867
+    3867 [label="3867 Identifier\ldestinos"]
+    0 [label="0 Root\l--------"]
+    0 -> 3869
+    3869 [label="3869 Use Display"]
+    3869 -> 
+    3869 [label="3869 Use Time"]
+    3869 -> 
+    0 [label="0 Root\l--------"]
+    0 -> 3870
+    3870 [label="3870 Var Declare\l-----------------\la"]
+    3872 [label ="3870 Var : a"]
+    3870 -> 3872
+    3872 [label="3872 Infix Dot"]
+    3872 -> 3871
+    3871 [label="3871 Identifier\lDisplay"]
+    3872 -> 3873
+    3873 [label="3873 Identifier\ldraw"]
+    0 [label="0 Root\l--------"]
+    0 -> 3874
+    3874 [label="3874 Import\lchess_types"]
+    0 [label="0 Root\l--------"]
+    0 -> 3875
+    3875 [label="3875 Import\lchess_init"]
+    0 [label="0 Root\l--------"]
+    0 -> 3876
+    3876 [label="3876 Import\lchess_moves"]
+    0 [label="0 Root\l--------"]
+    0 -> 3877
+    3877 [label="3877 Import\lchess-check"]
+    0 [label="0 Root\l--------"]
+    0 -> 3878
+    3878 [label="3878 Import\lchess_ai"]
+    0 [label="0 Root\l--------"]
+    0 -> 3879
+    3879 [label="3879 Constant\l--------"]
+    3879 -> 3880
+    3880 [label="3880 Integer\l100"]
+    0 [label="0 Root\l--------"]
+    0 -> 3881
+    3881 [label="3881 Var Declare\l-----------------\lnum1"]
+    3882 [label ="3881 Var : num1"]
+    3881 -> 3882
+    3882 [label="3882 Float\l123.123457"]
+    0 [label="0 Root\l--------"]
+    0 -> 3883
+    3883 [label="3883 Var Declare\l-----------------\lnum2"]
+    3884 [label ="3883 Var : num2"]
+    3883 -> 3884
+    3884 [label="3884 Float\l1234.123457"]
+    0 [label="0 Root\l--------"]
+    0 -> 3885
+    3885 [label="3885 Var Declare\l-----------------\lnum3"]
+    3886 [label ="3885 Var : num3"]
+    3885 -> 3886
+    3886 [label="3886 Float\l12345.123457"]
+    0 [label="0 Root\l--------"]
+    0 -> 3887
+    3887 [label="3887 Expression"]
+    3887 -> 3889
+    3889 [label="3889 Call\lprintln()"]
+    3889 -> 3890
+    3890 [label="3890 String\lnum1: "]
+    3889 -> 3891
+    3891 [label="3891 Identifier\lnum1"]
+    0 [label="0 Root\l--------"]
+    0 -> 3892
+    3892 [label="3892 Expression"]
+    3892 -> 3894
+    3894 [label="3894 Call\lprintln()"]
+    3894 -> 3895
+    3895 [label="3895 String\lnum2: "]
+    3894 -> 3896
+    3896 [label="3896 Identifier\lnum2"]
+    0 [label="0 Root\l--------"]
+    0 -> 3897
+    3897 [label="3897 Expression"]
+    3897 -> 3899
+    3899 [label="3899 Call\lprintln()"]
+    3899 -> 3900
+    3900 [label="3900 String\lnum3: "]
+    3899 -> 3901
+    3901 [label="3901 Identifier\lnum3"]
+    0 [label="0 Root\l--------"]
+    0 -> 3902
+    3902 [label="3902 Expression"]
+    3902 -> 3904
+    3904 [label="3904 Call\liniciar_tablero()"]
+    0 [label="0 Root\l--------"]
+    0 -> 3905
+    3905 [label="3905 Var Declare\l-----------------\lstart"]
+    3907 [label ="3905 Var : start"]
+    3905 -> 3907
+    3907 [label="3907 Call\lclock()"]
+    0 [label="0 Root\l--------"]
+    0 -> 3908
+    3908 [label="3908 While"]
+    3908 -> 3919
+    3919 [label="3919 Block"]
+    3919 -> 3920
+    3920 [label="3920 Expression"]
+    3920 -> 3922
+    3922 [label="3922 Call\lprintln()"]
+    3919 [label="3919 Block"]
+    3919 -> 3923
+    3923 [label="3923 Expression"]
+    3923 -> 3925
+    3925 [label="3925 Call\lprintln()"]
+    3919 [label="3919 Block"]
+    3919 -> 3926
+    3926 [label="3926 Expression"]
+    3926 -> 3928
+    3928 [label="3928 Call\lmostrar_tablero()"]
+    3919 [label="3919 Block"]
+    3919 -> 3929
+    3929 [label="3929 Expression"]
+    3929 -> 3931
+    3931 [label="3931 Call\lprintln()"]
+    3931 -> 3932
+    3932 [label="3932 String\lTurno de las "]
+    3931 -> 3938
+    3919 [label="3919 Block"]
+    3919 -> 3941
+    3941 [label="3941 Expression"]
+    3941 -> 3943
+    3943 [label="3943 Call\lprintln()"]
+    3943 -> 3944
+    3944 [label="3944 String\lMovimiento: "]
+    3943 -> 3946
+    3946 [label="3946 Infix Dot"]
+    3946 -> 3945
+    3945 [label="3945 Identifier\lEstado"]
+    3946 -> 3947
+    3947 [label="3947 Identifier\lmovimientos"]
+    3943 -> 3948
+    3948 [label="3948 String\l | Tiempo : "]
+    3943 -> 3953
+    3953 [label="3953 Infix Expr\l/"]
+    3953 -> 3951
+    3951 [label="3951 Infix Expr\l-"]
+    3951 -> 3950
+    3950 [label="3950 Call\lclock()"]
+    3951 [label="3951 Infix Expr\l-"]
+    3951 -> 3952
+    3952 [label="3952 Identifier\lstart"]
+    3953 [label="3953 Infix Expr\l/"]
+    3953 -> 3954
+    3954 [label="3954 Integer\l1000"]
+    3919 [label="3919 Block"]
+    3919 -> 3955
+    3955 [label="3955 Expression"]
+    3955 -> 3957
+    3957 [label="3957 Assign\l-------------\l="]
+    3957 -> 3956
+    3956 [label="3956 Identifier\lstart"]
+    3957 -> 3960
+    3960 [label="3960 Call\lclock()"]
+    3919 [label="3919 Block"]
+    3919 -> 3961
+    3961 [label="3961 If Then\l--------"]
+    3961 -> 3967
+    3967 [label="3967 Block"]
+    3967 -> 3968
+    3968 [label="3968 Expression"]
+    3968 -> 3970
+    3970 [label="3970 Call\lprintln()"]
+    3970 -> 3971
+    3971 [label="3971 String\l- JAQUE!"]
+    3919 [label="3919 Block"]
+    3919 -> 3972
+    3972 [label="3972 Var Declare\l-----------------\lcolor_ia"]
+    3974 [label ="3972 Var : color_ia"]
+    3972 -> 3974
+    3974 [label="3974 Infix Dot"]
+    3974 -> 3973
+    3973 [label="3973 Identifier\lEstado"]
+    3974 -> 3975
+    3975 [label="3975 Identifier\lturno"]
+    3919 [label="3919 Block"]
+    3919 -> 3976
+    3976 [label="3976 Var Declare\l-----------------\lmovimiento_ia"]
+    3978 [label ="3976 Var : movimiento_ia"]
+    3976 -> 3978
+    3978 [label="3978 Call\lgenerar_movimiento_ia()"]
+    3978 -> 3979
+    3979 [label="3979 Identifier\lcolor_ia"]
+    3919 [label="3919 Block"]
+    3919 -> 3980
+    3980 [label="3980 If Then\l--------"]
+    3980 -> 3984
+    3984 [label="3984 Block"]
+    3984 -> 3985
+    3985 [label="3985 Expression"]
+    3985 -> 3987
+    3987 [label="3987 Call\lrealizar_movimiento_seguro()"]
+    3987 -> 3989
+    3989 [label="3989 Index Expr\l"]
+    3989 -> 3988
+    3988 [label="3988 Identifier\lmovimiento_ia"]
+    3989 -> 3990
+    3990 [label="3990 Integer\l0"]
+    3987 -> 3992
+    3992 [label="3992 Index Expr\l"]
+    3992 -> 3991
+    3991 [label="3991 Identifier\lmovimiento_ia"]
+    3992 -> 3993
+    3993 [label="3993 Integer\l1"]
+    3987 -> 3995
+    3995 [label="3995 Index Expr\l"]
+    3995 -> 3994
+    3994 [label="3994 Identifier\lmovimiento_ia"]
+    3995 -> 3996
+    3996 [label="3996 Integer\l2"]
+    3987 -> 3998
+    3998 [label="3998 Index Expr\l"]
+    3998 -> 3997
+    3997 [label="3997 Identifier\lmovimiento_ia"]
+    3998 -> 3999
+    3999 [label="3999 Integer\l3"]
+    0 [label="0 Root\l--------"]
+    0 -> 4021
+    4021 [label="4021 Expression"]
+    4021 -> 4023
+    4023 [label="4023 Call\lprintln()"]
+    4023 -> 4024
+    4024 [label="4024 String\l- Fin del juego!"]
+    0 [label="0 Root\l--------"]
+    0 -> 4025
+    4025 [label="4025 If Then\l--------"]
+    4025 -> 4029
+    4029 [label="4029 Block"]
+    4029 -> 4030
+    4030 [label="4030 Expression"]
+    4030 -> 4032
+    4032 [label="4032 Call\lprintln()"]
+    4032 -> 4033
+    4033 [label="4033 String\l-"]
+    4032 -> 4039
+    4032 -> 4042
+    4042 [label="4042 String\l GANAN!"]
+}
