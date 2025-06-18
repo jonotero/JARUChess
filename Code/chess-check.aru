@@ -1,0 +1,277 @@
+/*********************************************************
+* Juego de Ajedrez - Detección de Jaque y Jaque Mate    *
+*********************************************************/
+import "chess_types"
+import "chess_moves"
+
+// ----------------------
+// Utilidades Matemáticas
+// ----------------------
+func abs(n)
+    return (n < 0) ? -n : n
+end
+
+func sign(n)
+    if (n > 0) then return 1 end
+    if (n < 0) then return -1 end
+    return 0
+end
+
+// Determina si la casilla (x, y) está amenazada por piezas de color_atacante
+func casilla_amenazada(x, y, color_atacante)
+    // Recorrer todas las piezas del tablero
+    for (var x0 = 0; x0 < 8; x0++)
+        for (var y0 = 0; y0 < 8; y0++)
+            if (Tablero[x0][y0].color_pieza == color_atacante) then
+                // Si la casilla atacada es la misma donde está la pieza, saltamos
+                if (x0 == x and y0 == y) then
+                    continue
+                end
+                var pieza = Tablero[x0][y0].pieza
+
+                // Ataque de peones
+                if (pieza == PEON) then
+                    if (color_atacante == BLANCO) then
+                        if ((x == x0 + 1 or x == x0 - 1) and y == y0 + 1) then return true end
+                    else  // NEGRO
+                        if ((x == x0 + 1 or x == x0 - 1) and y == y0 - 1) then return true end
+                    end
+                end
+
+                // Ataques de caballo
+                if (pieza == CABALLO) then
+                    if (validar_caballo(x0, y0, x, y)) then return true end
+                end
+
+                // Ataques de alfil
+                if (pieza == ALFIL) then
+                    if (validar_alfil(x0, y0, x, y)) then return true end
+                end
+
+                // Ataques de torre
+                if (pieza == TORRE) then
+                    if (validar_torre(x0, y0, x, y)) then return true end
+                end
+
+                // Ataques de dama
+                if (pieza == DAMA) then
+                    if (validar_dama(x0, y0, x, y)) then return true end
+                end
+
+                // Ataque de rey (casillas adyacentes)
+                if (pieza == REY) then
+                    if (abs(x0 - x) <= 1 and abs(y0 - y) <= 1) then return true end
+                end
+            end
+        end
+    end
+    return false
+end
+
+// -----------------------------------------
+// Detección de patrones de ataque deslizantes
+// -----------------------------------------
+func es_ataque_deslizante(x0, y0, x1, y1)
+    var dx = sign(x1 - x0)
+    var dy = sign(y1 - y0)
+    // Debe ser recta o diagonal
+    if ((dx != 0 and dy != 0 and abs(x1 - x0) != abs(y1 - y0)) or (dx == 0 and dy == 0)) then
+        return false
+    end
+    var cx = x0 + dx
+    var cy = y0 + dy
+    while (cx != x1 or cy != y1)
+        if (Tablero[cx][cy].pieza != NINGUNA) then
+            return false
+        end
+        cx += dx
+        cy += dy
+    end
+    return true
+end
+
+// ----------------------------------
+// Verificación de capacidad de ataque
+// ----------------------------------
+func puede_atacar(x0, y0, x1, y1)
+    var pieza = Tablero[x0][y0]
+    var dx = x1 - x0
+    var dy = y1 - y0
+    var adx = abs(dx)
+    var ady = abs(dy)
+
+    switch (pieza.pieza)
+        case TORRE:
+            if ((x0 == x1 or y0 == y1) and es_ataque_deslizante(x0, y0, x1, y1)) then
+                return true
+            end
+        case ALFIL:
+            if (adx == ady and es_ataque_deslizante(x0, y0, x1, y1)) then
+                return true
+            end
+        case DAMA:
+            if (((x0 == x1 or y0 == y1) or (adx == ady)) and es_ataque_deslizante(x0, y0, x1, y1)) then
+                return true
+            end
+        case CABALLO:
+            if ((adx == 1 and ady == 2) or (adx == 2 and ady == 1)) then
+                return true
+            end
+        case REY:
+            if (Math.max(adx, ady) == 1) then
+                return true
+            end
+        case PEON:
+            if (pieza.color_pieza == BLANCO) then
+                if (dy == 1 and adx == 1) then return true end
+            else
+                if (dy == -1 and adx == 1) then return true end
+            end
+        default:
+            return false
+    end
+    return false
+end
+
+// --------------------------------
+// Casilla bajo ataque por color_atacante
+// --------------------------------
+func casilla_bajo_ataque(x, y, color_atacante)
+    for (var xi = 0; xi < 8; xi++)
+        for (var yi = 0; yi < 8; yi++)
+            if (Tablero[xi][yi].color_pieza == color_atacante) then
+                if (puede_atacar(xi, yi, x, y)) then
+                    return true
+                end
+            end
+        end
+    end
+    return false
+end
+
+// --------------------------
+// Encuentra la posición del rey
+// --------------------------
+func encontrar_rey(color)
+    for (var x = 0; x < 8; x++)
+        for (var y = 0; y < 8; y++)
+            if (Tablero[x][y].pieza == REY and Tablero[x][y].color_pieza == color) then
+                return [x, y]
+            end
+        end
+    end
+    return nil
+end
+
+// --------------------------
+// Comprueba si un rey está en jaque
+// --------------------------
+func esta_en_jaque(color)
+    var pos_rey = encontrar_rey(color)
+    if (pos_rey == nil) then
+        return false
+    end
+    var color_atacante = (color == BLANCO) ? NEGRO : BLANCO
+    return casilla_bajo_ataque(pos_rey[0], pos_rey[1], color_atacante)
+end
+
+// ---------------------------------------------
+// Simula un movimiento y verifica si deja en jaque
+// ---------------------------------------------
+func movimiento_deja_en_jaque(x_orig, y_orig, x_dest, y_dest)
+    // Clonar estado completo
+    var estado_backup = Estado.clone()
+    // Clonar casillas
+    var pieza_orig = Tablero[x_orig][y_orig].clone()
+    var pieza_dest = Tablero[x_dest][y_dest].clone()
+
+    // Realizar movimiento temporal
+    Tablero[x_dest][y_dest].pieza       = pieza_orig.pieza
+    Tablero[x_dest][y_dest].color_pieza = pieza_orig.color_pieza
+    Tablero[x_orig][y_orig].pieza       = NINGUNA
+    Tablero[x_orig][y_orig].color_pieza = NINGUNO
+
+    // Verificar jaque
+    var en_jaque = esta_en_jaque(pieza_orig.color_pieza)
+
+    // Restaurar tablero y estado
+    Tablero[x_orig][y_orig].pieza = pieza_orig.pieza
+    Tablero[x_orig][y_orig].color_pieza= pieza_orig.color_pieza
+    Tablero[x_dest][y_dest].pieza = pieza_dest.pieza
+    Tablero[x_dest][y_dest].color_pieza = pieza_dest.color_pieza
+    Estado = estado_backup
+
+    return en_jaque
+end
+
+// --------------------------------------
+// Generar todos los movimientos legales
+// --------------------------------------
+func movimientos_legales(color)
+    var lista = []
+    for (var x0 = 0; x0 < 8; x0++)
+        for (var y0 = 0; y0 < 8; y0++)
+            if (Tablero[x0][y0].color_pieza != color) then
+                continue
+            end
+            for (var x1 = 0; x1 < 8; x1++)
+                for (var y1 = 0; y1 < 8; y1++)
+                    if (validar_movimiento(x0, y0, x1, y1) and !movimiento_deja_en_jaque(x0, y0, x1, y1)) then
+                        lista.insert([x0, y0, x1, y1])
+                    end
+                end
+            end
+        end
+    end
+    return lista
+end
+
+// --------------------------------------
+// Verificar Jaque Mate
+// --------------------------------------
+func es_jaque_mate(color)
+    if (!esta_en_jaque(color)) then
+        return false
+    end
+    var jugadas = movimientos_legales(color)
+    return (jugadas.size() == 0)
+end
+
+// --------------------------------------------------------
+// Extiende la función realizar_movimiento para incluir jaque
+// --------------------------------------------------------
+func realizar_movimiento_seguro(x_orig, y_orig, x_dest, y_dest)
+    if (!validar_movimiento(x_orig, y_orig, x_dest, y_dest)) then
+        return false
+    end
+    if (movimiento_deja_en_jaque(x_orig, y_orig, x_dest, y_dest)) then
+        println("Movimiento inválido: deja a tu rey en jaque.")
+        return false
+    end
+
+    // Guardar pieza capturada (por si se necesita)
+    var capturada = Tablero[x_dest][y_dest].clone()
+
+    // Realizar el movimiento
+    Tablero[x_dest][y_dest].pieza       = Tablero[x_orig][y_orig].pieza
+    Tablero[x_dest][y_dest].color_pieza = Tablero[x_orig][y_orig].color_pieza
+    Tablero[x_orig][y_orig].pieza       = NINGUNA
+    Tablero[x_orig][y_orig].color_pieza = NINGUNO
+
+    // Comprobar Jaque o Jaque Mate
+    var oponente = (Estado.turno == BLANCO) ? NEGRO : BLANCO
+    if (esta_en_jaque(oponente)) then
+        if (es_jaque_mate(oponente)) then
+            println("\n¡JAQUE MATE!")
+            Estado.terminar = true
+        else
+            println("\n¡JAQUE!")
+        end
+    end
+
+    // Cambiar turno
+    Estado.turno = oponente
+    // Incrementar contador de movimientos
+    Estado.movimientos++
+    return true
+end

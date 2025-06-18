@@ -1,0 +1,77 @@
+/*********************************************************
+ * Juego de Ajedrez - Tipos y Constantes
+ *********************************************************/
+//import "Main_Chess"
+
+// Constantes para las piezas
+const NINGUNA = 0
+const PEON = 10
+const ALFIL = 11
+const CABALLO = 12
+const TORRE = 13
+const DAMA = 14
+const REY = 15
+
+// Constantes para los colores
+const BLANCO = "B"
+const NEGRO = "N"
+const NINGUNO = "0"
+
+// Diccionario para representación visual de las piezas
+const piezas_dict = {
+    10: "P",  // Peón
+    11: "A",  // Alfil
+    12: "C",  // Caballo
+    13: "T",  // Torre
+    14: "D",  // Dama
+    15: "R",  // Rey
+    0: " "    // Casilla vacía
+}
+
+// Clase para representar una casilla del tablero
+class TCasilla
+    def init()
+        this.pieza = NINGUNA           // Tipo de pieza en la casilla
+        this.color_pieza = NINGUNO     // Color de la pieza
+        this.seleccionada = false      // Si la casilla está seleccionada
+    end
+
+    def clone()
+        var nueva = TCasilla()
+        nueva.pieza = this.pieza
+        nueva.color_pieza = this.color_pieza
+        nueva.seleccionada = this.seleccionada
+        return nueva
+    end
+end
+
+// Clase para mantener el estado del juego
+class TEstado
+    def init()
+        this.turno = BLANCO           // De quién es el turno
+        this.movimientos = 0          // Contador de movimientos
+        this.jaque_blanco = false     // Si el rey blanco está en jaque
+        this.jaque_negro = false      // Si el rey negro está en jaque
+        this.terminar = false         // Flag para terminar el juego
+    end
+
+    def init(x,y)
+        this.turno = BLANCO           // De quién es el turno
+        this.movimientos = 0          // Contador de movimientos
+        this.jaque_blanco = x     // Si el rey blanco está en jaque
+        this.jaque_negro = y      // Si el rey negro está en jaque
+        this.terminar = false         // Flag para terminar el juego
+    end
+
+    def clone()
+        var nuevo = TEstado()
+        nuevo.turno = this.turno
+        nuevo.movimientos = this.movimientos
+        nuevo.jaque_blanco = this.jaque_blanco
+        nuevo.jaque_negro = this.jaque_negro
+        nuevo.terminar = this.terminar
+        return nuevo
+    end
+end
+
+

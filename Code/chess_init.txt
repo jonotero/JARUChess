@@ -1,0 +1,61 @@
+/*********************************************************
+ * Juego de Ajedrez - Inicialización
+ *********************************************************/
+import "chess_types"
+// Tablero global
+var Tablero = []
+var Estado = TEstado()
+
+func iniciar_tablero()
+    // Orden inicial de las piezas en la primera/última fila
+    var piezas = [TORRE, CABALLO, ALFIL, DAMA, REY, ALFIL, CABALLO, TORRE]
+
+    // Crear matriz 8x8
+    for (var i=0; i<8; i++)
+        Tablero.insert([
+            TCasilla(), TCasilla(), TCasilla(), TCasilla(),
+            TCasilla(), TCasilla(), TCasilla(), TCasilla()
+        ])
+    end
+
+    // Colocar las piezas
+    for (var i=0; i<8; i++)
+        // Piezas negras
+        Tablero[i][0].pieza = piezas[i]
+        Tablero[i][0].color_pieza = NEGRO
+
+        // Peones negros
+        Tablero[i][1].pieza = PEON
+        Tablero[i][1].color_pieza = NEGRO
+
+        // Peones blancos
+        Tablero[i][6].pieza = PEON
+        Tablero[i][6].color_pieza = BLANCO
+
+        // Piezas blancas
+        Tablero[i][7].pieza = piezas[i]
+        Tablero[i][7].color_pieza = BLANCO
+    end
+
+end
+
+// Función para mostrar el tablero en consola
+func mostrar_tablero()
+    println("    a  b  c  d  e  f  g  h")
+    println("  -------------------------")
+
+    for (var y=0; y<8; y++)
+        print(8-y, " |")
+        for (var x=0; x<8; x++)
+            var pieza = Tablero[x][y].pieza
+            if (pieza != NINGUNA) then
+                print(" ", piezas_dict[pieza], Tablero[x][y].color_pieza)
+            else
+                print("   ")
+            end
+        end
+        println("|")
+    end
+    println("  -------------------------")
+end
+

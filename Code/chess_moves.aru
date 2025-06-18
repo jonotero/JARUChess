@@ -1,0 +1,207 @@
+/*********************************************************
+ * Juego de Ajedrez - Validación de Movimientos
+ *********************************************************/
+import "chess_types"
+
+// Convierte una letra (a-h) a su número de columna (0-7)
+func convertir_a_numero(letra)
+    var num
+    switch (letra)
+        case 'a': num = 0
+        case 'b': num = 1
+        case 'c': num = 2
+        case 'd': num = 3
+        case 'e': num = 4
+        case 'f': num = 5
+        case 'g': num = 6
+        case 'h': num = 7
+        default: num = -1
+    end
+    return num
+end
+
+// Valida si un movimiento está dentro del tablero
+func esta_en_tablero(x, y)
+    return x >= 0 and x < 8 and y >= 0 and y < 8
+end
+
+// Comprueba si hay una pieza del mismo color en la casilla destino
+func hay_pieza_mismo_color(x_dest, y_dest, color)
+    return Tablero[x_dest][y_dest].color_pieza == color
+end
+
+// Valida el movimiento del peón
+func validar_peon(x_orig, y_orig, x_dest, y_dest, color)
+    // Dirección: blancas suben (-1), negras bajan (+1)
+    var direccion   = (color == BLANCO) ? -1 : 1
+    var fila_inicial = (color == BLANCO) ? 6 : 1
+
+    // 1) Captura en diagonal (único caso de pieza en destino)
+    if (Tablero[x_dest][y_dest].pieza != NINGUNA and
+        Tablero[x_dest][y_dest].color_pieza != color) then
+
+        // Sólo permitido si es un paso diagonal de 1
+        if (abs(x_dest - x_orig) == 1 and y_dest == y_orig + direccion) then
+            return true
+        else
+            return false
+        end
+    end
+
+    // 2) Movimiento simple hacia adelante (sin captura)
+    if (x_orig == x_dest and y_dest == y_orig + direccion) then
+        return (Tablero[x_dest][y_dest].pieza == NINGUNA)
+    end
+
+    // 3) Movimiento doble en primer turno (fila inicial y camino libre)
+    if (x_orig == x_dest and
+        y_orig == fila_inicial and
+        y_dest == y_orig + 2 * direccion) then
+
+        return (Tablero[x_dest][y_dest].pieza == NINGUNA and
+                Tablero[x_dest][y_orig + direccion].pieza == NINGUNA)
+    end
+
+    // Cualquier otro movimiento de peón no está permitido
+    return false
+end
+
+// Valida el movimiento de la torre
+func validar_torre(x_orig, y_orig, x_dest, y_dest)
+    // La torre solo puede moverse en horizontal o vertical
+    if (x_orig != x_dest and y_orig != y_dest) then
+        return false
+    end
+
+    // Verificar que no hay piezas en el camino
+    if (x_orig == x_dest) then
+        var paso = (y_dest > y_orig) ? 1 : -1
+        var y = y_orig + paso
+        while (y != y_dest)
+            if (Tablero[x_orig][y].pieza != NINGUNA) then
+                return false
+            end
+            y += paso
+        end
+    else
+        var paso = (x_dest > x_orig) ? 1 : -1
+        var x = x_orig + paso
+        while (x != x_dest)
+            if (Tablero[x][y_orig].pieza != NINGUNA) then
+                return false
+            end
+            x += paso
+        end
+    end
+
+    return true
+end
+
+// Valida el movimiento del alfil
+func validar_alfil(x_orig, y_orig, x_dest, y_dest)
+    // Verificar que no es la misma posición
+    if (x_orig == x_dest and y_orig == y_dest) then
+        return false
+    end
+
+    // El alfil solo puede moverse en diagonal
+    if (abs(x_dest - x_orig) != abs(y_dest - y_orig)) then
+        return false
+    end
+
+    var paso_x = (x_dest > x_orig) ? 1 : -1
+    var paso_y = (y_dest > y_orig) ? 1 : -1
+
+    var x = x_orig + paso_x
+    var y = y_orig + paso_y
+
+    // Corrección: usar OR en lugar de AND para asegurar que verifiquemos
+    // todas las casillas en la diagonal hasta llegar al destino
+    while (x != x_dest) // Como es diagonal, x e y llegarán al mismo tiempo
+        if (Tablero[x][y].pieza != NINGUNA) then
+            return false
+        end
+        x += paso_x
+        y += paso_y
+    end
+
+    return true
+end
+
+// Valida el movimiento del caballo
+func validar_caballo(x_orig, y_orig, x_dest, y_dest)
+    var dx = abs(x_dest - x_orig)
+    var dy = abs(y_dest - y_orig)
+
+    return (dx == 1 and dy == 2) or (dx == 2 and dy == 1)
+end
+
+// Valida el movimiento de la reina (combinación de torre y alfil)
+func validar_dama(x_orig, y_orig, x_dest, y_dest)
+    return validar_torre(x_orig, y_orig, x_dest, y_dest) or
+           validar_alfil(x_orig, y_orig, x_dest, y_dest)
+end
+
+// Valida el movimiento del rey
+func validar_rey(x_orig, y_orig, x_dest, y_dest)
+// Verificar que no es la misma posición
+    if (x_orig == x_dest and y_orig == y_dest) then
+        return false
+    end
+    return abs(x_dest - x_orig) <= 1 and abs(y_dest - y_orig) <= 1
+end
+
+// Función principal para validar cualquier movimiento
+func validar_movimiento(x_orig, y_orig, x_dest, y_dest)
+    // Verificar que las coordenadas están dentro del tablero
+    if (!esta_en_tablero(x_orig, y_orig) or !esta_en_tablero(x_dest, y_dest)) then
+        return false
+    end
+
+    // Verificar que hay una pieza en el origen
+    if (Tablero[x_orig][y_orig].pieza == NINGUNA) then
+        return false
+    end
+
+    // Verificar que no hay una pieza del mismo color en el destino
+    var color = Tablero[x_orig][y_orig].color_pieza
+    if (hay_pieza_mismo_color(x_dest, y_dest, color)) then
+        return false
+    end
+
+    // Validar según el tipo de pieza
+    var valido = false
+    switch (Tablero[x_orig][y_orig].pieza)
+        case PEON: valido = validar_peon(x_orig, y_orig, x_dest, y_dest, color)
+        case TORRE: valido = validar_torre(x_orig, y_orig, x_dest, y_dest)
+        case ALFIL: valido = validar_alfil(x_orig, y_orig, x_dest, y_dest)
+        case CABALLO: valido = validar_caballo(x_orig, y_orig, x_dest, y_dest)
+        case DAMA: valido = validar_dama(x_orig, y_orig, x_dest, y_dest)
+        case REY: valido = validar_rey(x_orig, y_orig, x_dest, y_dest)
+    end
+
+    return valido
+end
+
+// Realiza el movimiento en el tablero
+func realizar_movimiento(x_orig, y_orig, x_dest, y_dest)
+    if (!validar_movimiento(x_orig, y_orig, x_dest, y_dest)) then
+        return false
+    end
+
+    // Realizar el movimiento
+    Tablero[x_dest][y_dest].pieza = Tablero[x_orig][y_orig].pieza
+    Tablero[x_dest][y_dest].color_pieza = Tablero[x_orig][y_orig].color_pieza
+
+    // Limpiar casilla origen
+    Tablero[x_orig][y_orig].pieza = NINGUNA
+    Tablero[x_orig][y_orig].color_pieza = NINGUNO
+
+    // Actualizar estado
+    Estado.movimientos++
+    Estado.turno = (Estado.turno == BLANCO) ? NEGRO : BLANCO
+
+    return true
+end
+
+

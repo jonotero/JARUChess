@@ -1,0 +1,432 @@
+/*********************************************************
+ * Juego de Ajedrez - Inteligencia Artificial (Minimax con poda alfa-beta)
+ *********************************************************/
+use Math
+
+import "chess_types"
+import "chess_moves"
+import "chess-check"
+import "chess_init"
+
+// Valores de las piezas para la evaluación
+const VALOR_PEON = 100
+const VALOR_CABALLO = 320
+const VALOR_ALFIL = 330
+const VALOR_TORRE = 500
+const VALOR_DAMA = 900
+const VALOR_REY = 20000
+
+// Profundidad de búsqueda del algoritmo (ajustar según rendimiento)
+const PROFUNDIDAD_BUSQUEDA = 3
+
+// Bonificaciones posicionales para mejorar la evaluación
+// Bonificación central para peones
+const TABLERO_PEONES = [
+    [0,  0,  0,  0,  0,  0,  0,  0],
+    [50, 50, 50, 50, 50, 50, 50, 50],
+    [10, 10, 20, 30, 30, 20, 10, 10],
+    [5,  5, 10, 25, 25, 10,  5,  5],
+    [0,  0,  0, 20, 20,  0,  0,  0],
+    [5, -5,-10,  0,  0,-10, -5,  5],
+    [5, 10, 10,-20,-20, 10, 10,  5],
+    [0,  0,  0,  0,  0,  0,  0,  0]
+]
+
+// Bonificación para caballos (valorar posiciones centrales)
+const TABLERO_CABALLOS = [
+    [-50,-40,-30,-30,-30,-30,-40,-50],
+    [-40,-20,  0,  0,  0,  0,-20,-40],
+    [-30,  0, 10, 15, 15, 10,  0,-30],
+    [-30,  5, 15, 20, 20, 15,  5,-30],
+    [-30,  0, 15, 20, 20, 15,  0,-30],
+    [-30,  5, 10, 15, 15, 10,  5,-30],
+    [-40,-20,  0,  5,  5,  0,-20,-40],
+    [-50,-40,-30,-30,-30,-30,-40,-50]
+]
+
+// Función principal para generar un movimiento de la IA
+
+func generar_movimiento_ia(color_ia)
+    var mejor_valor = -999999
+    var mejor_movimiento = nil
+    var pieza_orig_tipo
+    var pieza_orig_color
+    var pieza_dest_tipo
+    var pieza_dest_color
+    var estado_orig
+    var color_oponente
+    var valor
+    // Explorar todos los movimientos posibles para la IA
+    for (var x_orig=0; x_orig<8; x_orig++)
+        for (var y_orig=0; y_orig<8; y_orig++)
+            // Si no hay pieza o es del color contrario, continuar
+            if (Tablero[x_orig][y_orig].pieza == NINGUNA or
+                Tablero[x_orig][y_orig].color_pieza != color_ia) then
+                continue
+            end
+            // Para cada pieza del color actual, explorar todas las casillas destino
+            for (var x_dest=0; x_dest<8; x_dest++)
+                for (var y_dest=0; y_dest<8; y_dest++)
+                    // Verificar si el movimiento es válido y no deja al rey en jaque
+                    if (validar_movimiento(x_orig, y_orig, x_dest, y_dest) and
+                        !movimiento_deja_en_jaque(x_orig, y_orig, x_dest, y_dest)) then
+                        // Guardar solo los valores necesarios en lugar de clonar
+                        pieza_orig_tipo = Tablero[x_orig][y_orig].pieza
+                        pieza_orig_color = Tablero[x_orig][y_orig].color_pieza
+                        pieza_dest_tipo = Tablero[x_dest][y_dest].pieza
+                        pieza_dest_color = Tablero[x_dest][y_dest].color_pieza
+
+                        // Sin saber la estructura exacta de Estado, necesitamos guardar una copia
+                        // Para evitar clone() se requeriría conocer todas las propiedades de Estado
+                        estado_orig = Estado.clone()
+
+                        // Realizar movimiento temporal
+                        Tablero[x_dest][y_dest].pieza = pieza_orig_tipo
+                        Tablero[x_dest][y_dest].color_pieza = pieza_orig_color
+                        Tablero[x_orig][y_orig].pieza = NINGUNA
+                        Tablero[x_orig][y_orig].color_pieza = NINGUNO
+
+                        // Evaluar el movimiento mediante minimax con poda alfa-beta
+                        color_oponente = (color_ia == BLANCO) ? NEGRO : BLANCO
+                        valor = -minimax(PROFUNDIDAD_BUSQUEDA - 1, -999999, 999999, color_oponente)
+
+                        // Restaurar estado
+                        Tablero[x_orig][y_orig].pieza = pieza_orig_tipo
+                        Tablero[x_orig][y_orig].color_pieza = pieza_orig_color
+                        Tablero[x_dest][y_dest].pieza = pieza_dest_tipo
+                        Tablero[x_dest][y_dest].color_pieza = pieza_dest_color
+
+                        // Restaurar estado original - esto requiere el clone() original
+                        Estado = estado_orig
+
+                        // Actualizar mejor movimiento si es mejor
+                        if (valor > mejor_valor) then
+                            mejor_valor = valor
+                            mejor_movimiento = [x_orig, y_orig, x_dest, y_dest]
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return mejor_movimiento
+end
+
+// Algoritmo minimax con poda alfa-beta (OPTIMIZADO Y REFACTORIZADO)
+func minimax(profundidad, alfa, beta, color_turno)
+    // Si llegamos a la profundidad máxima, evaluar posición
+    if (profundidad == 0) then
+        return evaluar_tablero()
+    end
+
+    // Verificar si hay jaque mate
+    if (es_jaque_mate(color_turno)) then
+        return (color_turno == BLANCO) ? -900000 : 900000
+    end
+
+    var valor
+    var movimientos_legales = generar_movimientos_legales(color_turno)
+
+    // Inicializar valor según si somos maximizador o minimizador
+    valor = (color_turno == BLANCO) ? -999999 : 999999
+
+    // Determinar color del oponente para la recursión
+    var color_oponente = (color_turno == BLANCO) ? NEGRO : BLANCO
+
+    for (var i=0; i<movimientos_legales.size(); i++)
+        var x_orig = movimientos_legales[i][0]
+        var y_orig = movimientos_legales[i][1]
+        var x_dest = movimientos_legales[i][2]
+        var y_dest = movimientos_legales[i][3]
+
+        // Guardar valores necesarios
+        var pieza_orig_tipo = Tablero[x_orig][y_orig].pieza
+        var pieza_orig_color = Tablero[x_orig][y_orig].color_pieza
+        var pieza_dest_tipo = Tablero[x_dest][y_dest].pieza
+        var pieza_dest_color = Tablero[x_dest][y_dest].color_pieza
+
+        // Guardar estado original
+        var estado_orig = Estado.clone()
+
+        // Realizar movimiento
+        Tablero[x_dest][y_dest].pieza = pieza_orig_tipo
+        Tablero[x_dest][y_dest].color_pieza = pieza_orig_color
+        Tablero[x_orig][y_orig].pieza = NINGUNA
+        Tablero[x_orig][y_orig].color_pieza = NINGUNO
+
+        // Recursión minimax
+        var nuevo_valor = minimax(profundidad - 1, alfa, beta, color_oponente)
+
+        // Restaurar estado
+        Tablero[x_orig][y_orig].pieza = pieza_orig_tipo
+        Tablero[x_orig][y_orig].color_pieza = pieza_orig_color
+        Tablero[x_dest][y_dest].pieza = pieza_dest_tipo
+        Tablero[x_dest][y_dest].color_pieza = pieza_dest_color
+        Estado = estado_orig
+
+        // Actualizar el mejor valor y alfa/beta según corresponda
+        if (color_turno == BLANCO) then
+            valor = Math.max(valor, nuevo_valor)
+            alfa = Math.max(alfa, nuevo_valor)  // CORRECCIÓN: usar nuevo_valor en lugar de valor
+        else
+            valor = Math.min(valor, nuevo_valor)
+            beta = Math.min(beta, nuevo_valor)  // CORRECCIÓN: usar nuevo_valor en lugar de valor
+        end
+
+        // Poda alfa-beta (igual para ambos)
+        if (beta <= alfa) then
+            return valor
+        end
+    end
+
+    return valor
+end
+
+// Función de evaluación del tablero
+func evaluar_tablero()
+    var valor = 0
+
+    // Verificar si hay jaque
+    if (esta_en_jaque(BLANCO)) then
+        valor -= 50  // Penalización por estar en jaque
+    end
+
+    if (esta_en_jaque(NEGRO)) then
+        valor += 50  // Bonificación si el oponente está en jaque
+    end
+
+    // Sumar el valor de todas las piezas
+    for (var x=0; x<8; x++)
+        for (var y=0; y<8; y++)
+            var pieza = Tablero[x][y].pieza
+            var color = Tablero[x][y].color_pieza
+
+            if (pieza != NINGUNA) then
+                var valor_pieza = 0
+                var bonus_posicion = 0
+
+                // Valor material base
+                switch (pieza)
+                    case PEON:
+                        valor_pieza = VALOR_PEON
+                        // Añadir bonificación posicional para peones
+                        if (color == BLANCO) then
+                            bonus_posicion = TABLERO_PEONES[y][x]
+                        else
+                            bonus_posicion = TABLERO_PEONES[7-y][x]
+                        end
+                    case CABALLO:
+                        valor_pieza = VALOR_CABALLO
+                        // Añadir bonificación posicional para caballos
+                        if (color == BLANCO) then
+                            bonus_posicion = TABLERO_CABALLOS[y][x]
+                        else
+                            bonus_posicion = TABLERO_CABALLOS[7-y][x]
+                        end
+                    case ALFIL: valor_pieza = VALOR_ALFIL
+                    case TORRE: valor_pieza = VALOR_TORRE
+                    case DAMA: valor_pieza = VALOR_DAMA
+                    case REY: valor_pieza = VALOR_REY
+                end
+
+                // Sumar al valor total (positivo para blancas, negativo para negras)
+                if (color == BLANCO) then
+                    valor += valor_pieza + bonus_posicion
+                else
+                    valor -= valor_pieza + bonus_posicion
+                end
+            end
+        end
+    end
+
+    return valor
+end
+
+//=================================================================================================
+// Función para generar todos los movimientos legales de un color
+func generar_movimientos_legales(color)
+    var movimientos = []
+    var oponente = (color == BLANCO) ? NEGRO : BLANCO
+
+    // Recorrer el tablero una sola vez buscando piezas del color indicado
+    for (var x_orig=0; x_orig<8; x_orig++)
+        for (var y_orig=0; y_orig<8; y_orig++)
+            // Si no hay pieza o es del color contrario, continuar
+            if (Tablero[x_orig][y_orig].pieza == NINGUNA or
+                Tablero[x_orig][y_orig].color_pieza != color) then
+                continue
+            end
+
+            var pieza = Tablero[x_orig][y_orig].pieza
+
+            // Generar destinos potenciales según el tipo de pieza
+            var destinos = []
+
+            if (pieza == PEON) then
+                destinos = generar_destinos_peon(x_orig, y_orig, color)
+            elsif (pieza == ALFIL) then
+                destinos = generar_destinos_alfil(x_orig, y_orig)
+            elsif (pieza == CABALLO) then
+                destinos = generar_destinos_caballo(x_orig, y_orig)
+            elsif (pieza == TORRE) then
+                destinos = generar_destinos_torre(x_orig, y_orig)
+            elsif (pieza == DAMA) then
+                // La dama combina movimientos de alfil y torre
+                destinos = generar_destinos_alfil(x_orig, y_orig)
+                //destinos = destinos.concat(generar_destinos_torre(x_orig, y_orig))
+                var destinos_torre = generar_destinos_torre(x_orig, y_orig)
+                for (var j=0; j<destinos_torre.size(); j++)
+                    destinos.insert(destinos_torre[j])
+                end
+            elsif (pieza == REY) then
+                destinos = generar_destinos_rey(x_orig, y_orig)
+            end
+
+            // Para cada destino, verificar si es un movimiento válido y no deja al rey en jaque
+            for (var i=0; i<destinos.size(); i++)
+                var x_dest = destinos[i][0]
+                var y_dest = destinos[i][1]
+
+                if (validar_movimiento(x_orig, y_orig, x_dest, y_dest) and
+                        !movimiento_deja_en_jaque(x_orig, y_orig, x_dest, y_dest) and
+                        !(pieza == DAMA and casilla_amenazada(x_dest, y_dest, oponente))) then
+
+                        movimientos.insert([x_orig, y_orig, x_dest, y_dest])
+                end
+            end
+        end
+    end
+
+    return movimientos
+end
+
+// Función para generar destinos potenciales de un peón
+func generar_destinos_peon(x, y, color)
+    var destinos = []
+    var dir = (color == BLANCO) ? -1 : 1  // Dirección de movimiento (arriba para blancas, abajo para negras)
+
+    // Movimiento hacia adelante (1 casilla)
+    if (y + dir >= 0 and y + dir < 8) then
+        if (Tablero[x][y + dir].pieza == NINGUNA) then
+           destinos.insert([x, y + dir])
+
+           // Movimiento inicial (2 casillas)
+           if ((color == BLANCO and y == 6) or (color == NEGRO and y == 1)) then
+              var y2 = y + 2 * dir
+              if (y2 >= 0 and y2 < 8 and Tablero[x][y2].pieza == NINGUNA) then
+                 destinos.insert([x, y2])
+              end
+           end
+        end
+    end
+
+    // Capturas diagonales
+    for (var dx = -1; dx <= 1; dx += 2)
+        var nx = x + dx
+        var ny = y + dir
+        if (nx >= 0 and nx < 8 and ny >= 0 and ny < 8) then
+           if (Tablero[nx][ny].pieza != NINGUNA and
+              Tablero[nx][ny].color_pieza != color) then
+              destinos.insert([nx, ny])
+            end;
+        end
+    end
+
+    return destinos
+end
+
+// Función para generar destinos potenciales de un alfil
+func generar_destinos_alfil(x, y)
+    var destinos = []
+    var direcciones = [[-1, -1], [-1, 1], [1, -1], [1, 1]]  // 4 diagonales
+
+    for (var d=0; d<direcciones.size(); d++)
+        var dx = direcciones[d][0]
+        var dy = direcciones[d][1]
+        var nx = x + dx
+        var ny = y + dy
+
+        // Continuar en la dirección hasta encontrar obstáculo o borde
+        while (nx >= 0 and nx < 8 and ny >= 0 and ny < 8)
+            destinos.insert([nx, ny])
+
+            // Si hay una pieza en esta posición, no podemos seguir en esta dirección
+            if (Tablero[nx][ny].pieza != NINGUNA) then
+                break
+            end
+
+            nx += dx
+            ny += dy
+        end
+    end
+
+    return destinos
+end
+
+// Función para generar destinos potenciales de un caballo
+func generar_destinos_caballo(x, y)
+    var destinos = []
+    var movimientos = [[-2, -1], [-2, 1], [-1, -2], [-1, 2], [1, -2], [1, 2], [2, -1], [2, 1]]
+
+    for (var m=0; m<movimientos.size(); m++)
+        var nx = x + movimientos[m][0]
+        var ny = y + movimientos[m][1]
+
+        if (nx >= 0 and nx < 8 and ny >= 0 and ny < 8) then
+            destinos.insert([nx, ny])
+        end
+    end
+
+    return destinos
+end
+
+// Función para generar destinos potenciales de una torre
+func generar_destinos_torre(x, y)
+    var destinos = []
+    var direcciones = [[-1, 0], [1, 0], [0, -1], [0, 1]]  // 4 ortogonales
+
+    for (var d=0; d<direcciones.size(); d++)
+        var dx = direcciones[d][0]
+        var dy = direcciones[d][1]
+        var nx = x + dx
+        var ny = y + dy
+
+        // Continuar en la dirección hasta encontrar obstáculo o borde
+        while (nx >= 0 and nx < 8 and ny >= 0 and ny < 8)
+            destinos.insert([nx, ny])
+
+            // Si hay una pieza en esta posición, no podemos seguir en esta dirección
+            if (Tablero[nx][ny].pieza != NINGUNA) then
+                break
+            end
+
+            nx += dx
+            ny += dy
+        end
+    end
+
+    return destinos
+end
+
+// Función para generar destinos potenciales de un rey
+func generar_destinos_rey(x, y)
+    var destinos = []
+
+    // El rey puede moverse 1 casilla en cualquier dirección
+    for (var dx=-1; dx<=1; dx++)
+        for (var dy=-1; dy<=1; dy++)
+            if (dx == 0 and dy == 0) then
+                continue  // Excluir la posición actual
+            end
+
+            var nx = x + dx
+            var ny = y + dy
+
+            if (nx >= 0 and nx < 8 and ny >= 0 and ny < 8) then
+                destinos.insert([nx, ny])
+            end
+        end
+    end
+
+    return destinos
+end
