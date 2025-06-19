@@ -1,6 +1,6 @@
 /*********************************************************
-* Juego de Ajedrez - Detección de Jaque y Jaque Mate    *
-*********************************************************/
+* Juego de Ajedrez - Detección de Jaque y Jaque Mate     *
+**********************************************************/
 import "chess_types"
 import "chess_moves"
 

@@ -1,6 +1,7 @@
 /*********************************************************
  * Juego de Ajedrez - Inicialización
  *********************************************************/
+
 import "chess_types"
 // Tablero global
 var Tablero = []

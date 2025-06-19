@@ -12,13 +12,6 @@ import "chess_ai"
 
 const max_movimientos = 100
 
-var num1=123.123456789
-var num2=1234.123456789
-var num3=12345.123456789
-
-println ("num1: ",num1)
-println ("num2: ",num2)
-println ("num3: ",num3)
 
 // Inicializar el juego
 iniciar_tablero()
