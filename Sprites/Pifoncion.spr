@@ -1,0 +1,1 @@
+{ "version" : 1, "imageNodeID" : 12, "imageRelativePath" : "Images\\ImgDemo11.bmp", "animation" : { "fps" : 15, "alignment" : 0, "isTransparent" : false, "backgroundColor" : 6908265 }, "regions" : [{ "x" : 0, "y" : 0, "width" : 320, "height" : 240 }] }
