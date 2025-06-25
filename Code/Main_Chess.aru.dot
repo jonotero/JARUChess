@@ -5345,204 +5345,159 @@ digraph{
     3880 [label="3880 Integer\l100"]
     0 [label="0 Root\l--------"]
     0 -> 3881
-    3881 [label="3881 Var Declare\l-----------------\lnum1"]
-    3882 [label ="3881 Var : num1"]
-    3881 -> 3882
-    3882 [label="3882 Float\l123.123457"]
+    3881 [label="3881 Expression"]
+    3881 -> 3883
+    3883 [label="3883 Call\liniciar_tablero()"]
     0 [label="0 Root\l--------"]
-    0 -> 3883
-    3883 [label="3883 Var Declare\l-----------------\lnum2"]
-    3884 [label ="3883 Var : num2"]
-    3883 -> 3884
-    3884 [label="3884 Float\l1234.123457"]
-    0 [label="0 Root\l--------"]
-    0 -> 3885
-    3885 [label="3885 Var Declare\l-----------------\lnum3"]
-    3886 [label ="3885 Var : num3"]
-    3885 -> 3886
-    3886 [label="3886 Float\l12345.123457"]
+    0 -> 3884
+    3884 [label="3884 Var Declare\l-----------------\lstart"]
+    3886 [label ="3884 Var : start"]
+    3884 -> 3886
+    3886 [label="3886 Call\lclock()"]
     0 [label="0 Root\l--------"]
     0 -> 3887
-    3887 [label="3887 Expression"]
-    3887 -> 3889
-    3889 [label="3889 Call\lprintln()"]
-    3889 -> 3890
-    3890 [label="3890 String\lnum1: "]
-    3889 -> 3891
-    3891 [label="3891 Identifier\lnum1"]
-    0 [label="0 Root\l--------"]
-    0 -> 3892
-    3892 [label="3892 Expression"]
-    3892 -> 3894
-    3894 [label="3894 Call\lprintln()"]
-    3894 -> 3895
-    3895 [label="3895 String\lnum2: "]
-    3894 -> 3896
-    3896 [label="3896 Identifier\lnum2"]
-    0 [label="0 Root\l--------"]
-    0 -> 3897
-    3897 [label="3897 Expression"]
-    3897 -> 3899
-    3899 [label="3899 Call\lprintln()"]
-    3899 -> 3900
-    3900 [label="3900 String\lnum3: "]
+    3887 [label="3887 While"]
+    3887 -> 3898
+    3898 [label="3898 Block"]
+    3898 -> 3899
+    3899 [label="3899 Expression"]
     3899 -> 3901
-    3901 [label="3901 Identifier\lnum3"]
-    0 [label="0 Root\l--------"]
-    0 -> 3902
+    3901 [label="3901 Call\lprintln()"]
+    3898 [label="3898 Block"]
+    3898 -> 3902
     3902 [label="3902 Expression"]
     3902 -> 3904
-    3904 [label="3904 Call\liniciar_tablero()"]
-    0 [label="0 Root\l--------"]
-    0 -> 3905
-    3905 [label="3905 Var Declare\l-----------------\lstart"]
-    3907 [label ="3905 Var : start"]
+    3904 [label="3904 Call\lprintln()"]
+    3898 [label="3898 Block"]
+    3898 -> 3905
+    3905 [label="3905 Expression"]
     3905 -> 3907
-    3907 [label="3907 Call\lclock()"]
-    0 [label="0 Root\l--------"]
-    0 -> 3908
-    3908 [label="3908 While"]
-    3908 -> 3919
-    3919 [label="3919 Block"]
-    3919 -> 3920
+    3907 [label="3907 Call\lmostrar_tablero()"]
+    3898 [label="3898 Block"]
+    3898 -> 3908
+    3908 [label="3908 Expression"]
+    3908 -> 3910
+    3910 [label="3910 Call\lprintln()"]
+    3910 -> 3911
+    3911 [label="3911 String\lTurno de las "]
+    3910 -> 3917
+    3898 [label="3898 Block"]
+    3898 -> 3920
     3920 [label="3920 Expression"]
     3920 -> 3922
     3922 [label="3922 Call\lprintln()"]
-    3919 [label="3919 Block"]
-    3919 -> 3923
-    3923 [label="3923 Expression"]
-    3923 -> 3925
-    3925 [label="3925 Call\lprintln()"]
-    3919 [label="3919 Block"]
-    3919 -> 3926
-    3926 [label="3926 Expression"]
-    3926 -> 3928
-    3928 [label="3928 Call\lmostrar_tablero()"]
-    3919 [label="3919 Block"]
-    3919 -> 3929
-    3929 [label="3929 Expression"]
-    3929 -> 3931
-    3931 [label="3931 Call\lprintln()"]
-    3931 -> 3932
-    3932 [label="3932 String\lTurno de las "]
-    3931 -> 3938
-    3919 [label="3919 Block"]
-    3919 -> 3941
-    3941 [label="3941 Expression"]
-    3941 -> 3943
-    3943 [label="3943 Call\lprintln()"]
-    3943 -> 3944
-    3944 [label="3944 String\lMovimiento: "]
-    3943 -> 3946
-    3946 [label="3946 Infix Dot"]
-    3946 -> 3945
-    3945 [label="3945 Identifier\lEstado"]
+    3922 -> 3923
+    3923 [label="3923 String\lMovimiento: "]
+    3922 -> 3925
+    3925 [label="3925 Infix Dot"]
+    3925 -> 3924
+    3924 [label="3924 Identifier\lEstado"]
+    3925 -> 3926
+    3926 [label="3926 Identifier\lmovimientos"]
+    3922 -> 3927
+    3927 [label="3927 String\l | Tiempo : "]
+    3922 -> 3932
+    3932 [label="3932 Infix Expr\l/"]
+    3932 -> 3930
+    3930 [label="3930 Infix Expr\l-"]
+    3930 -> 3929
+    3929 [label="3929 Call\lclock()"]
+    3930 [label="3930 Infix Expr\l-"]
+    3930 -> 3931
+    3931 [label="3931 Identifier\lstart"]
+    3932 [label="3932 Infix Expr\l/"]
+    3932 -> 3933
+    3933 [label="3933 Integer\l1000"]
+    3898 [label="3898 Block"]
+    3898 -> 3934
+    3934 [label="3934 Expression"]
+    3934 -> 3936
+    3936 [label="3936 Assign\l-------------\l="]
+    3936 -> 3935
+    3935 [label="3935 Identifier\lstart"]
+    3936 -> 3939
+    3939 [label="3939 Call\lclock()"]
+    3898 [label="3898 Block"]
+    3898 -> 3940
+    3940 [label="3940 If Then\l--------"]
+    3940 -> 3946
+    3946 [label="3946 Block"]
     3946 -> 3947
-    3947 [label="3947 Identifier\lmovimientos"]
-    3943 -> 3948
-    3948 [label="3948 String\l | Tiempo : "]
-    3943 -> 3953
-    3953 [label="3953 Infix Expr\l/"]
-    3953 -> 3951
-    3951 [label="3951 Infix Expr\l-"]
-    3951 -> 3950
-    3950 [label="3950 Call\lclock()"]
-    3951 [label="3951 Infix Expr\l-"]
-    3951 -> 3952
-    3952 [label="3952 Identifier\lstart"]
-    3953 [label="3953 Infix Expr\l/"]
+    3947 [label="3947 Expression"]
+    3947 -> 3949
+    3949 [label="3949 Call\lprintln()"]
+    3949 -> 3950
+    3950 [label="3950 String\l- JAQUE!"]
+    3898 [label="3898 Block"]
+    3898 -> 3951
+    3951 [label="3951 Var Declare\l-----------------\lcolor_ia"]
+    3953 [label ="3951 Var : color_ia"]
+    3951 -> 3953
+    3953 [label="3953 Infix Dot"]
+    3953 -> 3952
+    3952 [label="3952 Identifier\lEstado"]
     3953 -> 3954
-    3954 [label="3954 Integer\l1000"]
-    3919 [label="3919 Block"]
-    3919 -> 3955
-    3955 [label="3955 Expression"]
+    3954 [label="3954 Identifier\lturno"]
+    3898 [label="3898 Block"]
+    3898 -> 3955
+    3955 [label="3955 Var Declare\l-----------------\lmovimiento_ia"]
+    3957 [label ="3955 Var : movimiento_ia"]
     3955 -> 3957
-    3957 [label="3957 Assign\l-------------\l="]
-    3957 -> 3956
-    3956 [label="3956 Identifier\lstart"]
-    3957 -> 3960
-    3960 [label="3960 Call\lclock()"]
-    3919 [label="3919 Block"]
-    3919 -> 3961
-    3961 [label="3961 If Then\l--------"]
-    3961 -> 3967
-    3967 [label="3967 Block"]
-    3967 -> 3968
-    3968 [label="3968 Expression"]
-    3968 -> 3970
-    3970 [label="3970 Call\lprintln()"]
-    3970 -> 3971
-    3971 [label="3971 String\l- JAQUE!"]
-    3919 [label="3919 Block"]
-    3919 -> 3972
-    3972 [label="3972 Var Declare\l-----------------\lcolor_ia"]
-    3974 [label ="3972 Var : color_ia"]
-    3972 -> 3974
-    3974 [label="3974 Infix Dot"]
+    3957 [label="3957 Call\lgenerar_movimiento_ia()"]
+    3957 -> 3958
+    3958 [label="3958 Identifier\lcolor_ia"]
+    3898 [label="3898 Block"]
+    3898 -> 3959
+    3959 [label="3959 If Then\l--------"]
+    3959 -> 3963
+    3963 [label="3963 Block"]
+    3963 -> 3964
+    3964 [label="3964 Expression"]
+    3964 -> 3966
+    3966 [label="3966 Call\lrealizar_movimiento_seguro()"]
+    3966 -> 3968
+    3968 [label="3968 Index Expr\l"]
+    3968 -> 3967
+    3967 [label="3967 Identifier\lmovimiento_ia"]
+    3968 -> 3969
+    3969 [label="3969 Integer\l0"]
+    3966 -> 3971
+    3971 [label="3971 Index Expr\l"]
+    3971 -> 3970
+    3970 [label="3970 Identifier\lmovimiento_ia"]
+    3971 -> 3972
+    3972 [label="3972 Integer\l1"]
+    3966 -> 3974
+    3974 [label="3974 Index Expr\l"]
     3974 -> 3973
-    3973 [label="3973 Identifier\lEstado"]
+    3973 [label="3973 Identifier\lmovimiento_ia"]
     3974 -> 3975
-    3975 [label="3975 Identifier\lturno"]
-    3919 [label="3919 Block"]
-    3919 -> 3976
-    3976 [label="3976 Var Declare\l-----------------\lmovimiento_ia"]
-    3978 [label ="3976 Var : movimiento_ia"]
-    3976 -> 3978
-    3978 [label="3978 Call\lgenerar_movimiento_ia()"]
-    3978 -> 3979
-    3979 [label="3979 Identifier\lcolor_ia"]
-    3919 [label="3919 Block"]
-    3919 -> 3980
-    3980 [label="3980 If Then\l--------"]
-    3980 -> 3984
-    3984 [label="3984 Block"]
-    3984 -> 3985
-    3985 [label="3985 Expression"]
-    3985 -> 3987
-    3987 [label="3987 Call\lrealizar_movimiento_seguro()"]
-    3987 -> 3989
-    3989 [label="3989 Index Expr\l"]
-    3989 -> 3988
-    3988 [label="3988 Identifier\lmovimiento_ia"]
-    3989 -> 3990
-    3990 [label="3990 Integer\l0"]
-    3987 -> 3992
-    3992 [label="3992 Index Expr\l"]
-    3992 -> 3991
-    3991 [label="3991 Identifier\lmovimiento_ia"]
-    3992 -> 3993
-    3993 [label="3993 Integer\l1"]
-    3987 -> 3995
-    3995 [label="3995 Index Expr\l"]
-    3995 -> 3994
-    3994 [label="3994 Identifier\lmovimiento_ia"]
-    3995 -> 3996
-    3996 [label="3996 Integer\l2"]
-    3987 -> 3998
-    3998 [label="3998 Index Expr\l"]
-    3998 -> 3997
-    3997 [label="3997 Identifier\lmovimiento_ia"]
-    3998 -> 3999
-    3999 [label="3999 Integer\l3"]
+    3975 [label="3975 Integer\l2"]
+    3966 -> 3977
+    3977 [label="3977 Index Expr\l"]
+    3977 -> 3976
+    3976 [label="3976 Identifier\lmovimiento_ia"]
+    3977 -> 3978
+    3978 [label="3978 Integer\l3"]
     0 [label="0 Root\l--------"]
-    0 -> 4021
-    4021 [label="4021 Expression"]
-    4021 -> 4023
-    4023 [label="4023 Call\lprintln()"]
-    4023 -> 4024
-    4024 [label="4024 String\l- Fin del juego!"]
+    0 -> 4000
+    4000 [label="4000 Expression"]
+    4000 -> 4002
+    4002 [label="4002 Call\lprintln()"]
+    4002 -> 4003
+    4003 [label="4003 String\l- Fin del juego!"]
     0 [label="0 Root\l--------"]
-    0 -> 4025
-    4025 [label="4025 If Then\l--------"]
-    4025 -> 4029
-    4029 [label="4029 Block"]
-    4029 -> 4030
-    4030 [label="4030 Expression"]
-    4030 -> 4032
-    4032 [label="4032 Call\lprintln()"]
-    4032 -> 4033
-    4033 [label="4033 String\l-"]
-    4032 -> 4039
-    4032 -> 4042
-    4042 [label="4042 String\l GANAN!"]
+    0 -> 4004
+    4004 [label="4004 If Then\l--------"]
+    4004 -> 4008
+    4008 [label="4008 Block"]
+    4008 -> 4009
+    4009 [label="4009 Expression"]
+    4009 -> 4011
+    4011 [label="4011 Call\lprintln()"]
+    4011 -> 4012
+    4012 [label="4012 String\l-"]
+    4011 -> 4018
+    4011 -> 4021
+    4021 [label="4021 String\l GANAN!"]
 }
