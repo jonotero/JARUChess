@@ -1,6 +1,6 @@
-/*********************************************************
+/********************************************************
  * Juego de Ajedrez - Validación de Movimientos
- *********************************************************/
+ ********************************************************/
 import "chess_types"
 
 // Convierte una letra (a-h) a su número de columna (0-7)
@@ -32,26 +32,37 @@ end
 
 // Valida el movimiento del peón
 func validar_peon(x_orig, y_orig, x_dest, y_dest, color)
-    var direccion = (color == BLANCO) ? -1 : 1  // Blancos mueven hacia arriba (-1), negros hacia abajo (+1)
+    // Dirección: blancas suben (-1), negras bajan (+1)
+    var direccion   = (color == BLANCO) ? -1 : 1
     var fila_inicial = (color == BLANCO) ? 6 : 1
 
-    // Movimiento simple hacia adelante
+    // 1) Captura en diagonal (único caso de pieza en destino)
+    if (Tablero[x_dest][y_dest].pieza != NINGUNA and
+        Tablero[x_dest][y_dest].color_pieza != color) then
+
+        // Sólo permitido si es un paso diagonal de 1
+        if (abs(x_dest - x_orig) == 1 and y_dest == y_orig + direccion) then
+            return true
+        else
+            return false
+        end
+    end
+
+    // 2) Movimiento simple hacia adelante (sin captura)
     if (x_orig == x_dest and y_dest == y_orig + direccion) then
-        return Tablero[x_dest][y_dest].pieza == NINGUNA
+        return (Tablero[x_dest][y_dest].pieza == NINGUNA)
     end
 
-    // Movimiento doble en el primer movimiento
-    if (x_orig == x_dest and y_orig == fila_inicial and y_dest == y_orig + 2 * direccion) then
-        return Tablero[x_dest][y_dest].pieza == NINGUNA and
-               Tablero[x_dest][y_orig + direccion].pieza == NINGUNA
+    // 3) Movimiento doble en primer turno (fila inicial y camino libre)
+    if (x_orig == x_dest and
+        y_orig == fila_inicial and
+        y_dest == y_orig + 2 * direccion) then
+
+        return (Tablero[x_dest][y_dest].pieza == NINGUNA and
+                Tablero[x_dest][y_orig + direccion].pieza == NINGUNA)
     end
 
-    // Capturas en diagonal
-    if (abs(x_dest - x_orig) == 1 and y_dest == y_orig + direccion) then
-        return Tablero[x_dest][y_dest].pieza != NINGUNA and
-               Tablero[x_dest][y_dest].color_pieza != color
-    end
-
+    // Cualquier otro movimiento de peón no está permitido
     return false
 end
 
@@ -88,6 +99,11 @@ end
 
 // Valida el movimiento del alfil
 func validar_alfil(x_orig, y_orig, x_dest, y_dest)
+    // Verificar que no es la misma posición
+    if (x_orig == x_dest and y_orig == y_dest) then
+        return false
+    end
+
     // El alfil solo puede moverse en diagonal
     if (abs(x_dest - x_orig) != abs(y_dest - y_orig)) then
         return false
@@ -99,7 +115,9 @@ func validar_alfil(x_orig, y_orig, x_dest, y_dest)
     var x = x_orig + paso_x
     var y = y_orig + paso_y
 
-    while (x != x_dest and y != y_dest)
+    // Corrección: usar OR en lugar de AND para asegurar que verifiquemos
+    // todas las casillas en la diagonal hasta llegar al destino
+    while (x != x_dest) // Como es diagonal, x e y llegarán al mismo tiempo
         if (Tablero[x][y].pieza != NINGUNA) then
             return false
         end
@@ -126,6 +144,10 @@ end
 
 // Valida el movimiento del rey
 func validar_rey(x_orig, y_orig, x_dest, y_dest)
+// Verificar que no es la misma posición
+    if (x_orig == x_dest and y_orig == y_dest) then
+        return false
+    end
     return abs(x_dest - x_orig) <= 1 and abs(y_dest - y_orig) <= 1
 end
 
